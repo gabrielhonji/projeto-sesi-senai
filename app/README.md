@@ -1,0 +1,11 @@
+## Projeto integrador Sesi/Senai
+
+## Bibliotecas Instaladas: 
+#
+#
+#
+#
+# React-native-linear-gradient : npm i react-native-linear-gradient
+# React-native app-intro-slider : npm i react-native-app-intro-slider
+# Lucide Icons : npm i lucide
+# snap-carousel: npm install --save react-native-snap-carousel
