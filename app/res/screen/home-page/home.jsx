@@ -2,7 +2,7 @@ import React from "react"
 import { View, Text, Image, Input, InputSlot, InputIcon, InputField, Pressable, Button, ButtonText} from "@gluestack-ui/themed"
 import { StyleSheet, SafeAreaView, TouchableOpacity, ScrollView, Dimensions} from "react-native"
 import LinearGradient from "react-native-linear-gradient"
-import Carousel from 'react-native-snap-carousel';
+import Carousel, {Pagination} from 'react-native-snap-carousel';
 import AppIntroSlider from "react-native-app-intro-slider";
 
 import profile from "../../../src/img/profileImage.png"
@@ -58,7 +58,7 @@ const cards = [
 
 const MyCarousel = ({ data }) => {
     const renderItem = ({ item,color }) => (
-        <View style ={{width:280, height:140, backgroundColor:"#fff", borderRadius:25,alignSelf:"center", marginRight:30, flexDirection:"row", padding:30,alignItems:"center",gap:15,elevation:5,}}>
+        <View style ={{width:300, height:140, backgroundColor:"#fff", borderRadius:25,alignSelf:"center", marginRight:10, flexDirection:"row", padding:30,alignItems:"center",gap:15,elevation:5,}}>
             <View style={{width:65, height:65, justifyContent:"center", alignItems:"center",backgroundColor:item.backgroundColor, borderRadius:10,}}>
                     <Image source={item.image} style={{width:45, height:45,}}/>
             </View>
@@ -79,8 +79,12 @@ const MyCarousel = ({ data }) => {
             renderItem={renderItem}
             sliderWidth={screenWidth}
             itemWidth={screenWidth}
-            layout={'default'}
-            
+            layout={'stack'}
+            layoutCardOffset={`20`}
+            autoplay={true}
+            autoplayDelay={3000}
+            autoplayInterval={5000}
+            loop={true}
         />
     );
 };
