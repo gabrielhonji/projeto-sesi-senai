@@ -1,50 +1,65 @@
 // Gabriel / Test
 import React from 'react';
-import { Text, Box, SafeAreaView, Image, View, ScrollView} from '@gluestack-ui/themed';
+import { Text, Box, SafeAreaView, Image, View, ScrollView, Card} from '@gluestack-ui/themed';
 import LogoSesiBranca from '../../../src/img/sesi-senai-logo-branca.png';
 import { StyleSheet } from 'react-native';
 
-
 export default function AdministracaoScreen({ }) {
   return (
+    
     <SafeAreaView bg={'#EE3135'} h={'100%'}>
-      <Box w={'100%'} h={'50%'} justifyContent='center' alignItems='center'>
-        <Text>Administração</Text>
+      <Box w={'100%'} h={'25%'} justifyContent='center' alignItems='center'>
+
+      <Image
+          style={styles.logoADM}
+          source={require('../../../src/img/logoADM1.png')}
+          />
         <Image w={'80%'} resizeMode='contain' alt='Logo do SESI/SENAI' source={LogoSesiBranca} />
+
       </Box>
+   
       <View style={styles.container}>
-        <View style={styles.header}>
-          <Text style={styles.headerText}>ADMINISTRAÇÃO</Text>
-        </View>
+
+     
         <ScrollView style={styles.content}>
-          <Image
-            //source={{ Image:'/app/src/img/'}} 
-            style={styles.banner}
+        <Image
+          style={styles.admImagem}
+          source={require('../../../src/img/admImagem.jpg')}
           />
           <View style={styles.box}>
             <Text style={styles.title}>Sobre o curso de Administração</Text>
-            <Text>O curso tem como objetivo geral formar o cidadão e o profissional apto a atuar\n 
-              em todas as áreas das Ciências Gerenciais\n
-               e a liderar e organizar novos empreendimentos e negócios,\n
+            <Text>O curso tem como objetivo geral formar o cidadão e o profissional apto a atuar
+              em todas as áreas das Ciências Gerenciais
+               e a liderar e organizar novos empreendimentos e negócios,
                contribuindo para a melhoria e o desenvolvimento das organizações existentes.</Text>
           </View>
           <View style={styles.box}>
             <Text style={styles.title}>Importância</Text>
-            <Text>A administração é crucial para o funcionamento eficaz e eficiente de qualquer organização.\n 
-               Ela envolve planejar, organizar,dirigir e controlar os recursos para alcançar objetivos organizacionais.\n 
-                A administração garante que uma organização use \n
-              seus recursos da melhor forma possível, maximize a produtividade, otimize custos e promova a inovação.\n 
+            <Text>A administração é crucial para o funcionamento eficaz e eficiente de qualquer organização. 
+               Ela envolve planejar, organizar,dirigir e controlar os recursos para alcançar objetivos organizacionais.
+                A administração garante que uma organização use 
+              seus recursos da melhor forma possível, maximize a produtividade, otimize custos e promova a inovação.
               Em uma economia global, a administração também ajuda as empresas a se adaptarem a mudanças rápidas e a se manterem competitivas.</Text>
           </View>
           <View style={styles.box}>
             <Text style={styles.title}>Matérias relacionadas com a área de administração</Text>
-            <Text>\n 
+            <Text>
                     1.Matemática: Para análise de dados e finanças.
                     2. Geografia: Logística e mercado global.
                     3.Sociologia: Entendimento de comportamento humano e cultura organizacional.
                     4.História: Contexto sobre evolução dos negócios.
                     5.Português: Comunicação eficaz e escrita de relatórios.</Text>
           </View>
+          <View style={styles.box2}>
+              <Text style={styles.text}>Veja agora um Podcast de uma pessoa que trabalha na área de Administração</Text>
+          </View>
+          <View style={styles.box2}>
+              <Text style={styles.text2}>Salário médio de um Administrador</Text>
+          </View>
+          <Image
+          style={styles.tabelaSalario}
+          source={require('../../../src/img/tabelaSalarial.png')}
+          />
           <View style={styles.box}>
             <Text style={styles.title}>Vocabulario técnico da Administração</Text>
             <Text>Análise SWOT: Fundamental para entender a posição da organização e definir estratégias.
@@ -61,24 +76,19 @@ export default function AdministracaoScreen({ }) {
           </View>
           <View style={styles.box}>
             <Text style={styles.title}>Perspectiva da Administração no futuro</Text>
-            <Text>O futuro da administração está sendo moldado por tendências como a transformação digital, \n 
-              que utiliza tecnologias como inteligência artificial, automação e big data para otimizar operações e decisões. \n 
-              Além disso, a agilidade e a inovação são essenciais, permitindo que as empresas se adaptem rapidamente \n 
+            <Text>O futuro da administração está sendo moldado por tendências como a transformação digital,  
+              que utiliza tecnologias como inteligência artificial, automação e big data para otimizar operações e decisões.  
+              Além disso, a agilidade e a inovação são essenciais, permitindo que as empresas se adaptem rapidamente  
               às mudanças e integrem metodologias ágeis nas práticas de gestão.</Text>
           </View>
           <View style={styles.box}>
             <Text style={styles.title}>Áreas da Administração</Text>
-            <Text>Administração Geral, Recursos Humanos, Marketing, Finanças, Operações, \n 
-              Logística, Empreendedorismo, Gestão Estratégica, \n 
+            <Text>Administração Geral, Recursos Humanos, Marketing, Finanças, Operações,  
+              Logística, Empreendedorismo, Gestão Estratégica,  
               Gestão de Projetos e Tecnologia da Informação</Text>
           </View>
         </ScrollView>
-        <View style={styles.footer}>
-          <Text style={styles.footerText}>Início</Text>
-          <Text style={styles.footerText}>Professores</Text>
-          <Text style={styles.footerText}>Matérias</Text>
-          <Text style={styles.footerText}>Perfil</Text>
-        </View>
+       
       </View>
     </SafeAreaView>
   );
@@ -112,7 +122,18 @@ const styles = StyleSheet.create({
     padding: 15,
     borderRadius: 5,
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 5,
+    elevation: 2,
+  },
+  box2: {
+    backgroundColor: 'red',
+    marginBottom: 15,
+    padding: 15,
+    borderRadius: 5,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.1,
     shadowRadius: 5,
     elevation: 2,
@@ -131,6 +152,28 @@ const styles = StyleSheet.create({
   footerText: {
     color: 'white',
   },
+  logoADM:{
+    height:100,
+    width:200,
+  },
+  admImagem:{
+    height:300,
+    width:800,
+  },
+  card:{
+    color: 'red',
+  },
+  text:{
+    color: 'white',
+  },
+  text2:{
+    textAlign:'center',
+    color: 'white',
+  },
+  tabelaSalario:{
+    height:100,
+    width:100,
+  }
 });
     
   
