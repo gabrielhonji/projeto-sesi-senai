@@ -1,29 +1,27 @@
-import React from "react"
-import { View, Text, Image, Input, InputSlot, InputIcon, InputField, Pressable, Button, ButtonText} from "@gluestack-ui/themed"
-import { StyleSheet, SafeAreaView, TouchableOpacity, ScrollView, Dimensions} from "react-native"
-import LinearGradient from "react-native-linear-gradient"
-import Carousel, {Pagination} from 'react-native-snap-carousel';
-import AppIntroSlider from "react-native-app-intro-slider";
+import { Box, Button, ButtonText, Image, Input, InputField, InputIcon, InputSlot, Pressable, SafeAreaView, SearchIcon, Text, View } from "@gluestack-ui/themed";
+import React from "react";
+import { Dimensions, ScrollView, StyleSheet, TouchableOpacity } from "react-native";
+import LinearGradient from "react-native-linear-gradient";
+import Carousel from 'react-native-snap-carousel';
 
-import profile from "../../../src/img/profileImage.png"
-import { SearchIcon } from "@gluestack-ui/themed"
-import vetor1 from "../../../src/img/vector1.png"
-import vetor2 from "../../../src/img/vector2.png"
-import vetor3 from "../../../src/img/vector4.png"
-import eletricIcon from "../../../src/img/eletricaIcon.png"
-import atleta from "../../../src/img/atleta.png"
-import coinsIcon from "../../../src/img/coinsIcon.png"
-import subjectIcon from "../../../src/img/subjectIcon.png"
-import codeIcon from "../../../src/img/codeIcon.png"
-import pencilIcon from "../../../src/img/pencilIcon.png"
-import geoIcon from "../../../src/img/geoIcon.png"
-import otherIcon from "../../../src/img/otherIcon.png"
-import serverIcon from "../../../src/img/serverIcon.png"
-import translateIcon from "../../../src/img/translateIcon.png"
-import wrenchIcon from "../../../src/img/wrenchIcon.png"
-import Construtor from "../../../src/img/construtor.png"
-import Nutricao from "../../../src/img/nutricao.png"
-import Advogado from "../../../src/img/advogado.png"
+// Import images
+import Advogado from "../../../src/img/advogado.png";
+import codeIcon from "../../../src/img/codeIcon.png";
+import coinsIcon from "../../../src/img/coinsIcon.png";
+import Construtor from "../../../src/img/construtor.png";
+import eletricIcon from "../../../src/img/eletricaIcon.png";
+import geoIcon from "../../../src/img/geoIcon.png";
+import Nutricao from "../../../src/img/nutricao.png";
+import otherIcon from "../../../src/img/otherIcon.png";
+import pencilIcon from "../../../src/img/pencilIcon.png";
+import profile from "../../../src/img/profileImage.png";
+import serverIcon from "../../../src/img/serverIcon.png";
+import subjectIcon from "../../../src/img/subjectIcon.png";
+import translateIcon from "../../../src/img/translateIcon.png";
+import vetor1 from "../../../src/img/vector1.png";
+import vetor2 from "../../../src/img/vector2.png";
+import vetor3 from "../../../src/img/vector4.png";
+import wrenchIcon from "../../../src/img/wrenchIcon.png";
 
 const { width: screenWidth } = Dimensions.get('window');
 const cards = [
@@ -57,16 +55,16 @@ const cards = [
 ]
 
 const MyCarousel = ({ data }) => {
-    const renderItem = ({ item,color }) => (
-        <View style ={{width:300, height:140, backgroundColor:"#fff", borderRadius:25,alignSelf:"center", marginRight:10, flexDirection:"row", padding:30,alignItems:"center",gap:15,elevation:5,}}>
+    const renderItem = ({ item, color }) => (
+        <View style ={{width:280, height:140, backgroundColor:"#fff", borderRadius:25,alignSelf:"center", marginRight:30, flexDirection:"row", padding:30,alignItems:"center",gap:15,elevation:5,}}>
             <View style={{width:65, height:65, justifyContent:"center", alignItems:"center",backgroundColor:item.backgroundColor, borderRadius:10,}}>
-                    <Image source={item.image} style={{width:45, height:45,}}/>
+                    <Image alt='job-image' source={item.image} style={{width:45, height:45,}}/>
             </View>
             <View style={{flexDirection:"column", gap:5}}>
                 <Text style={{color:"#212121", fontWeight:"800",fontSize:20,}}>{item.title}</Text>
                 <Text style={{color:"#212121", fontWeight:"600"}}>{item.area}</Text>
                 <View style={{flexDirection:"row", marginTop:4, gap:5}}>
-                    <Image source={coinsIcon} style={{width:24,height:24,}}/>
+                    <Image alt='coin-icon' source={coinsIcon} style={{width:24,height:24,}}/>
                     <Text style={{color:"#ee2d32", fontWeight:"800", paddingTop:3}}>R${item.minSal} - R${item.maxSal}</Text>
                 </View>
             </View>
@@ -125,13 +123,13 @@ export default function Home({ navigation}) {
                 </LinearGradient>
                 <View style={styles.jobsContainer}>
                     <View style={styles.avaiableJobs}>
-                        <Image source={vetor2} style={{ width: 31, height: 14, }} />
+                        <Image alt='icons' source={vetor2} style={{ width: 31, height: 14, }} />
                         <Text style={{ color: "#fff", fontSize: 30, fontWeight: "bold" }}>29</Text>
                         <Text style={{ color: "#fff" }}>Trabalhos disponiveis</Text>
                         <Image source={vetor1} alt="Perfil" resizeMode="contain" style={{ height: 70, width: 70, marginLeft: 52, marginTop: 17, }} />
                     </View>
                     <View style={styles.addedJobs}>
-                        <Image source={vetor2} style={{ width: 31, height: 14, }} />
+                        <Image alt='icons' source={vetor2} style={{ width: 31, height: 14, }} />
                         <Text style={{ color: "#fff", fontSize: 30, fontWeight: "bold" }}>3</Text>
                         <Text style={{ color: "#fff" }}>Trabalhos sendo adicionados</Text>
                         <Image source={vetor3} alt="Perfil" resizeMode="contain" style={{ height: 70, width: 70, marginLeft: 65, }} />
@@ -144,44 +142,44 @@ export default function Home({ navigation}) {
                     <View style={styles.cardContainer}>
                         <Pressable onPress={() => console.log("teste")}>
                             <View style={styles.categoryCard}>
-                                <Image source={eletricIcon} style={{ width: 30, height: 30 }} resizeMode="contain" />
+                                <Image alt='icon' source={eletricIcon} style={{ width: 30, height: 30 }} resizeMode="contain" />
                             </View>
                         </Pressable>
                         <Pressable onPress={() => console.log("teste")}>
                             <View style={styles.categoryCard}>
-                                <Image source={pencilIcon} style={{ width: 30, height: 30 }} resizeMode="contain" />
+                                <Image alt='icon' source={pencilIcon} style={{ width: 30, height: 30 }} resizeMode="contain" />
                             </View>
                         </Pressable>
                         <Pressable onPress={() => console.log("teste")}>
                             <View style={styles.categoryCard}>
-                                <Image source={geoIcon} style={{ width: 30, height: 30 }} resizeMode="contain" />
+                                <Image alt='icon' source={geoIcon} style={{ width: 30, height: 30 }} resizeMode="contain" />
                             </View>
                         </Pressable>
                         <Pressable onPress={() => console.log("teste")}>
                             <View style={styles.categoryCard}>
-                                <Image source={translateIcon} style={{ width: 30, height: 30 }} resizeMode="contain" />
+                                <Image alt='icon' source={translateIcon} style={{ width: 30, height: 30 }} resizeMode="contain" />
                             </View>
                         </Pressable>
                     </View>
                     <View style={styles.cardContainer}>
                         <Pressable onPress={() => console.log("teste")}>
                             <View style={styles.categoryCard}>
-                                <Image source={codeIcon} style={{ width: 30, height: 30 }} resizeMode="contain" />
+                                <Image alt='icon' source={codeIcon} style={{ width: 30, height: 30 }} resizeMode="contain" />
                             </View>
                         </Pressable>
                         <Pressable onPress={() => console.log("teste")}>
                             <View style={styles.categoryCard}>
-                                <Image source={serverIcon} style={{ width: 30, height: 30 }} resizeMode="contain" />
+                                <Image alt='icon' source={serverIcon} style={{ width: 30, height: 30 }} resizeMode="contain" />
                             </View>
                         </Pressable>
                         <Pressable onPress={() => console.log("teste")}>
                             <View style={styles.categoryCard}>
-                                <Image source={wrenchIcon} style={{ width: 30, height: 30 }} resizeMode="contain" />
+                                <Image alt='icon' source={wrenchIcon} style={{ width: 30, height: 30 }} resizeMode="contain" />
                             </View>
                         </Pressable>
                         <Pressable onPress={() => console.log("teste")}>
                             <View style={styles.categoryCard}>
-                                <Image source={otherIcon} style={{ width: 30, height: 30 }} resizeMode="contain" />
+                                <Image alt='icon' source={otherIcon} style={{ width: 30, height: 30 }} resizeMode="contain" />
                             </View>
                         </Pressable>
                     </View>
@@ -209,18 +207,18 @@ export default function Home({ navigation}) {
                 <View style={styles.newJobContainer}>
                     <View style={{flexDirection:"row", gap:25,}}>
                         <View style={{ backgroundColor: "#61FF78", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
-                            <Image source={Nutricao} resizeMode="contain" style={{ width:40, height:40,}}/>
+                            <Image alt='icon' source={Nutricao} resizeMode="contain" style={{ width:40, height:40,}}/>
                         </View>
                         <View style={{flexDirection:"column", gap:5,}}>
                             <Text>Saúde</Text>
                             <Text style={{color:"#000", fontSize:20, fontWeight:"bold"}}>Nutrição</Text>
                             <View style={{flexDirection:"column",marginTop:10, gap:10,}}>
                                 <View style={{flexDirection:"row", gap:18,}}>
-                                    <Image source={coinsIcon} style={{width:24,height:24,}}/>
+                                    <Image alt='icon' source={coinsIcon} style={{width:24,height:24,}}/>
                                     <Text style={{color: "#000", fontWeight:"500", }}>R$1.000 - R$2.000</Text>
                                 </View>
                                 <View style={{flexDirection:"row", gap:18,}}>
-                                    <Image source={subjectIcon} style={{width:22,height:22,}}/>
+                                    <Image alt='icon' source={subjectIcon} style={{width:22,height:22,}}/>
                                     <Text style={{color: "#000", fontWeight:"500",fontSize:18,}}>Biologia</Text>
                                 </View>
                             </View>
@@ -230,18 +228,18 @@ export default function Home({ navigation}) {
                 <View style={styles.newJobContainer}>
                     <View style={{flexDirection:"row", gap:25,}}>
                         <View style={{ backgroundColor: "#F9F909", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
-                            <Image source={Advogado} resizeMode="contain" style={{ width:40, height:40,}}/>
+                            <Image alt='icon' source={Advogado} resizeMode="contain" style={{ width:40, height:40,}}/>
                         </View>
                         <View style={{flexDirection:"column", gap:5,}}>
                             <Text>Direito</Text>
                             <Text style={{color:"#000", fontSize:20, fontWeight:"bold"}}>Advogado</Text>
                             <View style={{flexDirection:"column",marginTop:10, gap:10,}}>
                                 <View style={{flexDirection:"row", gap:18,}}>
-                                    <Image source={coinsIcon} style={{width:24,height:24,}}/>
+                                    <Image alt='icon' source={coinsIcon} style={{width:24,height:24,}}/>
                                     <Text style={{color: "#000", fontWeight:"500", }}>R$2.500 - R$3.000</Text>
                                 </View>
                                 <View style={{flexDirection:"row", gap:18,}}>
-                                    <Image source={subjectIcon} style={{width:22,height:22,}}/>
+                                    <Image alt='icon' source={subjectIcon} style={{width:22,height:22,}}/>
                                     <Text style={{color: "#000", fontWeight:"500",fontSize:18,}}>Língua Portuguesa</Text>
                                 </View>
                             </View>
@@ -251,24 +249,50 @@ export default function Home({ navigation}) {
                 <View style={styles.newJobContainer}>
                     <View style={{flexDirection:"row", gap:25,}}>
                         <View style={{ backgroundColor: "#FF8450", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
-                            <Image source={Construtor} resizeMode="contain" style={{ width:40, height:40,}}/>
+                            <Image alt='icon' source={Construtor} resizeMode="contain" style={{ width:40, height:40,}}/>
                         </View>
                         <View style={{flexDirection:"column", gap:5,}}>
                             <Text>Engenharia</Text>
                             <Text style={{color:"#000", fontSize:20, fontWeight:"bold"}}>Engenheiro</Text>
                             <View style={{flexDirection:"column",marginTop:10, gap:10,}}>
                                 <View style={{flexDirection:"row", gap:18,}}>
-                                    <Image source={coinsIcon} style={{width:24,height:24,}}/>
+                                    <Image alt='icon' source={coinsIcon} style={{width:24,height:24,}}/>
                                     <Text style={{color: "#000", fontWeight:"500", }}>R$1.500 - R$2.000</Text>
                                 </View>
                                 <View style={{flexDirection:"row", gap:18,}}>
-                                    <Image source={subjectIcon} style={{width:22,height:22,}}/>
+                                    <Image alt='icon' source={subjectIcon} style={{width:22,height:22,}}/>
                                     <Text style={{color: "#000", fontWeight:"500",fontSize:18,}}>Matemática</Text>
                                 </View>
                             </View>
                         </View>
                     </View>
                 </View>
+                <Box h={'100%'} padding={'12%'} flexDirection='row' columnGap={20} rowGap={20} flexWrap='wrap'>
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('AdministracaoScreen')}>
+                    <Text>Administracao</Text>
+                    </Button>
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('AtletaScreen')}>
+                    <Text>Atleta</Text>
+                    </Button>
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('CabeleireiroScreen')}>
+                    <Text>Cabeleireiro</Text>
+                    </Button>
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('DatabaseScreen')}>
+                    <Text>Database</Text>
+                    </Button>
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('DesignScreen')}>
+                    <Text>Design</Text>
+                    </Button>
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('DesignScreen')}>
+                    <Text>Design</Text>
+                    </Button>
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('NutricaoScreen')}>
+                    <Text>Nutrição</Text>
+                    </Button>
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('PedreiroScreen')}>
+                    <Text>Pedreiro</Text>
+                    </Button>
+                </Box>
             </ScrollView>
         </SafeAreaView>
     )
