@@ -1,5 +1,18 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #Tue Oct 01 08:59:13 BRT 2024
+=======
+#Tue Oct 01 10:48:57 BRT 2024
+=======
+<<<<<<< HEAD
+#Tue Oct 01 08:58:58 BRT 2024
+=======
+<<<<<<< HEAD
+#Tue Oct 01 12:02:04 BRT 2024
+=======
+<<<<<<< HEAD
+#Tue Oct 01 12:16:25 BRT 2024
+>>>>>>> 9d9b80cb21f2a4ee6f216ed0c20055eb53a6bbc3
 =======
 <<<<<<< HEAD
 #Tue Oct 01 09:06:10 BRT 2024
@@ -10,7 +23,14 @@
 #Tue Oct 01 09:38:12 BRT 2024
 >>>>>>> a99b9b2e5d640c0205f68cffdc9f588f75d130e2
 >>>>>>> 84b412614f9e8ff971bd2045f8f6b85e79cb558a
+<<<<<<< HEAD
 >>>>>>> 45aee5bbcc255d1670d731bc0064622b0dc37226
+=======
+>>>>>>> 0ab73a9fddee97a30dc3bc901a8e6fd6d6bbf6ea
+>>>>>>> 18d38293f6bafa148d4c3a0d6de689106a83fcd1
+>>>>>>> 1d38f451e669ef0f617db6944043214be82a76bb
+>>>>>>> fe52950ead94c329dd3b95e81e21014b6eb2b223
+>>>>>>> 9d9b80cb21f2a4ee6f216ed0c20055eb53a6bbc3
 path.4=3/classes.dex
 path.3=14/classes.dex
 path.2=0/classes.dex
@@ -18,11 +38,40 @@ path.1=0/classes.dex
 path.5=classes2.dex
 path.0=classes.dex
 <<<<<<< HEAD
+<<<<<<< HEAD
 base.4=C\:\\Users\\Aluno\\Desktop\\Gabriel GIT PULL\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
 base.3=C\:\\Users\\Aluno\\Desktop\\Gabriel GIT PULL\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
 base.2=C\:\\Users\\Aluno\\Desktop\\Gabriel GIT PULL\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.1=C\:\\Users\\Aluno\\Desktop\\Gabriel GIT PULL\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
 base.0=C\:\\Users\\Aluno\\Desktop\\Gabriel GIT PULL\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+=======
+base.4=C\:\\Users\\Aluno\\Desktop\\EduLink-Front\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
+base.3=C\:\\Users\\Aluno\\Desktop\\EduLink-Front\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
+base.2=C\:\\Users\\Aluno\\Desktop\\EduLink-Front\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.1=C\:\\Users\\Aluno\\Desktop\\EduLink-Front\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
+base.0=C\:\\Users\\Aluno\\Desktop\\EduLink-Front\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+=======
+<<<<<<< HEAD
+base.4=C\:\\Users\\Aluno\\Desktop\\projetoSesi\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
+base.3=C\:\\Users\\Aluno\\Desktop\\projetoSesi\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
+base.2=C\:\\Users\\Aluno\\Desktop\\projetoSesi\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.1=C\:\\Users\\Aluno\\Desktop\\projetoSesi\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
+base.0=C\:\\Users\\Aluno\\Desktop\\projetoSesi\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+=======
+<<<<<<< HEAD
+base.4=C\:\\Users\\Aluno\\Desktop\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
+base.3=C\:\\Users\\Aluno\\Desktop\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
+base.2=C\:\\Users\\Aluno\\Desktop\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.1=C\:\\Users\\Aluno\\Desktop\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
+base.0=C\:\\Users\\Aluno\\Desktop\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+=======
+<<<<<<< HEAD
+base.4=C\:\\Users\\Aluno\\Desktop\\EduLink\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
+base.3=C\:\\Users\\Aluno\\Desktop\\EduLink\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
+base.2=C\:\\Users\\Aluno\\Desktop\\EduLink\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.1=C\:\\Users\\Aluno\\Desktop\\EduLink\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
+base.0=C\:\\Users\\Aluno\\Desktop\\EduLink\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+>>>>>>> 9d9b80cb21f2a4ee6f216ed0c20055eb53a6bbc3
 =======
 <<<<<<< HEAD
 base.4=C\:\\Users\\Aluno\\Desktop\\sesi\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
@@ -45,7 +94,14 @@ base.1=C\:\\Users\\Aluno\\Desktop\\Projeto Sesi\\projeto-sesi-senai\\app\\androi
 base.0=C\:\\Users\\Aluno\\Desktop\\Projeto Sesi\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 >>>>>>> a99b9b2e5d640c0205f68cffdc9f588f75d130e2
 >>>>>>> 84b412614f9e8ff971bd2045f8f6b85e79cb558a
+<<<<<<< HEAD
 >>>>>>> 45aee5bbcc255d1670d731bc0064622b0dc37226
+=======
+>>>>>>> 0ab73a9fddee97a30dc3bc901a8e6fd6d6bbf6ea
+>>>>>>> 18d38293f6bafa148d4c3a0d6de689106a83fcd1
+>>>>>>> 1d38f451e669ef0f617db6944043214be82a76bb
+>>>>>>> fe52950ead94c329dd3b95e81e21014b6eb2b223
+>>>>>>> 9d9b80cb21f2a4ee6f216ed0c20055eb53a6bbc3
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
@@ -53,7 +109,20 @@ renamed.0=classes.dex
 renamed.5=classes6.dex
 renamed.4=classes5.dex
 <<<<<<< HEAD
+<<<<<<< HEAD
 base.5=C\:\\Users\\Aluno\\Desktop\\Gabriel GIT PULL\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+=======
+base.5=C\:\\Users\\Aluno\\Desktop\\EduLink-Front\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+=======
+<<<<<<< HEAD
+base.5=C\:\\Users\\Aluno\\Desktop\\projetoSesi\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+=======
+<<<<<<< HEAD
+base.5=C\:\\Users\\Aluno\\Desktop\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+=======
+<<<<<<< HEAD
+base.5=C\:\\Users\\Aluno\\Desktop\\EduLink\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+>>>>>>> 9d9b80cb21f2a4ee6f216ed0c20055eb53a6bbc3
 =======
 <<<<<<< HEAD
 base.5=C\:\\Users\\Aluno\\Desktop\\sesi\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
@@ -64,4 +133,11 @@ base.5=C\:\\Users\\Aluno\\Desktop\\2024\\github\\projeto-sesi-senai\\app\\androi
 base.5=C\:\\Users\\Aluno\\Desktop\\Projeto Sesi\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 >>>>>>> a99b9b2e5d640c0205f68cffdc9f588f75d130e2
 >>>>>>> 84b412614f9e8ff971bd2045f8f6b85e79cb558a
+<<<<<<< HEAD
 >>>>>>> 45aee5bbcc255d1670d731bc0064622b0dc37226
+=======
+>>>>>>> 0ab73a9fddee97a30dc3bc901a8e6fd6d6bbf6ea
+>>>>>>> 18d38293f6bafa148d4c3a0d6de689106a83fcd1
+>>>>>>> 1d38f451e669ef0f617db6944043214be82a76bb
+>>>>>>> fe52950ead94c329dd3b95e81e21014b6eb2b223
+>>>>>>> 9d9b80cb21f2a4ee6f216ed0c20055eb53a6bbc3
