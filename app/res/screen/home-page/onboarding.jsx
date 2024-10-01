@@ -1,6 +1,6 @@
-import React, {useState} from "react"
-import { Center, View, Text, Image} from "@gluestack-ui/themed"
-import { StyleSheet,Dimensions } from "react-native"
+import { Image, Text, View } from "@gluestack-ui/themed";
+import React from "react";
+import { Dimensions, StyleSheet } from "react-native";
 import AppIntroSlider from "react-native-app-intro-slider";
 
 const { width: screenWidth } = Dimensions.get('window');
@@ -40,29 +40,29 @@ export default function OnBoarding({ navigation }) {
         )
     };
      return(
-            <AppIntroSlider
-                data={slides}
-                renderItem={({item}) => {
-                    return(
-                        <View style = {styles.main}>
-                            <Image
-                             source={item.image} style={styles.image} resizeMode="contain" alt="Onboarding"/>
-                             <Text style={styles.title}>{item.title}</Text>
-                             <Text style={styles.desc}>{item.description}</Text>
-                        </View>
-                    )
-                }}
-                activeDotStyle={{
-                    backgroundColor:"#ee2d32",
-                    width:30,
-                }}
-                showSkipButton
-                renderNextButton={() => buttonLabel("Próximo","#ee2d32")}
-                renderSkipButton={() => buttonLabel("Pular","#17223B")}
-                renderDoneButton={() => buttonLabel("Explorar", "#ee2d32")}
-                onDone={navigation.navigate("Home")}
-                />
-        )
+        <AppIntroSlider
+            data={slides}
+            renderItem={({item}) => {
+                return(
+                    <View style = {styles.main}>
+                        <Image
+                         source={item.image} style={styles.image}resizeMode="contain" alt="Onboarding"/>
+                         <Text style={styles.title}>{item.title}</Text>
+                         <Text style={styles.desc}>{item.description}</Text>
+                    </View>
+                )
+            }}
+            activeDotStyle={{
+                backgroundColor:"#ee2d32",
+                width:30,
+            }}
+            showSkipButton
+            renderNextButton={() => buttonLabel("Próximo","#ee2d32")}
+            renderSkipButton={() => buttonLabel("Pular","#17223B")}
+            renderDoneButton={() => buttonLabel("Explorar", "#ee2d32")}
+            onDone={() => navigation.navigate("Home")}
+        />
+    )
 };
 
 const styles = StyleSheet.create({
