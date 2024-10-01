@@ -21,10 +21,11 @@ import PedreiroScreen from '../pedreiro-page/pedreiro-page';
 import AtletaScreen from '../atleta-page/atleta-page';
 import Home from "../home-page/home";
 import OnBoarding from './onboarding';
+
 export default function StartNavigator() {
     return (
         <NavigationContainer>
-            <Stack.Navigator initialRouteName='NutricaoScreen' screenOptions={{ headerShown: false }}>
+            <Stack.Navigator initialRouteName='OnBoarding' screenOptions={{ headerShown: false }}>
                 <Stack.Screen name="OnBoarding" component={OnBoarding}/>
                 <Stack.Screen name="Home" component={Home}/>
                 {/* JobScreen */}

@@ -1,7 +1,9 @@
 // Gabriel / Test
+import React from 'react';
 import { Text, Box, SafeAreaView, Image, View, ScrollView} from '@gluestack-ui/themed';
 import LogoSesiBranca from '../../../src/img/sesi-senai-logo-branca.png';
-import {React, StyleSheet} from 'react';
+import { StyleSheet } from 'react-native';
+
 
 export default function AdministracaoScreen({ }) {
   return (
@@ -16,7 +18,7 @@ export default function AdministracaoScreen({ }) {
         </View>
         <ScrollView style={styles.content}>
           <Image
-            source={{ Image:'/app/src/img/logo1ADMpng'}} 
+            //source={{ Image:'/app/src/img/'}} 
             style={styles.banner}
           />
           <View style={styles.box}>
