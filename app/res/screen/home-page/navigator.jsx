@@ -1,7 +1,7 @@
 // Gabriel / Test
-import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import React from 'react';
 // import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 // import Ionicons from 'react-native-vector-icons/Ionicons';
 // import { Box } from '@gluestack-ui/themed';
@@ -9,18 +9,17 @@ import { createStackNavigator } from '@react-navigation/stack';
 // const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
-import JobScreen from './job-screen';
-
-import DesignScreen from '../design-page/design-page';
-import NutricaoScreen from '../nutricao-page/nutricao-page';
+import AdministracaoScreen from '../administracao-page/administracao-page';
+import AtletaScreen from '../atleta-page/atleta-page';
 import CabeleireiroScreen from '../cabeleireiro-page/cabeleireiro-page';
 import DatabaseScreen from '../database-page/database-page';
+import DesignScreen from '../design-page/design-page';
 import DireitoScreen from '../direito-page/direito-page';
-import AdministracaoScreen from '../administracao-page/administracao-page';
-import PedreiroScreen from '../pedreiro-page/pedreiro-page';
-import AtletaScreen from '../atleta-page/atleta-page';
 import Home from "../home-page/home";
+import NutricaoScreen from '../nutricao-page/nutricao-page';
+import PedreiroScreen from '../pedreiro-page/pedreiro-page';
 import OnBoarding from './onboarding';
+
 export default function StartNavigator() {
     return (
         <NavigationContainer>

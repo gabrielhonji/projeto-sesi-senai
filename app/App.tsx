@@ -1,7 +1,12 @@
 // Gabriel / Test
+import { config } from '@gluestack-ui/config';
+import { GluestackUIProvider } from '@gluestack-ui/themed';
 import React from 'react';
+<<<<<<< HEAD
 import { GluestackUIProvider } from '@gluestack-ui/themed';
 import { config } from '@gluestack-ui/config';
+=======
+>>>>>>> 45aee5bbcc255d1670d731bc0064622b0dc37226
 import StartNavigator from './res/screen/home-page/navigator';
 import Cabeleireiro from './res/screen/cabeleireiro-page/Principal';
 import { Image } from "@rneui/base";
@@ -9,6 +14,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Principal from './res/screen/cabeleireiro-page/Principal';
 
+<<<<<<< HEAD
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -45,5 +51,12 @@ export default function App() {
 
       </Stack.Navigator>
     </NavigationContainer>
+=======
+export default function App() {
+  return (
+    <GluestackUIProvider config={config}>
+      <StartNavigator />
+    </GluestackUIProvider>
+>>>>>>> 45aee5bbcc255d1670d731bc0064622b0dc37226
   );
 }
