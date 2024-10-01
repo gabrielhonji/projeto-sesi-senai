@@ -17,6 +17,7 @@
     "@legendapp/motion": "latest",
     "@react-navigation/native": "^6.1.18",
     "@react-navigation/stack": "^6.4.1",
+    "@rneui/themed": "^4.0.0-rc.8",
     "lucide": "^0.446.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
