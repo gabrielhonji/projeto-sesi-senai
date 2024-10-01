@@ -77,8 +77,12 @@ const MyCarousel = ({ data }) => {
             renderItem={renderItem}
             sliderWidth={screenWidth}
             itemWidth={screenWidth}
-            layout={'default'}
-            
+            layout={'stack'}
+            layoutCardOffset={`20`}
+            autoplay={true}
+            autoplayDelay={3000}
+            autoplayInterval={5000}
+            loop={true}
         />
     );
 };
