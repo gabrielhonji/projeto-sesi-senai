@@ -9,7 +9,7 @@ import styles from "../cabeleireiro-page/Styles"
 
 
 
-export default Principal = ({ navigation }) => {
+export default CabeleireiroScreen = ({ navigation }) => {
 
 
 

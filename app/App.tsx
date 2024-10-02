@@ -16,7 +16,7 @@ import StartNavigator from './res/screen/home-page/navigator';
 // import Principal from './res/screen/cabeleireiro-page/Principal';
 
 // import CiclismoScreen from './res/screen/atleta-page/Ciclismo';
-// import AtletaScreen from './res/screen/atleta-page/atleta-page';
+import AtletaScreen from './res/screen/atleta-page/atleta-page';
 
 
 
