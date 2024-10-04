@@ -10,7 +10,6 @@ import imagemNut2 from '../../../src/img/image__6_-removebg-preview.png'
 import { ScrollView } from 'react-native-gesture-handler';
 import * as Animatable from 'react-native-animatable';
 export default function NutricaoScreen({ }) {
-  const [data, setData] = useState([]);
 
  
   return (
