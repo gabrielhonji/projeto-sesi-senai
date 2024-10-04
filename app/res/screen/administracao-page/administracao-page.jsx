@@ -58,7 +58,7 @@ export default function AdministracaoScreen({ }) {
           </View>
           <Image
           style={styles.tabelaSalario}
-          source={require('../../../src/img/tabelaSalarial.png')}
+          source={require('../../../src/img/img-adm/salario-medio-atividade-1-.png')}
           />
           <View style={styles.box}>
             <Text style={styles.title}>Vocabulario técnico da Administração</Text>
