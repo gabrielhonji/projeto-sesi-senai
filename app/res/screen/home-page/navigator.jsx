@@ -9,7 +9,7 @@ import React from 'react';
 // const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
-import AdministracaoScreen from '../administracao-page/administracao-page';
+import AdministracaoScreen from '../administracaoPage/administracaoPage';
 import AtletaScreen from '../atleta-page/atleta-page';
 import DatabaseScreen from '../database-page/database-page';
 import DesignScreen from '../design-page/design-page';
