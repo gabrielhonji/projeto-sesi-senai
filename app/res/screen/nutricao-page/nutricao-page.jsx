@@ -12,21 +12,7 @@ import * as Animatable from 'react-native-animatable';
 export default function NutricaoScreen({ }) {
   const [data, setData] = useState([]);
 
-  const renderItem = ({item})=>
-      
-      (
-
-        <SafeAreaView>
-             <Box w={'100%'} h={5000} flex={1}>
-       <Animatable.Text animation='slideInLeft' style={{color: 'white', fontSize: 19, }}>njdwkljljklwj</Animatable.Text>
-    
-      <Animatable.Text animation='slideInLeft' style={{color: 'white', fontSize: 19, marginTop:1000 }}>njdwkljljklwj</Animatable.Text>
-        
-         </Box>
-        </SafeAreaView>
-        
-     
-      );
+ 
   return (
     <SafeAreaView flex={1}>
       <ScrollView>
@@ -36,18 +22,19 @@ export default function NutricaoScreen({ }) {
         <Text marginTop={80} color={'red'} fontWeight={'$extrabold'} fontSize={46}>NUTRIÇÃO</Text>
      </ImageBackground>
 
-     <Box alignItems='center' w={'100%'} h={5000} bg={'red'}>
+     <Box alignItems='center'  w={'100%'} h={5000} bg={'red'}>
 
-     <FlatList
-          
-                   data={data}
-                   renderItem={renderItem}
-                   keyExtractor={item => String(item.id)}
-                   extraData={data}
-                   
-                   />
-      
   
+     <Animatable.Text animation='slideInLeft' style={{width: '90%', color: 'white', fontSize: 23, fontWeight: 'bold', justifyContent: 'center', alignItems: 'center', alignSelf: 'center' }}>
+      Quais são as principais Atividades de um Nutricionista Hoje?
+    </Animatable.Text>
+    
+     <Animatable.Text animation='slideInRight' style={{width: '90%', color: 'white', fontSize: 19, fontWeight: 'bold', justifyContent: 'center', alignItems: 'center', alignSelf: 'flex-start', marginTop: 25 }}>
+     Desvenda os mistérios do seu corpo: 
+     </Animatable.Text>
+     <Animatable.Text animation='slideInRight' style={{width: '90%', color: 'white', fontSize: 19, fontWeight: '500', justifyContent: 'center', alignItems: 'flex-start', alignSelf: 'flex-start', marginTop: 5 }}>
+     Através de uma avaliação completa, o nutricionista entende suas necessidades nutricionais e cria um plano alimentar personalizado
+     </Animatable.Text>
      
       </Box>
      </Box>
