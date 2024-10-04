@@ -5,9 +5,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Aluno\Desktop\PROJETO SESI\projeto-sesi-senai\app\android\app\src\main\jniLibs"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Aluno\Desktop\PROJETO SESI\projeto-sesi-senai\app\android\app\src\debug\jniLibs"/></dataSet></merger>
+=======
+<<<<<<< HEAD
 <merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Aluno\Desktop\Pedreiro\projeto-sesi-senai\app\android\app\src\main\jniLibs"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Aluno\Desktop\Pedreiro\projeto-sesi-senai\app\android\app\src\debug\jniLibs"/></dataSet></merger>
+>>>>>>> 89a057ac4591684b4ba1d4f4e708d1deca9e9adc
 =======
 <merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Aluno\Desktop\projetoSesi\projeto-sesi-senai\app\android\app\src\main\jniLibs"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Aluno\Desktop\projetoSesi\projeto-sesi-senai\app\android\app\src\debug\jniLibs"/></dataSet></merger>
+>>>>>>> e0308aef63699c2ef7a6ecda38f80ac27294d4a8
 =======
 <<<<<<< HEAD
 <merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Aluno\Desktop\projeto-sesi-senai\app\android\app\src\main\jniLibs"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Aluno\Desktop\projeto-sesi-senai\app\android\app\src\debug\jniLibs"/></dataSet></merger>
