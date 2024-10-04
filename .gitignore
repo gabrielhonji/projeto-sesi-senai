@@ -1,3 +1,7 @@
+# Evitar problema de João Pedro
+home-page/navigator.jsx
+app/App.jsx
+
 # Logs
 logs
 *.log
@@ -22,6 +26,18 @@ lib-cov
 # Coverage directory used by tools like istanbul
 coverage
 *.lcov
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+.cxx/
+*.keystore
+!debug.keystore
 
 # nyc test coverage
 .nyc_output
