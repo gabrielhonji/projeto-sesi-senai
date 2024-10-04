@@ -11,7 +11,6 @@ const Stack = createStackNavigator();
 
 import AdministracaoScreen from '../administracao-page/administracao-page';
 import AtletaScreen from '../atleta-page/atleta-page';
-import CabeleireiroScreen from '../cabeleireiro-page/cabeleireiro-page';
 import DatabaseScreen from '../database-page/database-page';
 import DesignScreen from '../design-page/design-page';
 import DireitoScreen from '../direito-page/direito-page';
@@ -34,7 +33,6 @@ export default function StartNavigator() {
                 {/* JobScreen */}
                 <Stack.Screen name="AdministracaoScreen" component={AdministracaoScreen} />
                 <Stack.Screen name="AtletaScreen" component={AtletaScreen} />
-                <Stack.Screen name="CabeleireiroScreen" component={CabeleireiroScreen} />
                 <Stack.Screen name="DatabaseScreen" component={DatabaseScreen} />
                 <Stack.Screen name="DesignScreen" component={DesignScreen} />
                 <Stack.Screen name="DireitoScreen" component={DireitoScreen} />
