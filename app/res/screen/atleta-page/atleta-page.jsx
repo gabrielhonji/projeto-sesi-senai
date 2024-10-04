@@ -1,12 +1,17 @@
 // Gabriel / Test
-import { Box, SafeAreaView, Image, ScrollView } from '@gluestack-ui/themed';
-import { View, Text, ImageBackground } from 'react-native'
-import LinearGradient from "react-native-linear-gradient"
+import { Box, SafeAreaView, Image} from '@gluestack-ui/themed';
+import { View, Text, ImageBackground, ScrollView  } from 'react-native';
+import LinearGradient from "react-native-linear-gradient";
+import Cards from './component/card';
 
 
 
-import LogoSesiBranca from '../../../src/img/sesi-senai-logo-branca.png';
-import corredor from "../../../src/img/corredor.png"
+import corredor from "../../../src/img/corredor.png";
+import academia from "../../../src/img/academia.png";
+import tenista from "../../../src/img/Tenista.png";
+import futebol from  "../../../src/img/Futebol.png";
+import basquete from "../../../src/img/Basquete.png";
+import crossFit from "../../../src/img/CrossFit.png";
 
 
 export default function AtletaScreen({ }) {
@@ -16,96 +21,18 @@ export default function AtletaScreen({ }) {
         <View style={{ backgroundColor: "#ee2d32", height: 100, width: "100%", justifyContent: "center", alignItems: "center" }}>
           <Text style={{ color: "#fff", fontSize: 22, fontWeight: "bold" }}>Tipos de Atletas</Text>
         </View>
-        <View style={{ backgroundColor: "#fff", flex: 1, flexDirection: "column",padding:10,marginTop:20,gap:20,}}>
-          <View style={{flexDirection:"row",gap:10,}}>
-            <ImageBackground source={corredor} style={{width:190,height:280, justifyContent:"flex-end",borderRadius:30,padding:5}}>
-            <View style={{width: "100%",height:90, gap:4,}}>
-            <Text style={{color:"#fff",fontSize:22, fontWeight:"700"}}>Atletismo</Text>
-            <Text style={{color:"#fff"}}>Vero explicabo quaerat velit molesti</Text>
-            <View style={{flex:1, flexDirection:"row", gap:10,}}>
-              <View style={{backgroundColor:"#C7C7C7",width:53, height:14, borderRadius:25,alignItems:"center",}}>
-                <Text>Corrida</Text>
-              </View>
-              <View style={{backgroundColor:"#C7C7C7",width:53, height:14, borderRadius:25,alignItems:"center",}}>
-                <Text>Corri</Text>
-              </View>
-            </View>
+        <View style={{ backgroundColor: "#fff", flex: 1, flexDirection: "column",padding:10,marginTop:10,gap:20,}}>
+          <View style={{flexDirection:"row", gap:5, justifyContent:"center"}}>
+          <Cards title='Atletismo' subtitle='Lorem ipsum dolor sit amet consectetur' filter1='Corrida' filter2='CrossFit' source={corredor}/>
+          <Cards title='Musculação' subtitle='Lorem ipsum dolor sit amet consectetur' filter1='Corrida' filter2='CrossFit' source={academia}/>
           </View>
-           </ImageBackground>
-            <ImageBackground source={corredor} style={{width:190,height:280, justifyContent:"flex-end",borderRadius:30,padding:5,}}>
-            <View style={{width: "100%",height:90, gap:4,}}>
-            <Text style={{color:"#fff",fontSize:22, fontWeight:"700"}}>Atletismo</Text>
-            <Text style={{color:"#fff"}}>Vero explicabo quaerat velit molesti</Text>
-            <View style={{flex:1, flexDirection:"row", gap:10,}}>
-              <View style={{backgroundColor:"#C7C7C7",width:53, height:14, borderRadius:25,alignItems:"center",}}>
-                <Text>Corrida</Text>
-              </View>
-              <View style={{backgroundColor:"#C7C7C7",width:53, height:14, borderRadius:25,alignItems:"center",}}>
-                <Text>Corri</Text>
-              </View>
-            </View>
+          <View style={{flexDirection:"row", gap:5, justifyContent:"center"}}>
+          <Cards title='Tenista' subtitle='Lorem ipsum dolor sit amet consectetur' filter1='Corrida' filter2='CrossFit' source={tenista}/>
+          <Cards title='Futebolista' subtitle='Lorem ipsum dolor sit amet consectetur' filter1='Corrida' filter2='CrossFit' source={futebol}/>
           </View>
-           </ImageBackground>
-          </View>
-          <View style={{flexDirection:"row",gap:10,}}>
-            <ImageBackground source={corredor} style={{width:190,height:280, justifyContent:"flex-end",borderRadius:30,padding:5}}>
-            <View style={{width: "100%",height:90, gap:4,}}>
-            <Text style={{color:"#fff",fontSize:22, fontWeight:"700"}}>Atletismo</Text>
-            <Text style={{color:"#fff"}}>Vero explicabo quaerat velit molesti</Text>
-            <View style={{flex:1, flexDirection:"row", gap:10,}}>
-              <View style={{backgroundColor:"#C7C7C7",width:53, height:14, borderRadius:25,alignItems:"center",}}>
-                <Text>Corrida</Text>
-              </View>
-              <View style={{backgroundColor:"#C7C7C7",width:53, height:14, borderRadius:25,alignItems:"center",}}>
-                <Text>Corri</Text>
-              </View>
-            </View>
-          </View>
-           </ImageBackground>
-            <ImageBackground source={corredor} style={{width:190,height:280, justifyContent:"flex-end",borderRadius:30,padding:5,}}>
-            <View style={{width: "100%",height:90, gap:4,}}>
-            <Text style={{color:"#fff",fontSize:22, fontWeight:"700"}}>Atletismo</Text>
-            <Text style={{color:"#fff"}}>Vero explicabo quaerat velit molesti</Text>
-            <View style={{flex:1, flexDirection:"row", gap:10,}}>
-              <View style={{backgroundColor:"#C7C7C7",width:53, height:14, borderRadius:25,alignItems:"center",}}>
-                <Text>Corrida</Text>
-              </View>
-              <View style={{backgroundColor:"#C7C7C7",width:53, height:14, borderRadius:25,alignItems:"center",}}>
-                <Text>Corri</Text>
-              </View>
-            </View>
-          </View>
-           </ImageBackground>
-          </View>
-          <View style={{flexDirection:"row",gap:10,}}>
-            <ImageBackground source={corredor} style={{width:190,height:280, justifyContent:"flex-end",borderRadius:30,padding:5}}>
-            <View style={{width: "100%",height:90, gap:4,}}>
-            <Text style={{color:"#fff",fontSize:22, fontWeight:"700"}}>Atletismo</Text>
-            <Text style={{color:"#fff"}}>Vero explicabo quaerat velit molesti</Text>
-            <View style={{flex:1, flexDirection:"row", gap:10,}}>
-              <View style={{backgroundColor:"#C7C7C7",width:53, height:14, borderRadius:25,alignItems:"center",}}>
-                <Text>Corrida</Text>
-              </View>
-              <View style={{backgroundColor:"#C7C7C7",width:53, height:14, borderRadius:25,alignItems:"center",}}>
-                <Text>Corri</Text>
-              </View>
-            </View>
-          </View>
-           </ImageBackground>
-            <ImageBackground source={corredor} style={{width:190,height:280, justifyContent:"flex-end",borderRadius:30,padding:5,}}>
-            <View style={{width: "100%",height:90, gap:4,}}>
-            <Text style={{color:"#fff",fontSize:22, fontWeight:"700"}}>Atletismo</Text>
-            <Text style={{color:"#fff"}}>Vero explicabo quaerat velit molesti</Text>
-            <View style={{flex:1, flexDirection:"row", gap:10,}}>
-              <View style={{backgroundColor:"#C7C7C7",width:53, height:14, borderRadius:25,alignItems:"center",}}>
-                <Text>Corrida</Text>
-              </View>
-              <View style={{backgroundColor:"#C7C7C7",width:53, height:14, borderRadius:25,alignItems:"center",}}>
-                <Text>Corri</Text>
-              </View>
-            </View>
-          </View>
-           </ImageBackground>
+          <View style={{flexDirection:"row", gap:5, justifyContent:"center"}}>
+          <Cards title='Basqueteiro' subtitle='Lorem ipsum dolor sit amet consectetur' filter1='Corrida' filter2='CrossFit' source={basquete}/>
+          <Cards title='Crossfiteiro' subtitle='Lorem ipsum dolor sit amet consectetur' filter1='Corrida' filter2='CrossFit' source={crossFit}/>
           </View>
         </View>
       </ScrollView>
