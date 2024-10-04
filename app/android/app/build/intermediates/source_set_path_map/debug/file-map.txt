@@ -28,6 +28,7 @@ com.reactnativeapp-jetified-flipper-0.182.0-26 C:\Users\Aluno\.gradle\caches\tra
 com.reactnativeapp-jetified-annotation-experimental-1.1.0-27 C:\Users\Aluno\.gradle\caches\transforms-3\ea88610a3c8be13450373fa73372379b\transformed\jetified-annotation-experimental-1.1.0\res
 com.reactnativeapp-drawerlayout-1.1.1-28 C:\Users\Aluno\.gradle\caches\transforms-3\f7136e33895596704e2928c39d7df1cb\transformed\drawerlayout-1.1.1\res
 <<<<<<< HEAD
+<<<<<<< HEAD
 com.reactnativeapp-pngs-29 C:\Users\Aluno\Desktop\PROJETO SESI\projeto-sesi-senai\app\android\app\build\generated\res\pngs\debug
 com.reactnativeapp-resValues-30 C:\Users\Aluno\Desktop\PROJETO SESI\projeto-sesi-senai\app\android\app\build\generated\res\resValues\debug
 com.reactnativeapp-rs-31 C:\Users\Aluno\Desktop\PROJETO SESI\projeto-sesi-senai\app\android\app\build\generated\res\rs\debug
@@ -41,6 +42,21 @@ com.reactnativeapp-packaged_res-38 C:\Users\Aluno\Desktop\PROJETO SESI\projeto-s
 com.reactnativeapp-packaged_res-39 C:\Users\Aluno\Desktop\PROJETO SESI\projeto-sesi-senai\app\node_modules\react-native-safe-area-context\android\build\intermediates\packaged_res\debug
 com.reactnativeapp-packaged_res-40 C:\Users\Aluno\Desktop\PROJETO SESI\projeto-sesi-senai\app\node_modules\react-native-screens\android\build\intermediates\packaged_res\debug
 com.reactnativeapp-packaged_res-41 C:\Users\Aluno\Desktop\PROJETO SESI\projeto-sesi-senai\app\node_modules\react-native-svg\android\build\intermediates\packaged_res\debug
+=======
+com.reactnativeapp-pngs-29 C:\Users\Aluno\Desktop\projetoSesi\projeto-sesi-senai\app\android\app\build\generated\res\pngs\debug
+com.reactnativeapp-resValues-30 C:\Users\Aluno\Desktop\projetoSesi\projeto-sesi-senai\app\android\app\build\generated\res\resValues\debug
+com.reactnativeapp-rs-31 C:\Users\Aluno\Desktop\projetoSesi\projeto-sesi-senai\app\android\app\build\generated\res\rs\debug
+com.reactnativeapp-mergeDebugResources-32 C:\Users\Aluno\Desktop\projetoSesi\projeto-sesi-senai\app\android\app\build\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.reactnativeapp-mergeDebugResources-33 C:\Users\Aluno\Desktop\projetoSesi\projeto-sesi-senai\app\android\app\build\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.reactnativeapp-merged_res-34 C:\Users\Aluno\Desktop\projetoSesi\projeto-sesi-senai\app\android\app\build\intermediates\merged_res\debug
+com.reactnativeapp-debug-35 C:\Users\Aluno\Desktop\projetoSesi\projeto-sesi-senai\app\android\app\src\debug\res
+com.reactnativeapp-main-36 C:\Users\Aluno\Desktop\projetoSesi\projeto-sesi-senai\app\android\app\src\main\res
+com.reactnativeapp-packaged_res-37 C:\Users\Aluno\Desktop\projetoSesi\projeto-sesi-senai\app\node_modules\react-native-gesture-handler\android\build\intermediates\packaged_res\debug
+com.reactnativeapp-packaged_res-38 C:\Users\Aluno\Desktop\projetoSesi\projeto-sesi-senai\app\node_modules\react-native-linear-gradient\android\build\intermediates\packaged_res\debug
+com.reactnativeapp-packaged_res-39 C:\Users\Aluno\Desktop\projetoSesi\projeto-sesi-senai\app\node_modules\react-native-safe-area-context\android\build\intermediates\packaged_res\debug
+com.reactnativeapp-packaged_res-40 C:\Users\Aluno\Desktop\projetoSesi\projeto-sesi-senai\app\node_modules\react-native-screens\android\build\intermediates\packaged_res\debug
+com.reactnativeapp-packaged_res-41 C:\Users\Aluno\Desktop\projetoSesi\projeto-sesi-senai\app\node_modules\react-native-svg\android\build\intermediates\packaged_res\debug
+>>>>>>> e0308aef63699c2ef7a6ecda38f80ac27294d4a8
 =======
 <<<<<<< HEAD
 com.reactnativeapp-pngs-29 C:\Users\Aluno\Desktop\projeto-sesi-senai\app\android\app\build\generated\res\pngs\debug

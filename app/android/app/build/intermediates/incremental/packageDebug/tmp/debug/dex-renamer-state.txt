@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #Tue Oct 01 09:39:31 BRT 2024
+=======
+#Tue Oct 01 08:58:58 BRT 2024
+>>>>>>> e0308aef63699c2ef7a6ecda38f80ac27294d4a8
 =======
 <<<<<<< HEAD
 #Tue Oct 01 12:02:04 BRT 2024
@@ -26,11 +30,19 @@ path.1=0/classes.dex
 path.5=classes2.dex
 path.0=classes.dex
 <<<<<<< HEAD
+<<<<<<< HEAD
 base.4=C\:\\Users\\Aluno\\Desktop\\PROJETO SESI\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
 base.3=C\:\\Users\\Aluno\\Desktop\\PROJETO SESI\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
 base.2=C\:\\Users\\Aluno\\Desktop\\PROJETO SESI\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.1=C\:\\Users\\Aluno\\Desktop\\PROJETO SESI\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
 base.0=C\:\\Users\\Aluno\\Desktop\\PROJETO SESI\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+=======
+base.4=C\:\\Users\\Aluno\\Desktop\\projetoSesi\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
+base.3=C\:\\Users\\Aluno\\Desktop\\projetoSesi\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
+base.2=C\:\\Users\\Aluno\\Desktop\\projetoSesi\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.1=C\:\\Users\\Aluno\\Desktop\\projetoSesi\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
+base.0=C\:\\Users\\Aluno\\Desktop\\projetoSesi\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+>>>>>>> e0308aef63699c2ef7a6ecda38f80ac27294d4a8
 =======
 <<<<<<< HEAD
 base.4=C\:\\Users\\Aluno\\Desktop\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
@@ -77,7 +89,11 @@ renamed.0=classes.dex
 renamed.5=classes6.dex
 renamed.4=classes5.dex
 <<<<<<< HEAD
+<<<<<<< HEAD
 base.5=C\:\\Users\\Aluno\\Desktop\\PROJETO SESI\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+=======
+base.5=C\:\\Users\\Aluno\\Desktop\\projetoSesi\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+>>>>>>> e0308aef63699c2ef7a6ecda38f80ac27294d4a8
 =======
 <<<<<<< HEAD
 base.5=C\:\\Users\\Aluno\\Desktop\\projeto-sesi-senai\\app\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
