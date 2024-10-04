@@ -22,14 +22,10 @@ import OnBoarding from './onboarding';
 export default function StartNavigator() {
     return (
         <NavigationContainer>
-<<<<<<< HEAD
-=======
-
->>>>>>> e0308aef63699c2ef7a6ecda38f80ac27294d4a8
             <Stack.Navigator initialRouteName='OnBoarding' screenOptions={{ headerShown: false }}>
                 <Stack.Screen name="OnBoarding" component={OnBoarding}/>
                 <Stack.Screen name="Home" component={Home}/>
-                {/* JobScreen */}
+                {/* Jobs */}
                 <Stack.Screen name="AdministracaoScreen" component={AdministracaoScreen} />
                 <Stack.Screen name="AtletaScreen" component={AtletaScreen} />
                 <Stack.Screen name="DatabaseScreen" component={DatabaseScreen} />
