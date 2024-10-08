@@ -283,8 +283,8 @@ export default function Home({ navigation}) {
                     <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('DesignScreen')}>
                     <Text>Design</Text>
                     </Button>
-                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('DesignScreen')}>
-                    <Text>Design</Text>
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('DireitoScreen')}>
+                    <Text>Direito</Text>
                     </Button>
                     <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('NutricaoScreen')}>
                     <Text>Nutrição</Text>
