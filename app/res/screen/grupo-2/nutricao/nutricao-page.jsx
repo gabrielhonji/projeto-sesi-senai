@@ -2,14 +2,13 @@
 import { Text, Box, SafeAreaView, Image, ImageBackground, HStack, FlatList } from '@gluestack-ui/themed';
 import React, {useEffect, useState} from "react";
 import { Dimensions, StyleSheet, TouchableOpacity, View } from "react-native";
-import LogoSesiBranca from '../../../src/img/sesi-senai-logo-branca.png';
-import imagemFundo from '../../../src/img/imagemFundo-nutricao-removebg-preview.png'
-import imagem1 from '../../../src/img/img-nutricao/image1.png'
-import imagem2 from '../../../src/img/img-nutricao/image2.png'
-import imagem3 from '../../../src/img/img-nutricao/Imagem3.png'
-import imagem4 from '../../../src/img/img-nutricao/Imagem4.png'
-import imagem5 from '../../../src/img/img-nutricao/Imagem5.png'
-import imagem6 from '../../../src/img/img-nutricao/Imagem6.png'
+import imagemFundo from '../../../../src/img/imagemFundo-nutricao-removebg-preview.png' 
+import imagem1 from '../../../../src/img/img-nutricao/image1.png'
+import imagem2 from '../../../../src/img/img-nutricao/image2.png'
+import imagem3 from '../../../../src/img/img-nutricao/Imagem3.png'
+import imagem4 from '../../../../src/img/img-nutricao/Imagem4.png'
+import imagem5 from '../../../../src/img/img-nutricao/Imagem5.png'
+import imagem6 from '../../../../src/img/img-nutricao/Imagem6.png'
 import Carousel from 'react-native-snap-carousel';
 import { ScrollView } from 'react-native-gesture-handler';
 import * as Animatable from 'react-native-animatable';
@@ -19,7 +18,7 @@ export default function NutricaoScreen({ }) {
     const cards = [
         {
             id: 1,
-            image: require("../../../src/img/img-nutricao/pratoCarne.png"),
+            image: require("../../../../src/img/img-nutricao/pratoCarne.png"),
             title: "Carne",
             area: "A carne é uma fonte de proteína, ferro e zinco. A proteína é essencial para a construção e manutenção dos músculos. O ferro é importante para a produção de hemoglobina, que transporta oxigênio para as células do corpo. O zinco é importante para o sistema imunológico.",
             height: 310
@@ -27,21 +26,21 @@ export default function NutricaoScreen({ }) {
         },
         {
             id: 2,
-            image: require("../../../src/img/img-nutricao/pratoMilho.png"),
+            image: require("../../../../src/img/img-nutricao/pratoMilho.png"),
             title: "Milho",
             area: " O milho, além de ser delicioso, é uma verdadeira potência nutricional. Rico em fibras, vitaminas e minerais, ele contribui para uma boa digestão, fornece energia e fortalece o sistema imunológico. Seus antioxidantes protegem as células e o milho é uma ótima opção para uma alimentação equilibrada e saudável.",
             height: 330
         },
         {
             id: 3,
-            image: require("../../../src/img/img-nutricao/pratoFeijao.png"),
+            image: require("../../../../src/img/img-nutricao/pratoFeijao.png"),
             title: "Feijão",
             area: "O feijão é uma fonte de proteína, fibras e ferro. Ele também é rico em vitaminas e minerais, como vitamina B1, vitamina B6 e ácido fólico.",
             height: 250
         },
         {
             id: 4,
-            image: require("../../../src/img/img-nutricao/pratoBatata.png"),
+            image: require("../../../../src/img/img-nutricao/pratoBatata.png"),
             title: "Batata",
             area: "A batata é uma fonte de carboidratos complexos e gordura. Ela também é rica em potássio e vitamina C",
             height: 230
@@ -49,14 +48,14 @@ export default function NutricaoScreen({ }) {
         
         {
             id: 5,
-            image: require("../../../src/img/img-nutricao/pratoArroz.png"),
+            image: require("../../../../src/img/img-nutricao/pratoArroz.png"),
             title: "Arroz",
             area: "O arroz é uma fonte de carboidratos complexos, que são uma ótima fonte de energia para o nosso corpo. Ele também é rico em vitaminas e minerais, como vitamina B1, vitamina B6 e ferro.",
             height: 250
         },
         {
             id: 6,
-            image: require("../../../src/img/img-nutricao/pratoVinagrete.png"),
+            image: require("../../../../src/img/img-nutricao/pratoVinagrete.png"),
             title: "Vinagrete",
             area: "O vinagrete, além de realçar o sabor da salada, oferece diversos benefícios para a saúde. O azeite, base do vinagrete, é rico em gorduras saudáveis, que ajudam a reduzir o colesterol ruim e protegem o coração. O vinagre, por sua vez, possui propriedades anti-inflamatórias e pode auxiliar no controle dos níveis de açúcar no sangue. As ervas frescas e especiarias utilizadas no preparo do vinagrete adicionam um toque de sabor e são fontes de antioxidantes.",
             height: 380
@@ -64,7 +63,7 @@ export default function NutricaoScreen({ }) {
         },
         {
             id: 7,
-            image: require("../../../src/img/img-nutricao/pratoSalada.png"),
+            image: require("../../../../src/img/img-nutricao/pratoSalada.png"),
             title: "Salada",
             area: "A salada é muito mais do que um acompanhamento saboroso. É um verdadeiro tesouro nutricional, repleto de vitaminas, minerais e fibras essenciais para o bom funcionamento do organismo. As folhas verdes, legumes e frutas que compõem as saladas são ricos em antioxidantes, que combatem os radicais livres e ajudam a prevenir doenças. Além disso, as fibras presentes nas saladas auxiliam na digestão, promovem a saciedade e contribuem para a saúde intestinal.",
             height: 400

@@ -6,12 +6,12 @@ import Cards from './component/card';
 
 
 
-import corredor from "../../../src/img/corredor.png";
-import academia from "../../../src/img/academia.png";
-import tenista from "../../../src/img/Tenista.png";
-import futebol from  "../../../src/img/Futebol.png";
-import basquete from "../../../src/img/Basquete.png";
-import crossFit from "../../../src/img/CrossFit.png";
+import corredor from "../../../../src/img/corredor.png";
+import academia from "../../../../src/img/academia.png"
+import tenista from "../../../../src/img/Tenista.png";
+import futebol from  "../../../../src/img/Futebol.png";
+import basquete from "../../../../src/img/Basquete.png";
+import crossFit from "../../../../src/img/CrossFit.png";
 
 
 export default function AtletaScreen({navigation}) {
