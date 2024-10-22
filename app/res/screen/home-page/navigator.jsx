@@ -9,15 +9,16 @@ import React from 'react';
 // const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
-import AdministracaoScreen from '../administracao-page/administracao-page';
+import AdministracaoScreen from '../grupo-5/administracao/administracao-page';
 import AtletaScreen from '../atleta-page/atleta-page';
-import CabeleireiroScreen from '../cabeleireiro-page/cabeleireiro-page';
-import DatabaseScreen from '../database-page/database-page';
-import DesignScreen from '../design-page/design-page';
-import DireitoScreen from '../direito-page/direito-page';
+import DatabaseScreen from '../grupo-3/database/database-page';
+import DesignScreen from '../grupo-4/design/design-page';
+import DireitoScreen from '../grupo-7/direito/direito-page';
 import Home from "../home-page/home";
-import NutricaoScreen from '../nutricao-page/nutricao-page';
-import PedreiroScreen from '../pedreiro-page/pedreiro-page';
+import NutricaoScreen from '../grupo-2/nutricao/nutricao-page';
+import PedreiroScreen from '../grupo-8/pedreiro/pedreiro-page';
+import PublicidadeScreen from '../grupo-3/publicidade/publicidade-page';
+// import CabeleireiroScreen from "../cabeleireiro-page/Principal"; PROBLEMA NA BIBLIOTECA RNEUI
 import OnBoarding from './onboarding';
 
 export default function StartNavigator() {
@@ -26,15 +27,16 @@ export default function StartNavigator() {
             <Stack.Navigator initialRouteName='OnBoarding' screenOptions={{ headerShown: false }}>
                 <Stack.Screen name="OnBoarding" component={OnBoarding}/>
                 <Stack.Screen name="Home" component={Home}/>
-                {/* JobScreen */}
+                {/* Jobs */}
                 <Stack.Screen name="AdministracaoScreen" component={AdministracaoScreen} />
                 <Stack.Screen name="AtletaScreen" component={AtletaScreen} />
-                <Stack.Screen name="CabeleireiroScreen" component={CabeleireiroScreen} />
                 <Stack.Screen name="DatabaseScreen" component={DatabaseScreen} />
                 <Stack.Screen name="DesignScreen" component={DesignScreen} />
                 <Stack.Screen name="DireitoScreen" component={DireitoScreen} />
                 <Stack.Screen name="NutricaoScreen" component={NutricaoScreen} />
                 <Stack.Screen name="PedreiroScreen" component={PedreiroScreen} />
+                <Stack.Screen name="JornalistaPage" component={JornalistaPage} />
+                <Stack.Screen name="PublicidadeScreen" component={PublicidadeScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );
