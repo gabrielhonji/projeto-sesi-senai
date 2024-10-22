@@ -37,6 +37,7 @@ export default function StartNavigator() {
                 <Stack.Screen name="NutricaoScreen" component={NutricaoScreen} />
                 <Stack.Screen name="PedreiroScreen" component={PedreiroScreen} />
                 <Stack.Screen name="GeologoScreen" component={GeologoScreen} />
+                <Stack.Screen name="JornalistaPage" component={JornalistaPage} />
                 <Stack.Screen name="PublicidadeScreen" component={PublicidadeScreen} />
             </Stack.Navigator>
         </NavigationContainer>
