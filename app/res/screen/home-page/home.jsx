@@ -80,8 +80,8 @@ const MyCarousel = ({ data }) => {
             layout={'stack'}
             layoutCardOffset={`20`}
             autoplay={true}
-            autoplayDelay={3000}
-            autoplayInterval={5000}
+            autoplayDelay={1000}
+            autoplayInterval={3000}
             loop={true}
         />
     );
