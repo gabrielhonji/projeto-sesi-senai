@@ -14,7 +14,7 @@ import basquete from "../../../src/img/Basquete.png";
 import crossFit from "../../../src/img/CrossFit.png";
 
 
-export default function AtletaScreen({ }) {
+export default function AtletaScreen({navigation}) {
   return (
     <SafeAreaView bg={'#fff'} h={'100%'}>
       <ScrollView>

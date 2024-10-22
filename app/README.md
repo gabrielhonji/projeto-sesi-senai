@@ -10,3 +10,5 @@
 # Lucide Icons : npm i lucide
 # snap-carousel: npm install --save react-native-snap-carousel
 # @rneui/themed : npm install @rneui/themed
+# moti : npm i moti --legacy-peer-deps
+## Fix view prop types : npm i deprecated-react-native-prop-types@2.2.0
