@@ -15,6 +15,7 @@ import DatabaseScreen from '../database-page/database-page';
 import DesignScreen from '../design-page/design-page';
 import DireitoScreen from '../direito-page/direito-page';
 import Home from "../home-page/home";
+import JornalistaPage from '../jornalista-page/jornalista-page';
 import NutricaoScreen from '../nutricao-page/nutricao-page';
 import PedreiroScreen from '../pedreiro-page/pedreiro-page';
 // import CabeleireiroScreen from "../cabeleireiro-page/Principal"; PROBLEMA NA BIBLIOTECA RNEUI
@@ -34,6 +35,7 @@ export default function StartNavigator() {
                 <Stack.Screen name="DireitoScreen" component={DireitoScreen} />
                 <Stack.Screen name="NutricaoScreen" component={NutricaoScreen} />
                 <Stack.Screen name="PedreiroScreen" component={PedreiroScreen} />
+                <Stack.Screen name="JornalistaPage" component={JornalistaPage} />
             </Stack.Navigator>
         </NavigationContainer>
     );
