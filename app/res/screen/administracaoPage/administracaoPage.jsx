@@ -52,6 +52,7 @@ export default function AdministracaoScreen({ }) {
           </View>
           <View style={styles.box2}>
             <Text style={styles.text}>Veja agora um Podcast de uma pessoa que trabalha na área de Administração</Text>
+            
           </View>
           <View style={styles.box2}>
             <Text style={styles.text2}>Salário médio de um Administrador</Text>
