@@ -32,16 +32,18 @@ const cards = [
         area: "Saúde",
         minSal: "1.000",
         maxSal: "1B",
-        backgroundColor: "#40189D"
+        backgroundColor: "#40189D",
+        screen: "AtletaScreen",
     },
     {
         id: 2,
         image: require("../../../src/img/dev.png"),
-        title: "Programador",
-        area: "Dev de Sistemas",
+        title: "Administração",
+        area: "Administração",
         minSal: "3.000",
         maxSal: "4.000",
-        backgroundColor: "#EEE62D"
+        backgroundColor: "#EEE62D",
+        screen: "AdministracaoScreen",
     },
     {
         id: 3,
@@ -50,44 +52,48 @@ const cards = [
         area: "Engenharia",
         minSal: "2.000",
         maxSal: "3.000",
-        backgroundColor: "#FF8450"
+        backgroundColor: "#FF8450",
+        screen: "NutricaoScreen",
     }
 ]
 
-const MyCarousel = ({ data }) => {
-    const renderItem = ({ item, color }) => (
-        <View style ={{width:280, height:140, backgroundColor:"#fff", borderRadius:25,alignSelf:"center", marginRight:30, flexDirection:"row", padding:30,alignItems:"center",gap:15,elevation:5,}}>
-            <View style={{width:65, height:65, justifyContent:"center", alignItems:"center",backgroundColor:item.backgroundColor, borderRadius:10,}}>
-                    <Image alt='job-image' source={item.image} style={{width:45, height:45,}}/>
-            </View>
-            <View style={{flexDirection:"column", gap:5}}>
-                <Text style={{color:"#212121", fontWeight:"800",fontSize:20,}}>{item.title}</Text>
-                <Text style={{color:"#212121", fontWeight:"600"}}>{item.area}</Text>
-                <View style={{flexDirection:"row", marginTop:4, gap:5}}>
-                    <Image alt='coin-icon' source={coinsIcon} style={{width:24,height:24,}}/>
-                    <Text style={{color:"#ee2d32", fontWeight:"800", paddingTop:3}}>R${item.minSal} - R${item.maxSal}</Text>
+
+export default function Home({ navigation }) {
+    const MyCarousel = ({ data}) => {
+        const renderItem = ({ item, color, }) => (
+            <Pressable onPress={() => navigation.navigate(item.screen)}>
+                <View style={{ width: 280, height: 140, backgroundColor: "#fff", borderRadius: 25, alignSelf: "center", marginRight: 30, flexDirection: "row", padding: 30, alignItems: "center", gap: 15, elevation: 5, }}>
+                    <View style={{ width: 65, height: 65, justifyContent: "center", alignItems: "center", backgroundColor: item.backgroundColor, borderRadius: 10, }}>
+                        <Image alt='job-image' source={item.image} style={{ width: 45, height: 45, }} />
+                    </View>
+                    <View style={{ flexDirection: "column", gap: 5 }}>
+                        <Text style={{ color: "#212121", fontWeight: "800", fontSize: 20, }}>{item.title}</Text>
+                        <Text style={{ color: "#212121", fontWeight: "600" }}>{item.area}</Text>
+                        <View style={{ flexDirection: "row", marginTop: 4, gap: 5 }}>
+                            <Image alt='coin-icon' source={coinsIcon} style={{ width: 24, height: 24, }} />
+                            <Text style={{ color: "#ee2d32", fontWeight: "800", paddingTop: 3 }}>R${item.minSal} - R${item.maxSal}</Text>
+                        </View>
+                    </View>
                 </View>
-            </View>
-        </View>
-    );
+            </Pressable>
+        );
+    
+        return (
+            <Carousel
+                data={data}
+                renderItem={renderItem}
+                sliderWidth={screenWidth}
+                itemWidth={screenWidth}
+                layout={'stack'}
+                layoutCardOffset={`20`}
+                autoplay={true}
+                autoplayDelay={3000}
+                autoplayInterval={5000}
+                loop={true}
+            />
+        );
+    };
 
-    return (
-        <Carousel
-            data={data}
-            renderItem={renderItem}
-            sliderWidth={screenWidth}
-            itemWidth={screenWidth}
-            layout={'stack'}
-            layoutCardOffset={`20`}
-            autoplay={true}
-            autoplayDelay={3000}
-            autoplayInterval={5000}
-            loop={true}
-        />
-    );
-};
-
-export default function Home({ navigation}) {
     return (
         <SafeAreaView style={styles.main}>
             <ScrollView h={"$full"}>
@@ -191,8 +197,8 @@ export default function Home({ navigation}) {
                         <MyCarousel data={cards} />
                     </View>
                 </View>
-                <View style={{ marginTop: 54, flexDirection: "row", justifyContent:"space-between", paddingHorizontal:34, alignItems:"center"}}>
-                    <Text style={{ color: "#3D3D3D", fontSize: 18, fontWeight: "600",marginLeft:15,}}>Novos trabalhos</Text>
+                <View style={{ marginTop: 54, flexDirection: "row", justifyContent: "space-between", paddingHorizontal: 34, alignItems: "center" }}>
+                    <Text style={{ color: "#3D3D3D", fontSize: 18, fontWeight: "600", marginLeft: 15, }}>Novos trabalhos</Text>
                     <Button
                         size="md"
                         variant="link"
@@ -201,71 +207,169 @@ export default function Home({ navigation}) {
                         isFocusVisible={false}
                         style={{}}
                     >
-                        <ButtonText style={{color:"#ee2d32"}}>Mais</ButtonText>
+                        <ButtonText style={{ color: "#ee2d32" }}>Mais</ButtonText>
                     </Button>
                 </View>
                 <View style={styles.newJobContainer}>
-                    <View style={{flexDirection:"row", gap:25,}}>
-                        <View style={{ backgroundColor: "#61FF78", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
-                            <Image alt='icon' source={Nutricao} resizeMode="contain" style={{ width:40, height:40,}}/>
-                        </View>
-                        <View style={{flexDirection:"column", gap:5,}}>
-                            <Text>Saúde</Text>
-                            <Text style={{color:"#000", fontSize:20, fontWeight:"bold"}}>Nutrição</Text>
-                            <View style={{flexDirection:"column",marginTop:10, gap:10,}}>
-                                <View style={{flexDirection:"row", gap:18,}}>
-                                    <Image alt='icon' source={coinsIcon} style={{width:24,height:24,}}/>
-                                    <Text style={{color: "#000", fontWeight:"500", }}>R$1.000 - R$2.000</Text>
-                                </View>
-                                <View style={{flexDirection:"row", gap:18,}}>
-                                    <Image alt='icon' source={subjectIcon} style={{width:22,height:22,}}/>
-                                    <Text style={{color: "#000", fontWeight:"500",fontSize:18,}}>Biologia</Text>
+                    <Pressable onPress={() => navigation.navigate('NutricaoScreen')}>
+                        <View style={{ flexDirection: "row", gap: 25, }}>
+                            <View style={{ backgroundColor: "#61FF78", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
+                                <Image alt='icon' source={Nutricao} resizeMode="contain" style={{ width: 40, height: 40, }} />
+                            </View>
+                            <View style={{ flexDirection: "column", gap: 5, }}>
+                                <Text>Saúde</Text>
+                                <Text style={{ color: "#000", fontSize: 20, fontWeight: "bold" }}>Nutrição</Text>
+                                <View style={{ flexDirection: "column", marginTop: 10, gap: 10, }}>
+                                    <View style={{ flexDirection: "row", gap: 18, }}>
+                                        <Image alt='icon' source={coinsIcon} style={{ width: 24, height: 24, }} />
+                                        <Text style={{ color: "#000", fontWeight: "500", }}>R$1.000 - R$2.000</Text>
+                                    </View>
+                                    <View style={{ flexDirection: "row", gap: 18, }}>
+                                        <Image alt='icon' source={subjectIcon} style={{ width: 22, height: 22, }} />
+                                        <Text style={{ color: "#000", fontWeight: "500", fontSize: 18, }}>Biologia</Text>
+                                    </View>
                                 </View>
                             </View>
                         </View>
-                    </View>
+                    </Pressable>
                 </View>
                 <View style={styles.newJobContainer}>
-                    <View style={{flexDirection:"row", gap:25,}}>
-                        <View style={{ backgroundColor: "#F9F909", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
-                            <Image alt='icon' source={Advogado} resizeMode="contain" style={{ width:40, height:40,}}/>
-                        </View>
-                        <View style={{flexDirection:"column", gap:5,}}>
-                            <Text>Direito</Text>
-                            <Text style={{color:"#000", fontSize:20, fontWeight:"bold"}}>Advogado</Text>
-                            <View style={{flexDirection:"column",marginTop:10, gap:10,}}>
-                                <View style={{flexDirection:"row", gap:18,}}>
-                                    <Image alt='icon' source={coinsIcon} style={{width:24,height:24,}}/>
-                                    <Text style={{color: "#000", fontWeight:"500", }}>R$2.500 - R$3.000</Text>
-                                </View>
-                                <View style={{flexDirection:"row", gap:18,}}>
-                                    <Image alt='icon' source={subjectIcon} style={{width:22,height:22,}}/>
-                                    <Text style={{color: "#000", fontWeight:"500",fontSize:18,}}>Língua Portuguesa</Text>
+                    <Pressable onPress={() => navigation.navigate('DireitoScreen')}>
+                        <View style={{ flexDirection: "row", gap: 25, }}>
+                            <View style={{ backgroundColor: "#F9F909", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
+                                <Image alt='icon' source={Advogado} resizeMode="contain" style={{ width: 40, height: 40, }} />
+                            </View>
+                            <View style={{ flexDirection: "column", gap: 5, }}>
+                                <Text>Direito</Text>
+                                <Text style={{ color: "#000", fontSize: 20, fontWeight: "bold" }}>Advogado</Text>
+                                <View style={{ flexDirection: "column", marginTop: 10, gap: 10, }}>
+                                    <View style={{ flexDirection: "row", gap: 18, }}>
+                                        <Image alt='icon' source={coinsIcon} style={{ width: 24, height: 24, }} />
+                                        <Text style={{ color: "#000", fontWeight: "500", }}>R$2.500 - R$3.000</Text>
+                                    </View>
+                                    <View style={{ flexDirection: "row", gap: 18, }}>
+                                        <Image alt='icon' source={subjectIcon} style={{ width: 22, height: 22, }} />
+                                        <Text style={{ color: "#000", fontWeight: "500", fontSize: 18, }}>Língua Portuguesa</Text>
+                                    </View>
                                 </View>
                             </View>
                         </View>
-                    </View>
+                    </Pressable>
                 </View>
                 <View style={styles.newJobContainer}>
-                    <View style={{flexDirection:"row", gap:25,}}>
-                        <View style={{ backgroundColor: "#FF8450", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
-                            <Image alt='icon' source={Construtor} resizeMode="contain" style={{ width:40, height:40,}}/>
-                        </View>
-                        <View style={{flexDirection:"column", gap:5,}}>
-                            <Text>Engenharia</Text>
-                            <Text style={{color:"#000", fontSize:20, fontWeight:"bold"}}>Engenheiro</Text>
-                            <View style={{flexDirection:"column",marginTop:10, gap:10,}}>
-                                <View style={{flexDirection:"row", gap:18,}}>
-                                    <Image alt='icon' source={coinsIcon} style={{width:24,height:24,}}/>
-                                    <Text style={{color: "#000", fontWeight:"500", }}>R$1.500 - R$2.000</Text>
-                                </View>
-                                <View style={{flexDirection:"row", gap:18,}}>
-                                    <Image alt='icon' source={subjectIcon} style={{width:22,height:22,}}/>
-                                    <Text style={{color: "#000", fontWeight:"500",fontSize:18,}}>Matemática</Text>
+                    <Pressable onPress={() => navigation.navigate('EngenhariaScreen')}>
+                        <View style={{ flexDirection: "row", gap: 25, }}>
+                            <View style={{ backgroundColor: "#FF8450", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
+                                <Image alt='icon' source={Construtor} resizeMode="contain" style={{ width: 40, height: 40, }} />
+                            </View>
+                            <View style={{ flexDirection: "column", gap: 5, }}>
+                                <Text>Engenharia</Text>
+                                <Text style={{ color: "#000", fontSize: 20, fontWeight: "bold" }}>Engenheiro</Text>
+                                <View style={{ flexDirection: "column", marginTop: 10, gap: 10, }}>
+                                    <View style={{ flexDirection: "row", gap: 18, }}>
+                                        <Image alt='icon' source={coinsIcon} style={{ width: 24, height: 24, }} />
+                                        <Text style={{ color: "#000", fontWeight: "500", }}>R$1.500 - R$2.000</Text>
+                                    </View>
+                                    <View style={{ flexDirection: "row", gap: 18, }}>
+                                        <Image alt='icon' source={subjectIcon} style={{ width: 22, height: 22, }} />
+                                        <Text style={{ color: "#000", fontWeight: "500", fontSize: 18, }}>Matemática</Text>
+                                    </View>
                                 </View>
                             </View>
                         </View>
-                    </View>
+                    </Pressable>
+                </View>
+                <View style={styles.newJobContainer}>
+                    <Pressable onPress={() => navigation.navigate('DatabaseScreen')}>
+                        <View style={{ flexDirection: "row", gap: 25, }}>
+                            <View style={{ backgroundColor: "#FF8450", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
+                                <Image alt='icon' source={Construtor} resizeMode="contain" style={{ width: 40, height: 40, }} />
+                            </View>
+                            <View style={{ flexDirection: "column", gap: 5, }}>
+                                <Text>DBA</Text>
+                                <Text style={{ color: "#000", fontSize: 20, fontWeight: "bold" }}>DBA</Text>
+                                <View style={{ flexDirection: "column", marginTop: 10, gap: 10, }}>
+                                    <View style={{ flexDirection: "row", gap: 18, }}>
+                                        <Image alt='icon' source={coinsIcon} style={{ width: 24, height: 24, }} />
+                                        <Text style={{ color: "#000", fontWeight: "500", }}>R$1.500 - R$2.000</Text>
+                                    </View>
+                                    <View style={{ flexDirection: "row", gap: 18, }}>
+                                        <Image alt='icon' source={subjectIcon} style={{ width: 22, height: 22, }} />
+                                        <Text style={{ color: "#000", fontWeight: "500", fontSize: 18, }}>Matemática</Text>
+                                    </View>
+                                </View>
+                            </View>
+                        </View>
+                    </Pressable>
+                </View>
+                <View style={styles.newJobContainer}>
+                    <Pressable onPress={() => navigation.navigate('PublicidadeScreen')}>
+                        <View style={{ flexDirection: "row", gap: 25, }}>
+                            <View style={{ backgroundColor: "#FF8450", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
+                                <Image alt='icon' source={Construtor} resizeMode="contain" style={{ width: 40, height: 40, }} />
+                            </View>
+                            <View style={{ flexDirection: "column", gap: 5, }}>
+                                <Text>Publicidade e Propaganda</Text>
+                                <Text style={{ color: "#000", fontSize: 20, fontWeight: "bold" }}>Publicidade e Propaganda</Text>
+                                <View style={{ flexDirection: "column", marginTop: 10, gap: 10, }}>
+                                    <View style={{ flexDirection: "row", gap: 18, }}>
+                                        <Image alt='icon' source={coinsIcon} style={{ width: 24, height: 24, }} />
+                                        <Text style={{ color: "#000", fontWeight: "500", }}>R$1.500 - R$2.000</Text>
+                                    </View>
+                                    <View style={{ flexDirection: "row", gap: 18, }}>
+                                        <Image alt='icon' source={subjectIcon} style={{ width: 22, height: 22, }} />
+                                        <Text style={{ color: "#000", fontWeight: "500", fontSize: 18, }}>Matemática</Text>
+                                    </View>
+                                </View>
+                            </View>
+                        </View>
+                    </Pressable>
+                </View>
+                <View style={styles.newJobContainer}>
+                    <Pressable onPress={() => navigation.navigate('DesignScreen')}>
+                        <View style={{ flexDirection: "row", gap: 25, }}>
+                            <View style={{ backgroundColor: "#FF8450", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
+                                <Image alt='icon' source={Construtor} resizeMode="contain" style={{ width: 40, height: 40, }} />
+                            </View>
+                            <View style={{ flexDirection: "column", gap: 5, }}>
+                                <Text>Design</Text>
+                                <Text style={{ color: "#000", fontSize: 20, fontWeight: "bold" }}>Design</Text>
+                                <View style={{ flexDirection: "column", marginTop: 10, gap: 10, }}>
+                                    <View style={{ flexDirection: "row", gap: 18, }}>
+                                        <Image alt='icon' source={coinsIcon} style={{ width: 24, height: 24, }} />
+                                        <Text style={{ color: "#000", fontWeight: "500", }}>R$1.500 - R$2.000</Text>
+                                    </View>
+                                    <View style={{ flexDirection: "row", gap: 18, }}>
+                                        <Image alt='icon' source={subjectIcon} style={{ width: 22, height: 22, }} />
+                                        <Text style={{ color: "#000", fontWeight: "500", fontSize: 18, }}>Matemática</Text>
+                                    </View>
+                                </View>
+                            </View>
+                        </View>
+                    </Pressable>
+                </View>
+                <View style={styles.newJobContainer}>
+                    <Pressable onPress={() => navigation.navigate('PedreiroScreen')}>
+                        <View style={{ flexDirection: "row", gap: 25, }}>
+                            <View style={{ backgroundColor: "#FF8450", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
+                                <Image alt='icon' source={Construtor} resizeMode="contain" style={{ width: 40, height: 40, }} />
+                            </View>
+                            <View style={{ flexDirection: "column", gap: 5, }}>
+                                <Text>Pedreiro</Text>
+                                <Text style={{ color: "#000", fontSize: 20, fontWeight: "bold" }}>Pedreiro</Text>
+                                <View style={{ flexDirection: "column", marginTop: 10, gap: 10, }}>
+                                    <View style={{ flexDirection: "row", gap: 18, }}>
+                                        <Image alt='icon' source={coinsIcon} style={{ width: 24, height: 24, }} />
+                                        <Text style={{ color: "#000", fontWeight: "500", }}>R$1.500 - R$2.000</Text>
+                                    </View>
+                                    <View style={{ flexDirection: "row", gap: 18, }}>
+                                        <Image alt='icon' source={subjectIcon} style={{ width: 22, height: 22, }} />
+                                        <Text style={{ color: "#000", fontWeight: "500", fontSize: 18, }}>Matemática</Text>
+                                    </View>
+                                </View>
+                            </View>
+                        </View>
+                    </Pressable>
                 </View>
                 <Box h={'100%'} padding={'12%'} flexDirection='row' columnGap={20} rowGap={20} flexWrap='wrap'>
                     <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('AdministracaoScreen')}>
@@ -290,7 +394,7 @@ export default function Home({ navigation}) {
                     <Text>Nutrição</Text>
                     </Button>
                     <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('PedreiroScreen')}>
-                    <Text>Pedreiro</Text>
+                        <Text>Pedreiro</Text>
                     </Button>
                     <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('GeologoScreen')}>
                     <Text>Geólogo</Text>
@@ -387,7 +491,7 @@ const styles = StyleSheet.create({
         marginTop: 25,
     },
     recommendedCardContainer: {
-    },  
+    },
     recommendedCards: {
         flexDirection: "row",
         height: 110,
@@ -399,11 +503,11 @@ const styles = StyleSheet.create({
         gap: 35,
         padding: 20,
         marginRight: 45,
-        
+
     },
-    newJobContainer:{
-        flexDirection:"col",
-        backgroundColor:"#fff",
-        padding:25,
+    newJobContainer: {
+        flexDirection: "col",
+        backgroundColor: "#fff",
+        padding: 25,
     },
 });
