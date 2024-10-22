@@ -17,6 +17,7 @@ import DireitoScreen from '../direito-page/direito-page';
 import Home from "../home-page/home";
 import NutricaoScreen from '../nutricao-page/nutricao-page';
 import PedreiroScreen from '../pedreiro-page/pedreiro-page';
+// import CabeleireiroScreen from "../cabeleireiro-page/Principal"; PROBLEMA NA BIBLIOTECA RNEUI
 import OnBoarding from './onboarding';
 
 export default function StartNavigator() {
