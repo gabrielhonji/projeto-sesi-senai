@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Aluno\Desktop\projetoIntegrador\projeto-sesi-senai\app\android\app\src\main\shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Aluno\Desktop\projetoIntegrador\projeto-sesi-senai\app\android\app\src\debug\shaders"/></dataSet></merger>
+=======
+<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Aluno\Desktop\projeto-sesi-senai\app\android\app\src\main\shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Aluno\Desktop\projeto-sesi-senai\app\android\app\src\debug\shaders"/></dataSet></merger>
+>>>>>>> ceb0b618c0d0fe7d0d3318cf90e170dae62feb9d
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -40,4 +44,8 @@
 =======
 <merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Vitor\Documents\Projetos Dev\projeto-sesi-senai\app\android\app\src\main\shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Vitor\Documents\Projetos Dev\projeto-sesi-senai\app\android\app\src\debug\shaders"/></dataSet></merger>
 >>>>>>> 9a2be1d38dd56a1dccb42086bd329fc0add326a4
+<<<<<<< HEAD
 >>>>>>> a48d3ca02951c5b593001d88850a0470cda0e9e3
+=======
+>>>>>>> 2b3ad89700f6d9c6a3fd09ae082a844788764d1e
+>>>>>>> ceb0b618c0d0fe7d0d3318cf90e170dae62feb9d

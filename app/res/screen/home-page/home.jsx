@@ -292,6 +292,9 @@ export default function Home({ navigation}) {
                     <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('PedreiroScreen')}>
                     <Text>Pedreiro</Text>
                     </Button>
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('GeologoScreen')}>
+                    <Text>Geólogo</Text>
+                    </Button>
                 </Box>
             </ScrollView>
         </SafeAreaView>

@@ -18,6 +18,7 @@ import Home from "../home-page/home";
 import NutricaoScreen from '../nutricao-page/nutricao-page';
 import PedreiroScreen from '../pedreiro-page/pedreiro-page';
 import OnBoarding from './onboarding';
+import GeologoScreen from '../geologo-page/geologo-page'
 
 export default function StartNavigator() {
     return (
@@ -33,6 +34,7 @@ export default function StartNavigator() {
                 <Stack.Screen name="DireitoScreen" component={DireitoScreen} />
                 <Stack.Screen name="NutricaoScreen" component={NutricaoScreen} />
                 <Stack.Screen name="PedreiroScreen" component={PedreiroScreen} />
+                <Stack.Screen name="GeologoScreen" component={GeologoScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );

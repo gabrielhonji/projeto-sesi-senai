@@ -69,13 +69,7 @@ export default function DireitoScreen({ }) {
           <Text style={styles.TextTextoList}> 9. Jurídico: Relativo ao Direito e à prática legal.</Text>
           <Text style={styles.TextTextoList}>10. Litígios: Conflitos ou disputas levadas ao Judiciário.</Text>
 
-          <Box style={styles.boxSubTitulo}>
-            <Text style={styles.TextSub}>PodCast</Text>
-          </Box>
     
-          <Image alignSelf='center' w={100} h={100} source={podcast} />
-          <Box w={'100%'} h={150}></Box>
-
           <Box style={styles.boxSubTitulo}>
             <Text style={styles.TextSub}>Gráfico</Text>
           </Box>
