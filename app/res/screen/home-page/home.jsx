@@ -93,6 +93,7 @@ export default function Home({ navigation }) {
             />
         );
     };
+
     return (
         <SafeAreaView style={styles.main}>
             <ScrollView h={"$full"}>
