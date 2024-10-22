@@ -20,6 +20,7 @@ import PedreiroScreen from '../grupo-8/pedreiro/pedreiro-page';
 import PublicidadeScreen from '../grupo-3/publicidade/publicidade-page';
 // import CabeleireiroScreen from "../cabeleireiro-page/Principal"; PROBLEMA NA BIBLIOTECA RNEUI
 import OnBoarding from './onboarding';
+import GeologoScreen from '../geologo-page/geologo-page'
 
 export default function StartNavigator() {
     return (
@@ -35,6 +36,8 @@ export default function StartNavigator() {
                 <Stack.Screen name="DireitoScreen" component={DireitoScreen} />
                 <Stack.Screen name="NutricaoScreen" component={NutricaoScreen} />
                 <Stack.Screen name="PedreiroScreen" component={PedreiroScreen} />
+                <Stack.Screen name="GeologoScreen" component={GeologoScreen} />
+                <Stack.Screen name="JornalistaPage" component={JornalistaPage} />
                 <Stack.Screen name="PublicidadeScreen" component={PublicidadeScreen} />
             </Stack.Navigator>
         </NavigationContainer>
