@@ -303,14 +303,14 @@ export default function Home({ navigation }) {
                     </Pressable>
                 </View>
                 <View style={styles.newJobContainer}>
-                    <Pressable onPress={() => navigation.navigate('DatabaseScreen')}>
+                    <Pressable onPress={() => navigation.navigate('PublicidadeScreen')}>
                         <View style={{ flexDirection: "row", gap: 25, }}>
                             <View style={{ backgroundColor: "#FF8450", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
                                 <Image alt='icon' source={Construtor} resizeMode="contain" style={{ width: 40, height: 40, }} />
                             </View>
                             <View style={{ flexDirection: "column", gap: 5, }}>
-                                <Text>DBA</Text>
-                                <Text style={{ color: "#000", fontSize: 20, fontWeight: "bold" }}>DBA</Text>
+                                <Text>Publicidade e Propaganda</Text>
+                                <Text style={{ color: "#000", fontSize: 20, fontWeight: "bold" }}>Publicidade e Propaganda</Text>
                                 <View style={{ flexDirection: "column", marginTop: 10, gap: 10, }}>
                                     <View style={{ flexDirection: "row", gap: 18, }}>
                                         <Image alt='icon' source={coinsIcon} style={{ width: 24, height: 24, }} />

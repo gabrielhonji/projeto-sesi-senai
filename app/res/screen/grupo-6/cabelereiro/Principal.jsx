@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Input, Button, Image, LinearGradient } from '@rneui/themed'
 import { Card, Icon } from '@rneui/themed';
-import styles from "../cabeleireiro-page/Styles"
+import styles from "./Styles"
 // import axios from 'axios';
 
 
