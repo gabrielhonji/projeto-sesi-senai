@@ -23,6 +23,7 @@ import OnBoarding from './onboarding';
 import GeologoScreen from '../geologo-page/geologo-page';
 import DatabaseScreen from '../grupo-3/database/database-page';
 import JornalistaPage from '../jornalista-page/jornalista-page';
+import EngenhariaScreen from '../grupo-2/nutricao/engenharia-page';
 
 export default function StartNavigator() {
     return (
@@ -41,6 +42,7 @@ export default function StartNavigator() {
                 <Stack.Screen name="GeologoScreen" component={GeologoScreen} />
                 <Stack.Screen name="JornalistaPage" component={JornalistaPage} />
                 <Stack.Screen name="PublicidadeScreen" component={PublicidadeScreen} />
+                <Stack.Screen name="EngenhariaScreen" component={EngenhariaScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );

@@ -111,7 +111,7 @@ export default function NutricaoScreen({ }) {
       <ScrollView>
         <Box>
      
-     <ImageBackground alignItems='center' w={420} h={430} source={imagemFundo}>
+     <ImageBackground alignItems='center' w={'100%'} h={430} source={imagemFundo}>
         <Text marginTop={80} color={'red'} fontWeight={'$extrabold'} fontSize={46}>NUTRIÇÃO</Text>
      </ImageBackground>
 
