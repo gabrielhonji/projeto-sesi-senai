@@ -53,7 +53,8 @@ const courses = [
   },
   {
     title: "Construtor de Alvenaria",
-    description: 'https://www.sp.senai.br/curso/construtor-de-alvenaria/87552',
+    description: "Execução de alvenarias em edificações, com ou sem função estrutural, seguindo normas técnicas e de segurança.",
+    url: 'https://www.sp.senai.br/curso/construtor-de-alvenaria/87552',
   },
   {
     title: "Desenho Técnico",
