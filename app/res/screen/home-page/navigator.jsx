@@ -25,7 +25,7 @@ import PedreiroScreen from '../grupo-8/pedreiro/pedreiro-page';
 import PublicidadeScreen from '../grupo-3/publicidade/publicidade-page';
 // import CabeleireiroScreen from "../cabeleireiro-page/Principal"; PROBLEMA NA BIBLIOTECA RNEUI
 import OnBoarding from './onboarding';
-import GeologoScreen from '../geologo-page/geologo-page';
+import GeologoScreen from '../grupo-7/geologo-page/geologo-page';
 import DatabaseScreen from '../grupo-3/database/database-page';
 import JornalistaPage from '../jornalista-page/jornalista-page';
 import EngenhariaScreen from '../grupo-2/nutricao/engenharia-page';
