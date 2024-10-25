@@ -1,4 +1,4 @@
-com.reactnativeapp
+com.app
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -45,24 +45,20 @@ anim rns_fade_from_bottom
 anim rns_fade_in
 anim rns_fade_out
 anim rns_fade_to_bottom
-anim rns_ios_from_left_background_close
-anim rns_ios_from_left_background_open
-anim rns_ios_from_left_foreground_close
-anim rns_ios_from_left_foreground_open
-anim rns_ios_from_right_background_close
-anim rns_ios_from_right_background_open
-anim rns_ios_from_right_foreground_close
-anim rns_ios_from_right_foreground_open
 anim rns_no_animation_20
 anim rns_no_animation_250
 anim rns_no_animation_350
 anim rns_no_animation_medium
 anim rns_slide_in_from_bottom
 anim rns_slide_in_from_left
+anim rns_slide_in_from_left_ios
 anim rns_slide_in_from_right
+anim rns_slide_in_from_right_ios
 anim rns_slide_out_to_bottom
 anim rns_slide_out_to_left
+anim rns_slide_out_to_left_ios
 anim rns_slide_out_to_right
+anim rns_slide_out_to_right_ios
 anim rns_standard_accelerate_interpolator
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
@@ -1728,7 +1724,6 @@ color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
-color primary
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -2426,7 +2421,6 @@ drawable abc_vector_test
 drawable autofill_inline_suggestion_chip_background
 drawable avd_hide_password
 drawable avd_show_password
-drawable background_splash
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -2449,7 +2443,6 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
-drawable icon
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -2493,7 +2486,6 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable redbox_top_border_background
 drawable rn_edit_text_material
-drawable sesi_senai_logo_branca
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -3157,6 +3149,8 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+mipmap ic_launcher
+mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description
