@@ -2,7 +2,7 @@
 import { Text, Box, SafeAreaView, Image, ImageBackground, HStack, FlatList } from '@gluestack-ui/themed';
 import React, {useEffect, useState} from "react";
 import { Dimensions, StyleSheet, TouchableOpacity, View } from "react-native";
-import LogoSesiBranca from '../../../src/img/sesi-senai-logo-branca.png';
+//import LogoSesiBranca from '../../../src/img/sesi-senai-logo-branca.png';
 import imagemFundo from '../../../src/img/imagemFundo-nutricao-removebg-preview.png'
 import imagem1 from '../../../src/img/img-nutricao/image1.png'
 import imagem2 from '../../../src/img/img-nutricao/image2.png'

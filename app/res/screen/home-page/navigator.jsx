@@ -10,7 +10,7 @@ import React from 'react';
 const Stack = createStackNavigator();
 
 import AdministracaoScreen from '../grupo-5/administracao/administracao-page';
-import AtletaScreen from '../atleta-page/atleta-page';
+//import AtletaScreen from '../atleta-page/atleta-page';
 import DatabaseScreen from '../grupo-3/database/database-page';
 import DesignScreen from '../grupo-4/design/design-page';
 import DireitoScreen from '../grupo-7/direito/direito-page';
