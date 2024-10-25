@@ -9,17 +9,22 @@ import React from 'react';
 // const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
-import AdministracaoScreen from '../administracao-page/administracao-page';
-import AtletaScreen from '../atleta-page/atleta-page';
-import DatabaseScreen from '../database-page/database-page';
-import DesignScreen from '../design-page/design-page';
-import DireitoScreen from '../direito-page/direito-page';
-import Home from "../home-page/home";
-import NutricaoScreen from '../nutricao-page/nutricao-page';
-import PedreiroScreen from '../pedreiro-page/pedreiro-page';
+import AdministracaoScreen from '../grupo-5/administracao/administracao-page';
+import AtletaScreen from '../grupo-1/atleta-page/atleta-page';
+import DBAPage from '../grupo-3/database/database-page';
+import DesignScreen from '../grupo-4/design/design-page';
+import DireitoScreen from '../grupo-7/direito/direito-page';
+import Home from './home';
+import NutricaoScreen from '../grupo-2/nutricao/nutricao-page';
+import PedreiroScreen from '../grupo-8/pedreiro/pedreiro-page';
 import ArquiteturaScreen from '../arquitetura-page/arquitetura-page';
+import PublicidadeScreen from '../grupo-3/publicidade/publicidade-page';
 // import CabeleireiroScreen from "../cabeleireiro-page/Principal"; PROBLEMA NA BIBLIOTECA RNEUI
 import OnBoarding from './onboarding';
+import GeologoScreen from '../grupo-7/geologo-page/geologo-page';
+import DatabaseScreen from '../grupo-3/database/database-page';
+import JornalistaPage from '../jornalista-page/jornalista-page';
+import EngenhariaScreen from '../grupo-2/nutricao/engenharia-page';
 
 
 export default function StartNavigator() {
@@ -36,6 +41,10 @@ export default function StartNavigator() {
                 <Stack.Screen name="DireitoScreen" component={DireitoScreen} />
                 <Stack.Screen name="NutricaoScreen" component={NutricaoScreen} />
                 <Stack.Screen name="PedreiroScreen" component={PedreiroScreen} />
+                <Stack.Screen name="GeologoScreen" component={GeologoScreen} />
+                <Stack.Screen name="JornalistaPage" component={JornalistaPage} />
+                <Stack.Screen name="PublicidadeScreen" component={PublicidadeScreen} />
+                <Stack.Screen name="EngenhariaScreen" component={EngenhariaScreen} />
                 <Stack.Screen name="ArquiteturaScreen" component={ArquiteturaScreen} />
             </Stack.Navigator>
         </NavigationContainer>

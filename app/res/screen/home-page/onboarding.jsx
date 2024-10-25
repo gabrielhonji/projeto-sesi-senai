@@ -44,9 +44,9 @@ export default function OnBoarding({ navigation }) {
             data={slides}
             renderItem={({item}) => {
                 return(
-                    <View style = {styles.main}>
+                    <View style={styles.main}>
                         <Image
-                         source={item.image} style={styles.image}resizeMode="contain" alt="Onboarding"/>
+                         source={item.image} style={styles.image} resizeMode="contain" alt="Onboarding"/>
                          <Text style={styles.title}>{item.title}</Text>
                          <Text style={styles.desc}>{item.description}</Text>
                     </View>
