@@ -24,6 +24,7 @@ import GeologoScreen from '../grupo-7/geologo-page/geologo-page';
 import DatabaseScreen from '../grupo-3/database/database-page';
 import JornalistaPage from '../jornalista-page/jornalista-page';
 import EngenhariaScreen from '../grupo-2/nutricao/engenharia-page';
+import ArquiteturaScreen from '../grupo-8/arquitetura-page/arquitetura-page';
 
 export default function StartNavigator() {
     return (
@@ -43,6 +44,7 @@ export default function StartNavigator() {
                 <Stack.Screen name="JornalistaPage" component={JornalistaPage} />
                 <Stack.Screen name="PublicidadeScreen" component={PublicidadeScreen} />
                 <Stack.Screen name="EngenhariaScreen" component={EngenhariaScreen} />
+                <Stack.Screen name="ArquiteturaScreen" component={ArquiteturaScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );
