@@ -2,16 +2,6 @@
 import { Text, Box, SafeAreaView, Image, ImageBackground, HStack, FlatList } from '@gluestack-ui/themed';
 import React, {useEffect, useState} from "react";
 import { Dimensions, StyleSheet, TouchableOpacity, View } from "react-native";
-<<<<<<< HEAD
-//import LogoSesiBranca from '../../../src/img/sesi-senai-logo-branca.png';
-import imagemFundo from '../../../src/img/imagemFundo-nutricao-removebg-preview.png'
-import imagem1 from '../../../src/img/img-nutricao/image1.png'
-import imagem2 from '../../../src/img/img-nutricao/image2.png'
-import imagem3 from '../../../src/img/img-nutricao/Imagem3.png'
-import imagem4 from '../../../src/img/img-nutricao/Imagem4.png'
-import imagem5 from '../../../src/img/img-nutricao/Imagem5.png'
-import imagem6 from '../../../src/img/img-nutricao/Imagem6.png'
-=======
 import imagemFundo from '../../../../src/img/imagemFundo-nutricao-removebg-preview.png' 
 import imagem1 from '../../../../src/img/img-nutricao/image1.png'
 import imagem2 from '../../../../src/img/img-nutricao/image2.png'
@@ -19,7 +9,6 @@ import imagem3 from '../../../../src/img/img-nutricao/Imagem3.png'
 import imagem4 from '../../../../src/img/img-nutricao/Imagem4.png'
 import imagem5 from '../../../../src/img/img-nutricao/Imagem5.png'
 import imagem6 from '../../../../src/img/img-nutricao/Imagem6.png'
->>>>>>> 9f0eae18644b6f9f2ba948bed1a77e89b7d59bf2
 import Carousel from 'react-native-snap-carousel';
 import { ScrollView } from 'react-native-gesture-handler';
 import * as Animatable from 'react-native-animatable';
