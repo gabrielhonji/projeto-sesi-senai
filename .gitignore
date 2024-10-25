@@ -2,6 +2,8 @@
 home-page/navigator.jsx
 app/App.jsx
 
+app/android*
+
 # Logs
 logs
 *.log

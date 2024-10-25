@@ -1,8 +1,8 @@
 import { Text, Box, SafeAreaView, HStack, Image, Pressable } from '@gluestack-ui/themed';
 import Svg, { Path } from 'react-native-svg';
-import { Dimensions, Linking, ScrollView, View } from 'react-native';
+import { Dimensions, Linking, ScrollView, View, Button } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
-import React, { useRef, useState, useEffect, Link } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { StyleSheet } from 'react-native';
 import { PieChart } from 'react-native-chart-kit'; 
 
@@ -53,7 +53,8 @@ const courses = [
   },
   {
     title: "Construtor de Alvenaria",
-    description: 'https://www.sp.senai.br/curso/construtor-de-alvenaria/87552',
+    description: "Execução de alvenarias em edificações, com ou sem função estrutural, seguindo normas técnicas e de segurança.",
+    url: 'https://www.sp.senai.br/curso/construtor-de-alvenaria/87552',
   },
   {
     title: "Desenho Técnico",
@@ -80,7 +81,7 @@ const CourseCard = ({ course }) => (
   </Pressable>
 );
 
-export default function PedreiroScreen() {
+export default function PedreiroScreen({ navigation: { goBack } }) {
   const carouselRef = useRef(null);
   const [expandedIndex, setExpandedIndex] = useState(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -233,7 +234,8 @@ export default function PedreiroScreen() {
 
           <Box name='Mercado de trabalho' alignItems='left' justifyContent='center' >
           <Text p={15} color='#fff' >
-             Mecânica: Ao usar alavancas para mover objetos pesados ou garantir o equilíbrio de uma parede, o pedreiro está aplicando princípios da mecânica.
+             Mecânica: Ao usar alavancas para mover objetos pesados ou garantir o equilíbrio de uma parede, 
+             o pedreiro está aplicando princípios da mecânica.
             </Text>
             <Text p={15} color='#fff'>
               Hidráulica: O uso de bombas d'água nas construções é um exemplo claro da aplicação da hidráulica.
@@ -289,7 +291,10 @@ export default function PedreiroScreen() {
             <Text color='white' fontWeight='bold' fontSize={30}>Relação na Química</Text>
 
             <Text color='white' fontSize={16} p={10}>
-            A profissão de pedreiro envolve a aplicação de princípios químicos para garantir a qualidade e durabilidade das estruturas. A interação química entre cimento, água e agregados é essencial para a resistência. A escolha correta de materiais como argamassa, tintas e revestimentos é crucial, assim como a adição de aditivos para melhorar as propriedades do concreto e argamassa.
+            A profissão de pedreiro envolve a aplicação de princípios químicos para garantir a qualidade e 
+            durabilidade das estruturas. A interação química entre cimento, água e agregados é essencial para a 
+            resistência. A escolha correta de materiais como argamassa, tintas e revestimentos é crucial, assim 
+            como a adição de aditivos para melhorar as propriedades do concreto e argamassa.
             </Text>
             
             
