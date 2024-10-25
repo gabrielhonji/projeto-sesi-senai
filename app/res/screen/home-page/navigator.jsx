@@ -18,6 +18,7 @@ import Home from "../home-page/home";
 import NutricaoScreen from '../grupo-2/nutricao/nutricao-page';
 import PedreiroScreen from '../grupo-8/pedreiro/pedreiro-page';
 import PublicidadeScreen from '../grupo-3/publicidade/publicidade-page';
+import JornalistaPage from '../grupo-5/jornalista-page/jornalista-page';
 // import CabeleireiroScreen from "../cabeleireiro-page/Principal"; PROBLEMA NA BIBLIOTECA RNEUI
 import OnBoarding from './onboarding';
 
