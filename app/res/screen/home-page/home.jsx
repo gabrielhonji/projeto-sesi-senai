@@ -23,6 +23,7 @@ import vetor2 from "../../../src/img/vector2.png";
 import vetor3 from "../../../src/img/vector4.png";
 import wrenchIcon from "../../../src/img/wrenchIcon.png";
 import Geologo from '../../../src/img/geologia/geologo-icon.png'
+import Arquitetura from "../../../src/img/pedreiro/arquieteto-icon.png"
 
 const { width: screenWidth } = Dimensions.get('window');
 const cards = [
@@ -327,14 +328,14 @@ export default function Home({ navigation }) {
                     </Pressable>
                 </View>
                 <View style={styles.newJobContainer}>
-                    <Pressable onPress={() => navigation.navigate('PublicidadeScreen')}>
+                    <Pressable onPress={() => navigation.navigate('ArquiteturaScreen')}>
                         <View style={{ flexDirection: "row", gap: 25, }}>
-                            <View style={{ backgroundColor: "#FF8450", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
-                                <Image alt='icon' source={Construtor} resizeMode="contain" style={{ width: 40, height: 40, }} />
+                            <View style={{ backgroundColor: "#6495ED", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
+                                <Image alt='icon' source={Arquitetura} resizeMode="contain" style={{ width: 40, height: 40, }} />
                             </View>
                             <View style={{ flexDirection: "column", gap: 5, }}>
-                                <Text>Publicidade e Propaganda</Text>
-                                <Text style={{ color: "#000", fontSize: 20, fontWeight: "bold" }}>Publicidade e Propaganda</Text>
+                                <Text>Arquitetura</Text>
+                                <Text style={{ color: "#000", fontSize: 20, fontWeight: "bold" }}>Arquitetura</Text>
                                 <View style={{ flexDirection: "column", marginTop: 10, gap: 10, }}>
                                     <View style={{ flexDirection: "row", gap: 18, }}>
                                         <Image alt='icon' source={coinsIcon} style={{ width: 24, height: 24, }} />

@@ -20,7 +20,7 @@ export default function EngenhariaScreen({ }) {
     {
         id: 1,
         image: require("../../../../src/img/img-Engenharia/Imagem5.png"),
-        title: "Ponte Golden State",
+        title: "Ponte Golden Gate",
         area: "A ponte Golden Gate, localizada na entrada da baía de São Francisco (EUA), é considerada um marco na construção de pontes pênseis. Concluída em 1937, com o maior vão até então atingido, 1.280 m, a ponte manteve o título de a mais longa do mundo até 1964, ano em que foi inaugurada a ponte Verrazano Narrows (NY), com  1.298 m de vão.",
         height: 310
         
@@ -29,7 +29,7 @@ export default function EngenhariaScreen({ }) {
         id: 2,
         image: require("../../../../src/img/img-Engenharia/Imagem6.png"),
         title: "Prédio Empire State",
-        area: "O Empire State Building (ou Edifício Empire State) é um arranha-céu localizado na 5th Avenue (Quinta Avenida) de Nova Iorque, Estados Unidos da América 40° 44 53' N - 73° 59' 9 W. Este edifício foi concebido pelo arquiteto William Lamb. O prédio foi construído em apenas catorze meses e inaugurado no dia 1 de maio de 1931. Mede 381 metros de altura e tem 102 andares. Com a antena de TV que se colocou depois, chegou a 448 metros, e era na época da sua construção o maior edifício do mundo. Foi a estrutura mais alta do mundo até a construção do World Trade Center, em Nova Iorque, e da Sears Tower, em Chicago (ambas atingindo sua altura máxima em 1973). Outro números sobre o edifício também impressionam como o seu peso estimado em 308 mil toneladas e seu volume em 1,05 milhões de metros cúbicos.",
+        area: "O Empire State Building (ou Edifício Empire State) é um arranha-céu localizado na 5th Avenue (Quinta Avenida) de Nova Iorque, Estados Unidos da América 40° 44 53' N - 73° 59' 9 W. Este edifício foi concebido pelo arquiteto William Lamb. O prédio foi construído em apenas catorze meses e inaugurado no dia 1 de maio de 1931. Mede 381 metros de altura e tem 102 andares. E era na época da sua construção o maior edifício do mundo. Foi a estrutura mais alta do mundo até a construção do World Trade Center, em Nova Iorque, e da Sears Tower, em Chicago (ambas atingindo sua altura máxima em 1973).",
         height: 410
         
     },
@@ -38,7 +38,7 @@ export default function EngenhariaScreen({ }) {
         image: require("../../../../src/img/img-Engenharia/Imagem7.png"),
         title: "Torre de Canadian National",
         area: "O Canadian National Tower foi construído com o propósito de melhorar os sinais de canais de televisão, conseqüentemente, as imagens mostradas aos telespectadores. Hoje em dia ela representa muito mais que isso, é o símbolo de Toronto, a maior estrutura auto-portante do mundo e é visitada por mais de 2 milhões de pessoas por ano. A torre foi construída pela Companhia Canadense de estrada de ferro(Canadian National Raiways) e custou aproximadamente US$57 milhões.",
-        height: 310
+        height: 410
         
     },
     {
@@ -46,7 +46,7 @@ export default function EngenhariaScreen({ }) {
         image: require("../../../../src/img/img-Engenharia/Imagem9.png"),
         title: "Burj Khalifa",
         area: "O edifício mais alto já construído no mundo faz parte do complexo comercial chamado de Downtown Burj Dubai e demorou cerca de seis anos para ser erguido ao custo de US$ 1,5 bilhão.",
-        height: 210
+        height: 250
         
     },
     
@@ -94,7 +94,7 @@ return (
         <Text marginTop={80} color={'red'} fontWeight={'$extrabold'} fontSize={46}>ENGENHARIA</Text>
      </ImageBackground>
 
-     <Box alignItems='center'  w={'100%'} h={3150} bg={'red'}>
+     <Box alignItems='center'  w={'100%'} h={3100} bg={'red'}>
 
      <Animatable.Text animation='slideInLeft' style={{width: '90%', color: 'white', fontSize: 23, fontWeight: 'bold', justifyContent: 'center', alignItems: 'center', alignSelf: 'center' }}>
      Quais são os conceitos básicos da engenharia?
