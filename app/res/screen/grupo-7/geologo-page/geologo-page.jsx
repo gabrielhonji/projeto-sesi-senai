@@ -3,12 +3,12 @@ import { Text, Box, SafeAreaView, Image, View, StyleSheet, ImageBackground, Scro
 import { HashLink as Link} from 'react-router-hash-link'
 import styles from './Style';
 
-import Logo1 from '../../../src/img/geologia/logo1.png'
-import Logo2 from '../../../../app/src/img/geologia/logo2.png'
-import Logo3 from '../../../../app/src/img/geologia/logo3.png'
-import Logo4 from '../../../src/img/geologia/logo4.png'
-import grafico1 from '../../../src/img/geologia/tabela1.jpg'
-import grafico2 from '../../../src/img/geologia/tabela2.jpg'
+import Logo1 from '../../../../src/img/geologia/logo1.png'
+import Logo2 from '../../../../../app/src/img/geologia/logo2.png'
+import Logo3 from '../../../../../app/src/img/geologia/logo3.png'
+import Logo4 from '../../../../src/img/geologia/logo4.png'
+import grafico1 from '../../../../src/img/geologia/tabela1.jpg'
+import grafico2 from '../../../../src/img/geologia/tabela2.jpg'
 
 export default function GeologoScreen({ }) {
     return (
