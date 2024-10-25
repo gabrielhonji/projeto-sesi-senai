@@ -238,7 +238,7 @@ export default function Home({ navigation }) {
                 <View style={styles.newJobContainer}>
                     <Pressable onPress={() => navigation.navigate('DireitoScreen')}>
                         <View style={{ flexDirection: "row", gap: 25, }}>
-                            <View style={{ backgroundColor: "#F9F909", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
+                            <View style={{ backgroundColor: "#C0C0C0", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
                                 <Image alt='icon' source={Advogado} resizeMode="contain" style={{ width: 40, height: 40, }} />
                             </View>
                             <View style={{ flexDirection: "column", gap: 5, }}>
@@ -270,7 +270,7 @@ export default function Home({ navigation }) {
                                 <View style={{ flexDirection: "column", marginTop: 10, gap: 10, }}>
                                     <View style={{ flexDirection: "row", gap: 18, }}>
                                         <Image alt='icon' source={coinsIcon} style={{ width: 24, height: 24, }} />
-                                        <Text style={{ color: "#000", fontWeight: "500", }}>R$5.000 - R$8.000</Text>
+                                        <Text style={{ color: "#000", fontWeight: "500", }}>R$6.688 - R$17.311</Text>
                                     </View>
                                     <View style={{ flexDirection: "row", gap: 18, }}>
                                         <Image alt='icon' source={subjectIcon} style={{ width: 22, height: 22, }} />
