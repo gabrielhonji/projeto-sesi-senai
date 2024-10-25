@@ -19,6 +19,8 @@ import com.BV.LinearGradient.LinearGradientPackage;
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 // react-native-screens
 import com.swmansion.rnscreens.RNScreensPackage;
+// react-native-sound
+import com.zmxv.RNSound.RNSoundPackage;
 // react-native-svg
 import com.horcrux.svg.SvgPackage;
 
@@ -70,6 +72,7 @@ public class PackageList {
       new LinearGradientPackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage(),
+      new RNSoundPackage(),
       new SvgPackage()
     ));
   }
