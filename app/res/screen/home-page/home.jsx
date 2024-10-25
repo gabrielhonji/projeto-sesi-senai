@@ -22,6 +22,7 @@ import vetor1 from "../../../src/img/vector1.png";
 import vetor2 from "../../../src/img/vector2.png";
 import vetor3 from "../../../src/img/vector4.png";
 import wrenchIcon from "../../../src/img/wrenchIcon.png";
+import Geologo from '../../../src/img/geologia/geologo-icon.png'
 import Arquitetura from "../../../src/img/pedreiro/arquieteto-icon.png"
 
 const { width: screenWidth } = Dimensions.get('window');
@@ -237,7 +238,7 @@ export default function Home({ navigation }) {
                 <View style={styles.newJobContainer}>
                     <Pressable onPress={() => navigation.navigate('DireitoScreen')}>
                         <View style={{ flexDirection: "row", gap: 25, }}>
-                            <View style={{ backgroundColor: "#F9F909", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
+                            <View style={{ backgroundColor: "#C0C0C0", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
                                 <Image alt='icon' source={Advogado} resizeMode="contain" style={{ width: 40, height: 40, }} />
                             </View>
                             <View style={{ flexDirection: "column", gap: 5, }}>
@@ -251,6 +252,29 @@ export default function Home({ navigation }) {
                                     <View style={{ flexDirection: "row", gap: 18, }}>
                                         <Image alt='icon' source={subjectIcon} style={{ width: 22, height: 22, }} />
                                         <Text style={{ color: "#000", fontWeight: "500", fontSize: 18, }}>Língua Portuguesa</Text>
+                                    </View>
+                                </View>
+                            </View>
+                        </View>
+                    </Pressable>
+                </View>
+                <View style={styles.newJobContainer}>
+                    <Pressable onPress={() => navigation.navigate('GeologoScreen')}>
+                        <View style={{ flexDirection: "row", gap: 25, }}>
+                            <View style={{ backgroundColor: "#C19A6B", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
+                                <Image alt='icon' source={Geologo} resizeMode="contain" style={{ width: 40, height: 40, }} />
+                            </View>
+                            <View style={{ flexDirection: "column", gap: 5, }}>
+                                <Text>Geologo</Text>
+                                <Text style={{ color: "#000", fontSize: 20, fontWeight: "bold" }}>Geologo</Text>
+                                <View style={{ flexDirection: "column", marginTop: 10, gap: 10, }}>
+                                    <View style={{ flexDirection: "row", gap: 18, }}>
+                                        <Image alt='icon' source={coinsIcon} style={{ width: 24, height: 24, }} />
+                                        <Text style={{ color: "#000", fontWeight: "500", }}>R$6.688 - R$17.311</Text>
+                                    </View>
+                                    <View style={{ flexDirection: "row", gap: 18, }}>
+                                        <Image alt='icon' source={subjectIcon} style={{ width: 22, height: 22, }} />
+                                        <Text style={{ color: "#000", fontWeight: "500", fontSize: 18, }}>Geografia</Text>
                                     </View>
                                 </View>
                             </View>
