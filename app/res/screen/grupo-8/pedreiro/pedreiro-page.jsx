@@ -6,10 +6,10 @@ import React, { useRef, useState, useEffect, Link } from 'react';
 import { StyleSheet } from 'react-native';
 import { PieChart } from 'react-native-chart-kit'; 
 
-import colher from '../../../src/img/pedreiro/colherdepedreiro.png';
-import prumo from '../../../src/img/pedreiro/prumo.png';
-import nivel from '../../../src/img/pedreiro/nivel.png';
-import pa from '../../../src/img/pedreiro/pa.png';
+import colher from '../../../../src/img/pedreiro/colherdepedreiro.png';
+import prumo from '../../../../src/img/pedreiro/prumo.png';
+import nivel from '../../../../src/img/pedreiro/nivel.png';
+import pa from '../../../../src/img/pedreiro/pa.png';
 
 const tools = [
   { name: "Colher de Pedreiro", image: colher },
@@ -86,9 +86,9 @@ export default function PedreiroScreen() {
   const [activeIndex, setActiveIndex] = useState(0);
   
   const carImages = [
-    require('../../../src/img/pedreiro/slider1.jpg'), 
-    require('../../../src/img/pedreiro/slider2.jpg'), 
-    require('../../../src/img/pedreiro/slider3.jpg'), 
+    require('../../../../src/img/pedreiro/slider1.jpg'), 
+    require('../../../../src/img/pedreiro/slider2.jpg'), 
+    require('../../../../src/img/pedreiro/slider3.jpg'), 
   ];
 
   useEffect(() => {

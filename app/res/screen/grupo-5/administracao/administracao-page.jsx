@@ -1,7 +1,7 @@
 // Gabriel / Test
 import React from 'react';
 import { Text, Box, SafeAreaView, Image, View, ScrollView, Card} from '@gluestack-ui/themed';
-import LogoSesiBranca from '../../../src/img/sesi-senai-logo-branca.png';
+import LogoSesiBranca from '../../../../src/img/sesi-senai-logo-branca.png';
 import { StyleSheet } from 'react-native';
 
 export default function AdministracaoScreen({ }) {
@@ -12,7 +12,7 @@ export default function AdministracaoScreen({ }) {
 
       <Image
           style={styles.logoADM}
-          source={require('../../../src/img/logoADM1.png')}
+          source={require('../../../../src/img/logoADM1.png')}
           />
         <Image w={'80%'} resizeMode='contain' alt='Logo do SESI/SENAI' source={LogoSesiBranca} />
 
@@ -24,7 +24,7 @@ export default function AdministracaoScreen({ }) {
         <ScrollView style={styles.content}>
         <Image
           style={styles.admImagem}
-          source={require('../../../src/img/admImagem.jpg')}
+          source={require('../../../../src/img/admImagem.jpg')}
           />
           <View style={styles.box}>
             <Text style={styles.title}>Sobre o curso de Administração</Text>
@@ -58,7 +58,7 @@ export default function AdministracaoScreen({ }) {
           </View>
           <Image
           style={styles.tabelaSalario}
-          source={require('../../../src/img/tabelaSalarial.png')}
+          source={require('../../../../src/img/tabelaSalarial.png')}
           />
           <View style={styles.box}>
             <Text style={styles.title}>Vocabulario técnico da Administração</Text>

@@ -22,6 +22,7 @@ import vetor1 from "../../../src/img/vector1.png";
 import vetor2 from "../../../src/img/vector2.png";
 import vetor3 from "../../../src/img/vector4.png";
 import wrenchIcon from "../../../src/img/wrenchIcon.png";
+import Arquitetura from "../../../src/img/pedreiro/arquieteto-icon.png"
 
 const { width: screenWidth } = Dimensions.get('window');
 const cards = [
@@ -303,14 +304,14 @@ export default function Home({ navigation }) {
                     </Pressable>
                 </View>
                 <View style={styles.newJobContainer}>
-                    <Pressable onPress={() => navigation.navigate('PublicidadeScreen')}>
+                    <Pressable onPress={() => navigation.navigate('ArquiteturaScreen')}>
                         <View style={{ flexDirection: "row", gap: 25, }}>
-                            <View style={{ backgroundColor: "#FF8450", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
-                                <Image alt='icon' source={Construtor} resizeMode="contain" style={{ width: 40, height: 40, }} />
+                            <View style={{ backgroundColor: "#6495ED", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
+                                <Image alt='icon' source={Arquitetura} resizeMode="contain" style={{ width: 40, height: 40, }} />
                             </View>
                             <View style={{ flexDirection: "column", gap: 5, }}>
-                                <Text>Publicidade e Propaganda</Text>
-                                <Text style={{ color: "#000", fontSize: 20, fontWeight: "bold" }}>Publicidade e Propaganda</Text>
+                                <Text>Arquitetura</Text>
+                                <Text style={{ color: "#000", fontSize: 20, fontWeight: "bold" }}>Arquitetura</Text>
                                 <View style={{ flexDirection: "column", marginTop: 10, gap: 10, }}>
                                     <View style={{ flexDirection: "row", gap: 18, }}>
                                         <Image alt='icon' source={coinsIcon} style={{ width: 24, height: 24, }} />
@@ -371,10 +372,56 @@ export default function Home({ navigation }) {
                         </View>
                     </Pressable>
                 </View>
+                <View style={styles.newJobContainer}>
+                    <Pressable onPress={() => navigation.navigate('JornalistaPage')}>
+                        <View style={{ flexDirection: "row", gap: 25, }}>
+                            <View style={{ backgroundColor: "#FF8450", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
+                                <Image alt='icon' source={Construtor} resizeMode="contain" style={{ width: 40, height: 40, }} />
+                            </View>
+                            <View style={{ flexDirection: "column", gap: 5, }}>
+                                <Text>Jornalista</Text>
+                                <Text style={{ color: "#000", fontSize: 20, fontWeight: "bold" }}>Jornalista</Text>
+                                <View style={{ flexDirection: "column", marginTop: 10, gap: 10, }}>
+                                    <View style={{ flexDirection: "row", gap: 18, }}>
+                                        <Image alt='icon' source={coinsIcon} style={{ width: 24, height: 24, }} />
+                                        <Text style={{ color: "#000", fontWeight: "500", }}>R$1.500 - R$2.000</Text>
+                                    </View>
+                                    <View style={{ flexDirection: "row", gap: 18, }}>
+                                        <Image alt='icon' source={subjectIcon} style={{ width: 22, height: 22, }} />
+                                        <Text style={{ color: "#000", fontWeight: "500", fontSize: 18, }}>Matemática</Text>
+                                    </View>
+                                </View>
+                            </View>
+                        </View>
+                    </Pressable>
+                </View>
                 <Box h={'100%'} padding={'12%'} flexDirection='row' columnGap={20} rowGap={20} flexWrap='wrap'>
-                    
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('AdministracaoScreen')}>
+                    <Text>Administracao</Text>
+                    </Button>
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('AtletaScreen')}>
+                    <Text>Atleta</Text>
+                    </Button>
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('CabeleireiroScreen')}>
+                    <Text>Cabeleireiro</Text>
+                    </Button>
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('DatabaseScreen')}>
+                    <Text>Database</Text>
+                    </Button>
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('DesignScreen')}>
+                    <Text>Design</Text>
+                    </Button>
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('DireitoScreen')}>
+                    <Text>Direito</Text>
+                    </Button>
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('NutricaoScreen')}>
+                    <Text>Nutrição</Text>
+                    </Button>
                     <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('PedreiroScreen')}>
                         <Text>Pedreiro</Text>
+                    </Button>
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('GeologoScreen')}>
+                    <Text>Geólogo</Text>
                     </Button>
                 </Box>
             </ScrollView>
