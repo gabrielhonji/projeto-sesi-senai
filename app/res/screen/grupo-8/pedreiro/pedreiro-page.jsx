@@ -1,8 +1,8 @@
 import { Text, Box, SafeAreaView, HStack, Image, Pressable } from '@gluestack-ui/themed';
 import Svg, { Path } from 'react-native-svg';
-import { Dimensions, Linking, ScrollView, View } from 'react-native';
+import { Dimensions, Linking, ScrollView, View, Button } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
-import React, { useRef, useState, useEffect, Link } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { StyleSheet } from 'react-native';
 import { PieChart } from 'react-native-chart-kit'; 
 
@@ -53,7 +53,8 @@ const courses = [
   },
   {
     title: "Construtor de Alvenaria",
-    description: 'https://www.sp.senai.br/curso/construtor-de-alvenaria/87552',
+    description: "Execução de alvenarias em edificações, com ou sem função estrutural, seguindo normas técnicas e de segurança.",
+    url: 'https://www.sp.senai.br/curso/construtor-de-alvenaria/87552',
   },
   {
     title: "Desenho Técnico",
@@ -80,7 +81,7 @@ const CourseCard = ({ course }) => (
   </Pressable>
 );
 
-export default function PedreiroScreen() {
+export default function PedreiroScreen({ navigation: { goBack } }) {
   const carouselRef = useRef(null);
   const [expandedIndex, setExpandedIndex] = useState(null);
   const [activeIndex, setActiveIndex] = useState(0);

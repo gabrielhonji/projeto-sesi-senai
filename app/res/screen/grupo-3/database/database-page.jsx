@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, Image, StyleSheet, ScrollView,Button } from 'react-native';
 
 const DatabaseScreen = () => {
   const horizontalCards = [
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 10,
-    backgroundColor: 'red',
+    backgroundColor: '#f55252',
   },
   header: {
     fontSize: 24,
@@ -149,6 +149,7 @@ const styles = StyleSheet.create({
   },
   verticalTitle: {
     fontSize: 18,
+    color:'#797878',
     fontWeight: 'bold',
     marginTop: 5,
   },
