@@ -2,17 +2,17 @@ import React from 'react';
 import { Text, Box, SafeAreaView, Image, View, ScrollView, Card } from '@gluestack-ui/themed';
 import { StyleSheet } from 'react-native';
 
-export default function JornalistaPage({ navigation}) {
+export default function JornalistaPage({ navigation }) {
     return (
-        <SafeAreaView bg={'#EE3135'} h={'100%'}>
-            <Box w={'100%'} h={'25%'} justifyContent='center' alignItems='center'>
-                <Image style={styles.logoJornalista} source={require('../../../src/img/img-jornalista/header.png')} />
+        <SafeAreaView bg={'red'} h={'100%'}>
+            <Box w={'100%'} h={'12%'} justifyContent='center' alignItems='center'>
+                <Image style={styles.logoJornalista} source={require('../../../../src/img/img-jornalista/header.png')} />
             </Box>
             <View style={styles.container}>
                 <ScrollView style={styles.content}>
                     <Image
                         style={styles.jornalistaImagem}
-                        source={require('../../../src/img/img-jornalista/jornalista.jpg')}
+                        source={require('../../../../src/img/img-jornalista/jornalista.jpg')}
                     />
                     <View style={styles.box}>
                         <Text style={styles.title}>Sobre o curso de Jornalismo</Text>
@@ -39,6 +39,13 @@ export default function JornalistaPage({ navigation}) {
                             Exemplos: Assessorias de imprensa de empresas, políticos.</Text>
                     </View>
                     <View style={styles.box}>
+                        <Image
+                            style={styles.jornalistaImagem}
+                            source={require('../../../../src/img/img-jornalista/mapa-jornalismo.png')}
+                        />
+                    </View>
+
+                    <View style={styles.box}>
                         <Text style={styles.title}>Jornalismo Esportivo</Text>
                         <Text>
                             A cobertura de eventos esportivos, atletas e competições.
@@ -59,10 +66,13 @@ export default function JornalistaPage({ navigation}) {
                     <View style={styles.box2}>
                         <Text style={styles.text2}>Salário médio de um Jornalista</Text>
                     </View>
-                    <Image
-                        style={styles.tabelaSalario}
-                        source={require('../../../src/img/img-jornalista/salario.png')}
-                    />
+                    <View style={styles.box}>
+                        <Image
+                            style={styles.tabelaSalario}
+                            source={require('../../../../src/img/img-jornalista/salario.png')}
+                        />
+                    </View>
+
                     <View style={styles.box2}>
                         <Text style={styles.text2}>Relação entre a Constituição de 1988 e Jornalismo</Text>
                     </View>
@@ -136,12 +146,16 @@ const styles = StyleSheet.create({
         color: 'white',
     },
     logoJornalista: {
-        height: 100,
+        height: 80,
         width: 400,
     },
     jornalistaImagem: {
         height: 300,
-        width: 300,
+        width: 400,
+    },
+    jornalistaImagem2: {
+        height: 300,
+        width: 400,
     },
     card: {
         color: 'red',

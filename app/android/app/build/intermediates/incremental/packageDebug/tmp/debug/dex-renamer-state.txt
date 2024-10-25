@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-#Fri Oct 25 07:12:29 BRT 2024
-=======
-#Fri Oct 25 07:25:29 BRT 2024
->>>>>>> 1a7dbfe1169a14b40126e6507489a7c5baf62ee5
+#Fri Oct 25 08:12:00 BRT 2024
 path.4=3/classes.dex
 path.3=14/classes.dex
 path.2=0/classes.dex
