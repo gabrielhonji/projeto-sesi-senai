@@ -12,3 +12,6 @@
 # @rneui/themed : npm install @rneui/themed
 # moti : npm i moti --legacy-peer-deps
 ## Fix view prop types : npm i deprecated-react-native-prop-types@2.2.0
+
+## npm install react-native-sound --save
+## npm install @react-native-community/slider --save
