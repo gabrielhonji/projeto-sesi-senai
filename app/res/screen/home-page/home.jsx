@@ -26,7 +26,8 @@ import admIcon from "../../../src/img/admIcon.png";
 import JornalistaIcon from "../../../src/img/JornalistaIcon.png";
 import Geologo from '../../../src/img/geologia/geologo-icon.png'
 import Arquitetura from "../../../src/img/pedreiro/arquieteto-icon.png"
-
+import PropagandaIcon from "../../../src/img/propagandaIcons.png"
+import  DBAIcon from "../../../src/img/DbaIcon.png"
 const { width: screenWidth } = Dimensions.get('window');
 const cards = [
     {
@@ -309,8 +310,8 @@ export default function Home({ navigation }) {
                 <View style={styles.newJobContainer}>
                     <Pressable onPress={() => navigation.navigate('DatabaseScreen')}>
                         <View style={{ flexDirection: "row", gap: 25, }}>
-                            <View style={{ backgroundColor: "#FF8450", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
-                                <Image alt='icon' source={Construtor} resizeMode="contain" style={{ width: 40, height: 40, }} />
+                            <View style={{ backgroundColor: "#FFFF", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
+                                <Image alt='icon' source={DBAIcon} resizeMode="contain" style={{ width: 40, height: 40, }} />
                             </View>
                             <View style={{ flexDirection: "column", gap: 5, }}>
                                 <Text>DBA</Text>
@@ -332,8 +333,8 @@ export default function Home({ navigation }) {
                 <View style={styles.newJobContainer}>
                     <Pressable onPress={() => navigation.navigate('PublicidadeScreen')}>
                         <View style={{ flexDirection: "row", gap: 25, }}>
-                            <View style={{ backgroundColor: "#FF8450", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
-                                <Image alt='icon' source={Construtor} resizeMode="contain" style={{ width: 40, height: 40, }} />
+                            <View style={{ backgroundColor: "#4DA0DC", width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
+                                <Image alt='icon' source={PropagandaIcon} resizeMode="contain" style={{ width: 40, height: 40, }} />
                             </View>
                             <View style={{ flexDirection: "column", gap: 5, }}>
                                 <Text>Publicidade e Propaganda</Text>

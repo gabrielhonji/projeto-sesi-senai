@@ -1,25 +1,25 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, ScrollView, Button,TouchableOpacity } from 'react-native';
+import { View, Text, Image, StyleSheet, ScrollView, Button, TouchableOpacity } from 'react-native';
 import audio from '../../../../src/img/audio-removebg-preview.png';
 import ReprodutorAudio from '../publicidade/Sounds'
-const DatabaseScreen = () => {
-  const horizontalCards = [
-    {
-      title: "",
-      image: 'https://img.freepik.com/vetores-gratis/ilustracao-de-sql-de-tecnologia-abstrata_23-2149238125.jpg?ga=GA1.1.1860229980.1727432431&semt=ais_hybrid',
-      description: ""
-    },
-    {
-      title: "Habilidades",
-      image: 'https://img.freepik.com/vetores-gratis/conceito-de-inovacao-de-design-plano_23-2149163765.jpg?ga=GA1.1.1860229980.1727432431&semt=ais_hybrid',
-      description: ""
-    },
-    {
-      title: "Ferramentas usadas",
-      image: 'https://img.freepik.com/vetores-gratis/conceito-de-configuracao-do-site-para-a-pagina-de-destino_23-2148310295.jpg?ga=GA1.1.1860229980.1727432431&semt=ais_hybrid',
-      description: ""
-    },
-  ];
+const PublicidadeScreen = () => {
+  // const horizontalCards = [
+  //   {
+  //     title: "",
+  //     image: 'https://img.freepik.com/vetores-gratis/ilustracao-de-sql-de-tecnologia-abstrata_23-2149238125.jpg?ga=GA1.1.1860229980.1727432431&semt=ais_hybrid',
+  //     description: ""
+  //   },
+  //   {
+  //     title: "Habilidades",
+  //     image: 'https://img.freepik.com/vetores-gratis/conceito-de-inovacao-de-design-plano_23-2149163765.jpg?ga=GA1.1.1860229980.1727432431&semt=ais_hybrid',
+  //     description: ""
+  //   },
+  //   {
+  //     title: "Ferramentas usadas",
+  //     image: 'https://img.freepik.com/vetores-gratis/conceito-de-configuracao-do-site-para-a-pagina-de-destino_23-2148310295.jpg?ga=GA1.1.1860229980.1727432431&semt=ais_hybrid',
+  //     description: ""
+  //   },
+  // ];
 
   const verticalCards = [
     {
@@ -90,9 +90,10 @@ const DatabaseScreen = () => {
 
   return (
     <View style={styles.container}>
+    
       <Text style={styles.header}>Publicidade e Propaganda</Text>
-      
-      <ScrollView
+
+      {/* <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
         style={styles.horizontalScroll}
@@ -104,16 +105,16 @@ const DatabaseScreen = () => {
             <Text style={styles.description}>{card.description}</Text>
           </View>
         ))}
-      </ScrollView>
-      <View style={{backgroundColor:'#ffff',borderRadius:20}}>
-        <Text style={{color:'black',alignItems:"center",marginLeft:110,fontSize:18}}>Ouça nosso PodCast</Text>
-      <Image
-        source={audio}
-        style={{alignItems:'center',marginLeft:20,width:350,height:50,marginTop:10}}
-      />
-      <ReprodutorAudio />
+      </ScrollView> */}
+      <View style={{ backgroundColor: '#ffff', borderRadius: 20 }}>
+        <Text style={{ color: 'black', alignItems: "center", marginLeft: 110, fontSize: 18 }}>Ouça nosso PodCast</Text>
+        <Image
+          source={audio}
+          style={{ alignItems: 'center', marginLeft: 20, width: 350, height: 50, marginTop: 10 }}
+        />
+        <ReprodutorAudio />
       </View>
-      
+
       <ScrollView
         showsVerticalScrollIndicator={false}
         style={styles.verticalScroll}
@@ -131,11 +132,8 @@ const DatabaseScreen = () => {
 
           </View>
         ))}
-        <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Editorial</Text>
-        </TouchableOpacity>
-
       </ScrollView>
+      
     </View>
   );
 };
@@ -144,14 +142,14 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 10,
-    backgroundColor: '#f55252',
+    backgroundColor: '#e84646',
   },
   button: {
     backgroundColor: 'white',
     paddingVertical: 15,
     paddingHorizontal: 30,
     borderRadius: 10,
-    marginTop:20
+    marginTop: 20
   },
   buttonText: {
     color: 'red',
@@ -243,4 +241,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default DatabaseScreen;
+export default PublicidadeScreen;
