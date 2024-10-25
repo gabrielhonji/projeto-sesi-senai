@@ -17,8 +17,10 @@ import DireitoScreen from '../direito-page/direito-page';
 import Home from "../home-page/home";
 import NutricaoScreen from '../nutricao-page/nutricao-page';
 import PedreiroScreen from '../pedreiro-page/pedreiro-page';
+import ArquiteturaScreen from '../arquitetura-page/arquitetura-page';
 // import CabeleireiroScreen from "../cabeleireiro-page/Principal"; PROBLEMA NA BIBLIOTECA RNEUI
 import OnBoarding from './onboarding';
+
 
 export default function StartNavigator() {
     return (
@@ -34,6 +36,7 @@ export default function StartNavigator() {
                 <Stack.Screen name="DireitoScreen" component={DireitoScreen} />
                 <Stack.Screen name="NutricaoScreen" component={NutricaoScreen} />
                 <Stack.Screen name="PedreiroScreen" component={PedreiroScreen} />
+                <Stack.Screen name="ArquiteturaScreen" component={ArquiteturaScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );
