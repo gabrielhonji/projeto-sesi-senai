@@ -10,7 +10,7 @@ import Logo4 from '../../../../src/img/geologia/logo4.png'
 import grafico1 from '../../../../src/img/geologia/tabela1.jpg'
 import grafico2 from '../../../../src/img/geologia/tabela2.jpg'
 
-export default function GeologoScreen({ }) {
+export default function GeologoScreen({}) {
     return (
     <View style={styles.container}>
       <SafeAreaView>

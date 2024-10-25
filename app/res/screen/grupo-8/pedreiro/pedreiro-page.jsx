@@ -233,7 +233,8 @@ export default function PedreiroScreen() {
 
           <Box name='Mercado de trabalho' alignItems='left' justifyContent='center' >
           <Text p={15} color='#fff' >
-             Mecânica: Ao usar alavancas para mover objetos pesados ou garantir o equilíbrio de uma parede, o pedreiro está aplicando princípios da mecânica.
+             Mecânica: Ao usar alavancas para mover objetos pesados ou garantir o equilíbrio de uma parede, 
+             o pedreiro está aplicando princípios da mecânica.
             </Text>
             <Text p={15} color='#fff'>
               Hidráulica: O uso de bombas d'água nas construções é um exemplo claro da aplicação da hidráulica.
@@ -289,7 +290,10 @@ export default function PedreiroScreen() {
             <Text color='white' fontWeight='bold' fontSize={30}>Relação na Química</Text>
 
             <Text color='white' fontSize={16} p={10}>
-            A profissão de pedreiro envolve a aplicação de princípios químicos para garantir a qualidade e durabilidade das estruturas. A interação química entre cimento, água e agregados é essencial para a resistência. A escolha correta de materiais como argamassa, tintas e revestimentos é crucial, assim como a adição de aditivos para melhorar as propriedades do concreto e argamassa.
+            A profissão de pedreiro envolve a aplicação de princípios químicos para garantir a qualidade e 
+            durabilidade das estruturas. A interação química entre cimento, água e agregados é essencial para a 
+            resistência. A escolha correta de materiais como argamassa, tintas e revestimentos é crucial, assim 
+            como a adição de aditivos para melhorar as propriedades do concreto e argamassa.
             </Text>
             
             
