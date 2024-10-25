@@ -1,10 +1,10 @@
 // Gabriel / Test
 import { Box, Heading, Image, SafeAreaView, ScrollView, Text } from '@gluestack-ui/themed';
-import designerGrafico from '../../../src/img/design/desginer-grafico.jpg';
-import designerInterior from '../../../src/img/design/desginer-interior.jpg';
-import designerModa from '../../../src/img/design/desginer-moda.jpg';
-import designerProduto from '../../../src/img/design/desginer-produto.jpg';
-import designerWeb from '../../../src/img/design/desginer-web.jpg';
+import designerGrafico from '../../../../src/img/design/desginer-grafico.jpg';
+import designerInterior from '../../../../src/img/design/desginer-interior.jpg';
+import designerModa from '../../../../src/img/design/desginer-moda.jpg';
+import designerProduto from '../../../../src/img/design/desginer-produto.jpg';
+import designerWeb from '../../../../src/img/design/desginer-web.jpg';
 
 export default function DesignScreen({ }) {
   return (

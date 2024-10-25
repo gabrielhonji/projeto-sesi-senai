@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet, ScrollView } from 'react-native';
 
-const DBAPage = () => {
+const DatabaseScreen = () => {
   const horizontalCards = [
     {
       title: "",
@@ -182,4 +182,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default DBAPage;
+export default DatabaseScreen;
