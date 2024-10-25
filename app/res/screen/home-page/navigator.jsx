@@ -18,11 +18,11 @@ import Home from './home';
 import NutricaoScreen from '../grupo-2/nutricao/nutricao-page';
 import PedreiroScreen from '../grupo-8/pedreiro/pedreiro-page';
 import PublicidadeScreen from '../grupo-3/publicidade/publicidade-page';
+import JornalistaPage from '../grupo-5/jornalista-page/jornalista-page';
 // import CabeleireiroScreen from "../cabeleireiro-page/Principal"; PROBLEMA NA BIBLIOTECA RNEUI
 import OnBoarding from './onboarding';
 import GeologoScreen from '../grupo-7/geologo-page/geologo-page';
 import DatabaseScreen from '../grupo-3/database/database-page';
-import JornalistaPage from '../jornalista-page/jornalista-page';
 import EngenhariaScreen from '../grupo-2/nutricao/engenharia-page';
 import ArquiteturaScreen from '../grupo-8/arquitetura-page/arquitetura-page';
 
