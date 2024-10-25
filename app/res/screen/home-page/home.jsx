@@ -395,9 +395,32 @@ export default function Home({ navigation }) {
                     </Pressable>
                 </View>
                 <Box h={'100%'} padding={'12%'} flexDirection='row' columnGap={20} rowGap={20} flexWrap='wrap'>
-                    
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('AdministracaoScreen')}>
+                    <Text>Administracao</Text>
+                    </Button>
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('AtletaScreen')}>
+                    <Text>Atleta</Text>
+                    </Button>
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('CabeleireiroScreen')}>
+                    <Text>Cabeleireiro</Text>
+                    </Button>
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('DatabaseScreen')}>
+                    <Text>Database</Text>
+                    </Button>
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('DesignScreen')}>
+                    <Text>Design</Text>
+                    </Button>
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('DireitoScreen')}>
+                    <Text>Direito</Text>
+                    </Button>
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('NutricaoScreen')}>
+                    <Text>Nutrição</Text>
+                    </Button>
                     <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('PedreiroScreen')}>
                         <Text>Pedreiro</Text>
+                    </Button>
+                    <Button alignItems='center' justifyContent='center' bg='$amber300' w={'46%'} h={100} onPress={() => navigation.navigate('GeologoScreen')}>
+                    <Text>Geólogo</Text>
                     </Button>
                 </Box>
             </ScrollView>
