@@ -1,13 +1,13 @@
 // Gabriel / Test
 import { Text, Box, SafeAreaView, Image, View, StyleSheet, ImageBackground, ScrollView, FlatList } from '@gluestack-ui/themed';
 import styles from './Style';
-import LogoSesiBranca from '../../../src/img/sesi-senai-logo-branca.png';
-import imagemFundo from '../../../src/img/iconeadvogado.png'
-import iconeFundo from '../../../src/img/direito/graficodireito.png'
-import tabelaFundo2 from '../../../src/img/tabela2advogado.png'
-import balanca2 from '../../../../app/src/img/direito/balanca2.png'
-import podcast from '../../../../app/src/img/direito/favourite.png'
-import book from '../../../../app/src/img/direito/book.png'
+import LogoSesiBranca from '../../../../src/img/sesi-senai-logo-branca.png';
+import imagemFundo from '../../../../src/img/iconeadvogado.png'
+import iconeFundo from '../../../../src/img/direito/graficodireito.png'
+import tabelaFundo2 from '../../../../src/img/tabela2advogado.png'
+import balanca2 from '../../../../../app/src/img/direito/balanca2.png'
+import podcast from '../../../../../app/src/img/direito/favourite.png'
+import book from '../../../../app/../src/img/direito/book.png'
 
 
 
