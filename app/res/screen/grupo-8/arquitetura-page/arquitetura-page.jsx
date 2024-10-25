@@ -5,12 +5,12 @@ import Carousel from 'react-native-snap-carousel';
 import React, { useRef, useState, useEffect } from 'react';
 import { StyleSheet } from 'react-native';
 
-import autocad from'../../../src/img/pedreiro/autocaad.jpg';
-import archicad from'../../../src/img/pedreiro/archicad.jpg';
-import revit from'../../../src/img/pedreiro/revit.jpg';
-import sketchUp from'../../../src/img/pedreiro/sketchup.jpg';
-import graduacao from'../../../src/img/pedreiro/graduacao.jpg';
-import cau from'../../../src/img/pedreiro/cau.jpg';
+import autocad from'../../../../src/img/pedreiro/autocaad.jpg';
+import archicad from'../../../../src/img/pedreiro/archicad.jpg';
+import revit from'../../../../src/img/pedreiro/revit.jpg';
+import sketchUp from'../../../../src/img/pedreiro/sketchup.jpg';
+import graduacao from'../../../../src/img/pedreiro/graduacao.jpg';
+import cau from'../../../../src/img/pedreiro/cau.jpg';
 
 const safetyTips = [
   "Projetos residenciais: Casas, apartamentos, condomínios.",
@@ -87,9 +87,9 @@ export default function ArquiteturaScreen() {
   const [activeIndex, setActiveIndex] = useState(0);
  
   const carImages = [
-    require('../../../src/img/pedreiro/arquitetura1.jpg'),
-    require('../../../src/img/pedreiro/arquitetura2.jpg'),
-    require('../../../src/img/pedreiro/arquitetura3.jpg'),
+    require('../../../../src/img/pedreiro/arquitetura1.jpg'),
+    require('../../../../src/img/pedreiro/arquitetura2.jpg'),
+    require('../../../../src/img/pedreiro/arquitetura3.jpg'),
   ];
 
   useEffect(() => {
@@ -204,7 +204,7 @@ export default function ArquiteturaScreen() {
             fundamental para a pesquisa e o desenvolvimento de novas tecnologias e
             materiais.
           </Text>
-          <Image source={require('../../../src/img/pedreiro/Piso-Salarial-Arquiteto.png')} w={'100%'} h={460}/>
+          <Image source={require('../../../../src/img/pedreiro/Piso-Salarial-Arquiteto.png')} w={'100%'} h={460}/>
       </ScrollView>
     </SafeAreaView>
   );
