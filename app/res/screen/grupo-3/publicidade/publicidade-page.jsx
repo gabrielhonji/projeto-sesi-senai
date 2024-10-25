@@ -1,7 +1,8 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, ScrollView } from 'react-native';
-
-const PublicidadeScreen = () => {
+import { View, Text, Image, StyleSheet, ScrollView, Button,TouchableOpacity } from 'react-native';
+import audio from '../../../../src/img/audio-removebg-preview.png';
+import ReprodutorAudio from '../publicidade/Sounds'
+const DatabaseScreen = () => {
   const horizontalCards = [
     {
       title: "",
@@ -22,48 +23,78 @@ const PublicidadeScreen = () => {
 
   const verticalCards = [
     {
-      title: "O que é um DBA?",
-      image: 'https://img.freepik.com/vetores-gratis/ilustracao-de-intranet-gradiente_23-2149368727.jpg?ga=GA1.1.1860229980.1727432431&semt=ais_hybrid',
+      title: "O que é Publicidade e Propaganda?",
+      image: 'https://img.freepik.com/vetores-premium/duas-pessoas-de-pe-uma-ao-lado-da-outra_961875-519737.jpg?ga=GA1.1.187520066.1729855074&semt=ais_hybrid',
       description: [
-        "O administrador de banco de dados é aquele que desenvolve, realiza as manutenções e monitora o banco de dados de uma organização. Além disso, esse profissional conduz a instalação, reparos e analisa a estrutura do sistema.",
+        "Publicidade e Propaganda é a área que se dedica a criar e disseminar mensagens persuasivas para promover produtos, serviços, ideias ou marcas. O profissional dessa área, o publicitário, utiliza diversas ferramentas e técnicas de comunicação para conectar marcas aos seus públicos-alvo, gerando interesse e desejo de consumo.",
       ]
     },
     {
-      title: "Como é o mercado de trabalho?",
+      title: "O que um publicitário faz:",
       image: 'https://img.freepik.com/vetores-gratis/ilustracao-de-sql-de-design-plano-desenhado-a-mao_23-2149262964.jpg?ga=GA1.1.1860229980.1727432431&semt=ais_hybrid',
       description: [
-        "Por conta do avanço da tecnologia e da necessidade de programas de sistemas de banco de dados, como o MySQL, o mercado está ampliado.",
-        "A oferta é alta.",
+        "• Cria: Desenvolvem ideias originais para campanhas (slogans, visuais, etc.).",
+        "• Planeja: Estratégias de comunicação, análise de mercado e escolha dos canais.",
+        "• Atende: Clientes, compreendendo suas necessidades e apresentando soluções.",
+        "• Gerencia mídia: Negocia espaços publicitários em diversos veículos.",
+        "• Pesquisa: Entende o comportamento do consumidor e avalia a eficácia das campanhas.",
+        "•Marketing digital: Cria e gerencia campanhas em mídias digitais (redes sociais, etc.).",
       ]
     },
     {
-      title: "Habilidades Necessárias:",
-      image: 'https://img.freepik.com/vetores-premium/homens-com-o-conceito-de-organizacao-do-projeto-organizacao-do-processo-eficaz-no-escritorio-trabalho-em-equipe-e-parceria-colaboracao-e-cooperacao-pessoas-com-quebra-cabecas-ilustracao-vetorial-plana-dos-desenhos-animados_118813-15909.jpg?ga=GA1.1.1860229980.1727432431&semt=ais_hybrid',
+      title: "Habilidades essenciais:",
+      image: 'https://img.freepik.com/vetores-gratis/pessoas-minusculas-gerente-de-marketing-com-megafone-e-publicidade-push-publicidade-push-estrategia-de-marketing-tradicional-ilustracao-do-conceito-de-marketing-de-interrupcao_335657-2571.jpg?ga=GA1.1.187520066.1729855074&semt=ais_hybrid',
       description: [
-        "• Conhecimento Técnico",
-        "• Linguagens de Programação",
-        "• Habilidades de Resolução de Problemas",
-        "• Segurança e Backup",
-        "• Comunicação",
+        "• Criatividade: Para gerar ideias inovadoras.",
+        "• Comunicação: Para se expressar de forma clara e persuasiva.",
+        "• Trabalho em equipe: Para trabalhar em conjunto com outros profissionais.",
+        "• Adaptabilidade: Para se adaptar às constantes mudanças do mercado.",
+        "•Curiosidade: Para conhecer as últimas tendências do mercado.",
       ]
     },
     {
-      title: "Matérias relacionadas com dba:",
+      title: "Áreas de atuação::",
       image: 'https://img.freepik.com/vetores-premium/uma-ilustracao-colorida-mostrando-varios-simbolos-de-sucesso-e-realizacao-incluindo-um-bone-de-formatura-um-trofeu-livros-uma-lampada-um-globo-e-um-smartphone_520881-8071.jpg?ga=GA1.1.1860229980.1727432431&semt=ais_hybrid',
       description: [
-        "• Matemática",
-        "• Inglês",
+        "• Agências de publicidade: Desenvolvem campanhas completas.",
+        "• Marketing: Trabalham em empresas, desenvolvendo estratégias de marketing.",
+        "• Mídia: Gerenciam mídias sociais e criam conteúdo..",
+        "• Produção audiovisual: Criam vídeos publicitários e filmes institucionais.",
+        "• Design: Criam identidades visuais, logos, etc.",
+      ]
+    },
+    {
+      title: "Matériais relacionados com Publicidade e Propaganda",
+      image: 'https://img.freepik.com/vetores-premium/ilustracao-de-marketing-digital-e-engajamento-em-midias-sociais_9975-87362.jpg?ga=GA1.1.187520066.1729855074&semt=ais_hybrid',
+      description: [
+        "• Ciências Humanas: Psicologia, Sociologia, Antropologia, Semiótica e Linguística",
+        "• Ciências Exatas: Estatística e Matemática",
+        "• Artes: Design, Direção de Arte, Fotografia e Audiovisual",
+        "• Ciências da Comunicação: Jornalismo e Relações Públicas",
+        "• Língua portuguesa: A língua portuguesa é a ferramenta central da publicidade e da propaganda.",
       ]
     },
   ];
 
+  const verticalCardsButton = [
+    {
+      title: "O que é Publicidade e Propaganda?",
+      image: 'https://img.freepik.com/vetores-premium/duas-pessoas-de-pe-uma-ao-lado-da-outra_961875-519737.jpg?ga=GA1.1.187520066.1729855074&semt=ais_hybrid',
+      description: [
+        "Publicidade e Propaganda é a área que se dedica a criar e disseminar mensagens persuasivas para promover produtos, serviços, ideias ou marcas. O profissional dessa área, o publicitário, utiliza diversas ferramentas e técnicas de comunicação para conectar marcas aos seus públicos-alvo, gerando interesse e desejo de consumo.",
+      ]
+    },
+
+
+  ];
+
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Publicidade</Text>
-
-      <ScrollView 
+      <Text style={styles.header}>Publicidade e Propaganda</Text>
+      
+      <ScrollView
         horizontal
-        showsHorizontalScrollIndicator={false} 
+        showsHorizontalScrollIndicator={false}
         style={styles.horizontalScroll}
       >
         {horizontalCards.map((card, index) => (
@@ -74,9 +105,17 @@ const PublicidadeScreen = () => {
           </View>
         ))}
       </ScrollView>
-
-      <ScrollView 
-        showsVerticalScrollIndicator={false} 
+      <View style={{backgroundColor:'#ffff',borderRadius:20}}>
+        <Text style={{color:'black',alignItems:"center",marginLeft:110,fontSize:18}}>Ouça nosso PodCast</Text>
+      <Image
+        source={audio}
+        style={{alignItems:'center',marginLeft:20,width:350,height:50,marginTop:10}}
+      />
+      <ReprodutorAudio />
+      </View>
+      
+      <ScrollView
+        showsVerticalScrollIndicator={false}
         style={styles.verticalScroll}
       >
         {verticalCards.map((card, index) => (
@@ -87,9 +126,15 @@ const PublicidadeScreen = () => {
               {card.description.map((item, idx) => (
                 <Text key={idx} style={styles.bulletPoint}>{item}</Text>
               ))}
+
             </View>
+
           </View>
         ))}
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttonText}>Editorial</Text>
+        </TouchableOpacity>
+
       </ScrollView>
     </View>
   );
@@ -99,7 +144,20 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 10,
-    backgroundColor: 'red',
+    backgroundColor: '#f55252',
+  },
+  button: {
+    backgroundColor: 'white',
+    paddingVertical: 15,
+    paddingHorizontal: 30,
+    borderRadius: 10,
+    marginTop:20
+  },
+  buttonText: {
+    color: 'red',
+    fontSize: 16,
+    fontWeight: 'bold',
+    textAlign: 'center',
   },
   header: {
     fontSize: 24,
@@ -149,11 +207,14 @@ const styles = StyleSheet.create({
   },
   verticalTitle: {
     fontSize: 18,
+    color: '#797878',
     fontWeight: 'bold',
     marginTop: 5,
   },
   verticalDescription: {
     marginTop: 10,
+    gap: 8,
+
   },
   bulletPoint: {
     fontSize: 14,
@@ -163,7 +224,7 @@ const styles = StyleSheet.create({
     paddingLeft: 15,
   },
   bulletPoint: {
-    fontSize: 14,
+    fontSize: 16,
     color: '#333',
     marginLeft: 10,
     paddingLeft: 15,
@@ -182,4 +243,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default PublicidadeScreen;
+export default DatabaseScreen;
