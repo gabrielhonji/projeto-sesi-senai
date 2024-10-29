@@ -18,6 +18,7 @@ import Home from './home';
 import NutricaoScreen from '../grupo-2/nutricao/nutricao-page';
 import PedreiroScreen from '../grupo-8/pedreiro/pedreiro-page';
 import PublicidadeScreen from '../grupo-3/publicidade/publicidade-page';
+import Comissario from '../grupo-4/comissario/comissário';
 import JornalistaPage from '../grupo-5/jornalista-page/jornalista-page';
 // import CabeleireiroScreen from "../cabeleireiro-page/Principal"; PROBLEMA NA BIBLIOTECA RNEUI
 import OnBoarding from './onboarding';
@@ -43,6 +44,7 @@ export default function StartNavigator() {
                 <Stack.Screen name="GeologoScreen" component={GeologoScreen} />
                 <Stack.Screen name="JornalistaPage" component={JornalistaPage} />
                 <Stack.Screen name="PublicidadeScreen" component={PublicidadeScreen} />
+                <Stack.Screen name="ComissarioScreen" component={Comissario} />
                 <Stack.Screen name="EngenhariaScreen" component={EngenhariaScreen} />
                 <Stack.Screen name="ArquiteturaScreen" component={ArquiteturaScreen} />
             </Stack.Navigator>
