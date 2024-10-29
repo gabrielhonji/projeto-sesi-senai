@@ -1,6 +1,6 @@
 import { Text, Box, SafeAreaView, Image, VStack, HStack, Button } from '@gluestack-ui/themed';
-import cardimage from '../../../src/img/design/cardimage.jpg';
-import miniLogo from '../../../src/img/design/card2.jpg'; // Import da mini logo
+import cardimage from '../../../../src/img/design/cardimage.jpg';
+import miniLogo from '../../../../src/img/design/card2.jpg'; // Import da mini logo
 
 export default function CiclismoScreen() {
   return (

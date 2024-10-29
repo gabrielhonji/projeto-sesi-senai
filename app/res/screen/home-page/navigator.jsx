@@ -26,6 +26,7 @@ import GeologoScreen from '../grupo-7/geologo-page/geologo-page';
 import DatabaseScreen from '../grupo-3/database/database-page';
 import EngenhariaScreen from '../grupo-2/nutricao/engenharia-page';
 import ArquiteturaScreen from '../grupo-8/arquitetura-page/arquitetura-page';
+import CiclismoScreen from '../grupo-1/atleta-page/Ciclismo';
 
 export default function StartNavigator() {
     return (
@@ -36,6 +37,7 @@ export default function StartNavigator() {
                 {/* Jobs */}
                 <Stack.Screen name="AdministracaoScreen" component={AdministracaoScreen} />
                 <Stack.Screen name="AtletaScreen" component={AtletaScreen} />
+                <Stack.Screen name="CiclismoScreen" component={CiclismoScreen} />
                 <Stack.Screen name="DatabaseScreen" component={DatabaseScreen} />
                 <Stack.Screen name="DesignScreen" component={DesignScreen} />
                 <Stack.Screen name="DireitoScreen" component={DireitoScreen} />
