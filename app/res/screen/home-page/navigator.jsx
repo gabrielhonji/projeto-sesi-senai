@@ -38,6 +38,7 @@ import BIOScreen from './subjects/bio';
 import INGScreen from './subjects/ing';
 import FISScreen from './subjects/fis';
 import QUIScreen from './subjects/qui';
+import EconomistaScreen from '../grupo-1/economista';
 
 
 
@@ -62,7 +63,7 @@ export default function StartNavigator() {
                 <Stack.Screen name="DireitoScreen" component={DireitoScreen} />
                 <Stack.Screen name="PedreiroScreen" component={PedreiroScreen} />
                 {/* Second Jobs */}
-                {/* <Stack.Screen name="EconomistaScreen" component={EconomistaScreen} /> */}
+                <Stack.Screen name="EconomistaScreen" component={EconomistaScreen} />
                 <Stack.Screen name="EngenhariaScreen" component={EngenhariaScreen} />
                 <Stack.Screen name="PublicidadeScreen" component={PublicidadeScreen} />
                 <Stack.Screen name="ComissarioScreen" component={Comissario} />

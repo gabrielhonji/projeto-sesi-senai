@@ -8,6 +8,7 @@ import AvaialableJobs from './res/screen/home-page/availableJobs';
 
 import LinearGradient from "react-native-linear-gradient";
 import { LogBox, StatusBar } from 'react-native';
+import EconomistaScreen from './res/screen/grupo-1/economista';
 
 
 // Ignore log notification by message

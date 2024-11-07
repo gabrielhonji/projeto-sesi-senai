@@ -8,19 +8,19 @@ const slides = [
     {
         id: 1,
         title: 'Bem vindo ao EduLink',
-        description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.',
+        description: 'Bem vindo ao primeiro aplicativo vocacional de empregos',
         image: require("../../../src/img/onboarding1.jpg")
     },
     {
         id: 2,
         title: 'Dificuldade em escolher seu trabalho',
-        description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.',
+        description: 'Muitas pessoas encontram dificuldades para escolher seu futuro trabalho ou faculdade. Mas aqui a gente te ajuda',
         image: require("../../../src/img/onboarding2.jpg")
     },
     {
         id: 3,
         title: 'Aqui a gente te ajuda',
-        description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.',
+        description: 'A partir dos seus gostos e interesses te ajudamos a encontrar um trabalho que se encaixe com você',
         image: require("../../../src/img/onboarding3.jpg")
     }
 ]

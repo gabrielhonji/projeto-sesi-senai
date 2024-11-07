@@ -1,11 +1,11 @@
 //Vitor animation test
 import { Box, Button, ButtonText, Image, Input, InputField, InputIcon, InputSlot, Pressable, SafeAreaView, SearchIcon, Text, View } from "@gluestack-ui/themed";
 import React, { useState, useEffect } from "react";
-import { Dimensions, ScrollView, StyleSheet, TouchableOpacity } from "react-native";
+import { Dimensions, ScrollView, StyleSheet, TouchableOpacity, FlatList } from "react-native";
 import LinearGradient from "react-native-linear-gradient";
 import Carousel from 'react-native-snap-carousel';
 import { MotiView } from "moti";
-
+import { DATA } from "./data";
 import { LogBox } from 'react-native';
 // Ignore log notification by message
 LogBox.ignoreLogs(['Warning: ...']);
@@ -20,7 +20,7 @@ import Nutricao from "../../../src/img/nutricao.png";
 import vetor1 from "../../../src/img/vector1.png";
 import vetor2 from "../../../src/img/vector2.png";
 import vetor3 from "../../../src/img/vector4.png";
-
+import subjectIcon from "../../../src/img/subjectIcon.png";
 //Import Components
 import JobCard from "../../components/JobCard";
 
@@ -28,29 +28,29 @@ const { width: screenWidth } = Dimensions.get('window');
 const cards = [
     {
         id: 1,
-        image: require("../../../src/img/atleta.png"),
+        image: require("../../../src/img/profissoes/atleta.png"),
         title: "Atleta",
-        area: "Saúde",
-        minSal: "1.000",
-        maxSal: "1B",
-        backgroundColor: "#40189D",
+        area: "Esportes",
+        minSal: "800",
+        maxSal: "3.5 M",
+        backgroundColor: "#ee2d32",
         screen: "AtletaScreen",
     },
     {
         id: 2,
-        image: require("../../../src/img/dev.png"),
+        image: require("../../../src/img/profissoes/administracao.png"),
         title: "Administração",
-        area: "Administração",
+        area: "Administração e Ges...",
         minSal: "3.000",
         maxSal: "4.000",
-        backgroundColor: "#EEE62D",
+        backgroundColor: "#032cfc",
         screen: "AdministracaoScreen",
     },
     {
         id: 3,
-        image: require("../../../src/img/construtor.png"),
+        image: require("../../../src/img/profissoes/engenharia.png"),
         title: "Engenheiro",
-        area: "Engenharia",
+        area: "Engenharia e Tec...",
         minSal: "2.000",
         maxSal: "3.000",
         backgroundColor: "#FF8450",
@@ -109,6 +109,59 @@ export default function Home({ navigation }) {
             />
         );
     };
+    const ListItem = ({ data }) => {
+        return (
+            <Pressable onPress={() => navigation.navigate(data.screen)}>
+                <View style={styles.newJobContainer}>
+                    <View style={{ flexDirection: "row", gap: 25, }}>
+                        <View style={{ backgroundColor: data.backgroundColor, width: 55, height: 55, borderRadius: 10, justifyContent: "center", alignItems: "center", }}>
+                            <Image alt='icon' source={data.image} resizeMode="contain" style={{ width: 40, height: 40, }} />
+                        </View>
+                        <View style={{ flexDirection: "column", gap: 5, }}>
+                            <Text>{data.area}</Text>
+                            <Text style={{ color: "#000", fontSize: 20, fontWeight: "bold" }}>{data.name}</Text>
+                            <View style={{ flexDirection: "column", marginTop: 10, gap: 10, }}>
+                                <View style={{ flexDirection: "row", gap: 18, }}>
+                                    <Image alt='icon' source={coinsIcon} style={{ width: 24, height: 24, }} />
+                                    <Text style={{ color: "#000", fontWeight: "500", }}>R${data.minSal} - R${data.maxSal}</Text>
+                                </View>
+                                <View style={{ flexDirection: "row", gap: 18, }}>
+                                    <Image alt='icon' source={subjectIcon} style={{ width: 22, height: 22, }} />
+                                    <Text style={{ color: "#000", fontWeight: "500", fontSize: 18, }}>{data.subject}</Text>
+                                </View>
+                            </View>
+                        </View>
+                    </View>
+                </View>
+            </Pressable>
+        )
+    }
+
+    const [searchText, setSearchText] = useState('');
+    const [list, setList] = useState(DATA);
+
+    useEffect(() => {
+        if (searchText === '') {
+            setList(DATA);
+        } else {
+            setList(
+                DATA.filter(
+                    (item) =>
+                        item.name.toLowerCase().indexOf(searchText.toLowerCase()) > -1 ||
+                        item.subject.toLowerCase().indexOf(searchText.toLowerCase()) > -1
+                )
+            );
+        }
+    }, [searchText]);
+
+    const handleOrderClick = () => {
+        let newList = [...DATA];
+
+        newList.sort((a, b) => (a.name > b.name ? 1 : b.name > a.name ? -1 : 0)) ||
+        newList.sort((a, b) => (a.subject > b.subject ? 1 : b.subject > a.subject ? -1 : 0));
+        
+        setList(newList);
+    };
 
     return (
         <SafeAreaView style={styles.main}>
@@ -144,7 +197,9 @@ export default function Home({ navigation }) {
                                 <InputSlot pl="$3">
                                     <InputIcon as={SearchIcon} size="xl" />
                                 </InputSlot>
-                                <InputField placeholder="Procure trabalhos aqui ..." placeholderTextColor='#585858' />
+                                <InputField placeholder="Procure trabalhos aqui ..." placeholderTextColor='#585858' value={searchText}
+                                    onChangeText={(t) => setSearchText(t)} />
+
                             </Input>
                         </MotiView>
                     </LinearGradient>
@@ -178,7 +233,7 @@ export default function Home({ navigation }) {
                         from={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 2300 }}>
-                        <Text style={{ color: "#3d3d3d", fontSize: 18, fontWeight: "600" }}>Categorias</Text>
+                        <Text style={{ color: "#3d3d3d", fontSize: 18, fontWeight: "600" }}>Matérias</Text>
                     </MotiView>
                     <MotiView style={styles.cardContainer}
                         from={{ translateY: 200 }}
@@ -263,22 +318,11 @@ export default function Home({ navigation }) {
                         </Button>
                     </MotiView>
                 </View>
-                <JobCard subject={"Biologia"} minSal={1000} maxSal={2001} jobName={"Nutrição"} jobArea={"Saúde"} jobImage={Nutricao} onPress={() => navigation.navigate("NutricaoScreen")} bgColor={"#61ff78"} />
-                <JobCard subject={"Lingua Portuguesa"} minSal={1000} maxSal={2000} jobName={"Advogado"} jobArea={"Direito"} jobImage={Advogado} onPress={() => navigation.navigate("DireitoScreen")} bgColor={"#f9f909"} />
-                <JobCard subject={"Matemática"} minSal={1000} maxSal={2000} jobName={"Engenheiro"} jobArea={"Construção"} jobImage={Construtor} onPress={() => navigation.navigate("EngenhariaScreen")} bgColor={"#FF8450"} />
-                <JobCard subject={"Matemática"} minSal={1000} maxSal={2000} jobName={"DBA"} jobArea={"Tecnologia"} jobImage={Nutricao} onPress={() => navigation.navigate("DatabaseScreen")} bgColor={"#"} />
-                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Publicidade e Propaganda"} jobArea={"Marketing"} jobImage={Nutricao} onPress={() => navigation.navigate("PublicidadeScreen")} bgColor={"#"} />
-                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Design"} jobArea={"Marketing"} jobImage={Nutricao} onPress={() => navigation.navigate("DesignScreen")} bgColor={"#"} />
-                <JobCard subject={"Matemática"} minSal={1000} maxSal={2000} jobName={"Pedreiro"} jobArea={"Construção"} jobImage={Nutricao} onPress={() => navigation.navigate("PedreiroScreen")} bgColor={"#"} />
-                <JobCard subject={"Lingua Portuguesa"} minSal={1000} maxSal={2000} jobName={"Jornalista"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("JornalistaPage")} bgColor={"#"} />
-                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Administracao"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("AdministracaoScreen")} bgColor={"#"} />
-                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Atleta"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("AtletaScreen")} bgColor={"#"} />
-                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Cabeleireiro"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("CabeleireiroScreen")} bgColor={"#"} />
-                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Geologo"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("GeologoScreen")} bgColor={"#"} />
-                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Comissário"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("ComissarioScreen")} bgColor={"#"} />
-                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Economista"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("NutricaoScreen")} bgColor={"#"} />
-                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Arquiteto"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("ArquiteturaScreen")} bgColor={"#"} />
-                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Medicina"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("MedicinaScreen")} bgColor={"#"} />
+                <FlatList
+                    data={list}
+                    renderItem={({ item }) => <ListItem data={item} />}
+                    keyExtractor={(item) => item.id}
+                />
             </ScrollView>
         </SafeAreaView >
     )
