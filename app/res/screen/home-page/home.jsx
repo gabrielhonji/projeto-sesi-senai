@@ -14,22 +14,12 @@ LogBox.ignoreAllLogs();
 
 // Import images
 import Advogado from "../../../src/img/advogado.png";
-import codeIcon from "../../../src/img/codeIcon.png";
 import coinsIcon from "../../../src/img/coinsIcon.png";
 import Construtor from "../../../src/img/construtor.png";
-import eletricIcon from "../../../src/img/eletricaIcon.png";
-import geoIcon from "../../../src/img/geoIcon.png";
 import Nutricao from "../../../src/img/nutricao.png";
-import otherIcon from "../../../src/img/otherIcon.png";
-import pencilIcon from "../../../src/img/pencilIcon.png";
-import profile from "../../../src/img/profileImage.png";
-import serverIcon from "../../../src/img/serverIcon.png";
-import subjectIcon from "../../../src/img/subjectIcon.png";
-import translateIcon from "../../../src/img/translateIcon.png";
 import vetor1 from "../../../src/img/vector1.png";
 import vetor2 from "../../../src/img/vector2.png";
 import vetor3 from "../../../src/img/vector4.png";
-import wrenchIcon from "../../../src/img/wrenchIcon.png";
 
 //Import Components
 import JobCard from "../../components/JobCard";
@@ -122,7 +112,7 @@ export default function Home({ navigation }) {
 
     return (
         <SafeAreaView style={styles.main}>
-            <ScrollView h={"$full"} onScroll={handleScroll} scrollEventThrottle={16}>
+            <ScrollView h={"$full"} onScroll={handleScroll} scrollEventThrottle={16} showsVerticalScrollIndicator={false}>
                 <MotiView
                     from={{ translateY: -100 }}
                     animate={{ translateY: 0 }}
@@ -166,20 +156,22 @@ export default function Home({ navigation }) {
                             animate={{ translateX: 0 }}
                             transition={{ duration: 1700, type: "timing" }}>
                             <Image alt='icons' source={vetor2} style={{ width: 31, height: 14, }} />
-                            <Text style={{ color: "#fff", fontSize: 30, fontWeight: "bold" }}>29</Text>
+                            <Text style={{ color: "#fff", fontSize: 30, fontWeight: "bold" }}>8</Text>
                             <Text style={{ color: "#fff" }}>Trabalhos disponiveis</Text>
                             <Image source={vetor1} alt="Perfil" resizeMode="contain" style={{ height: 70, width: 70, marginLeft: 52, marginTop: 17, }} />
                         </MotiView>
                     </Pressable>
-                    <MotiView style={styles.addedJobs}
-                        from={{ translateX: 200 }}
-                        animate={{ translateX: 0 }}
-                        transition={{ duration: 1700, type: "timing" }}>
-                        <Image alt='icons' source={vetor2} style={{ width: 31, height: 14, }} />
-                        <Text style={{ color: "#fff", fontSize: 30, fontWeight: "bold" }}>3</Text>
-                        <Text style={{ color: "#fff" }}>Trabalhos sendo adicionados</Text>
-                        <Image source={vetor3} alt="Perfil" resizeMode="contain" style={{ height: 70, width: 70, marginLeft: 65, }} />
-                    </MotiView>
+                    <Pressable onPress={() => navigation.navigate("JobsBeingAdded")}>
+                        <MotiView style={styles.addedJobs}
+                            from={{ translateX: 200 }}
+                            animate={{ translateX: 0 }}
+                            transition={{ duration: 1700, type: "timing" }}>
+                            <Image alt='icons' source={vetor2} style={{ width: 31, height: 14, }} />
+                            <Text style={{ color: "#fff", fontSize: 30, fontWeight: "bold" }}>8</Text>
+                            <Text style={{ color: "#fff" }}>Trabalhos sendo adicionados</Text>
+                            <Image source={vetor3} alt="Perfil" resizeMode="contain" style={{ height: 70, width: 70, marginLeft: 65, }} />
+                        </MotiView>
+                    </Pressable>
                 </View>
                 <View style={styles.categoryContainer}>
                     <MotiView
@@ -192,24 +184,24 @@ export default function Home({ navigation }) {
                         from={{ translateY: 200 }}
                         animate={{ translateY: 0 }}
                         transition={{ type: "timing", duration: 2500 }}>
-                        <Pressable onPress={() => console.log("teste")}>
+                        <Pressable onPress={() => navigation.navigate("LPScreen")}>
                             <View style={styles.categoryCard}>
-                                <Image alt='icon' source={eletricIcon} style={{ width: 30, height: 30 }} resizeMode="contain" />
+                                <Text style={{ color: "#ee2d32", fontSize: 22, fontWeight: "bold" }}>L.P</Text>
                             </View>
                         </Pressable>
-                        <Pressable onPress={() => console.log("teste")}>
+                        <Pressable onPress={() => navigation.navigate("MATScreen")}>
                             <View style={styles.categoryCard}>
-                                <Image alt='icon' source={pencilIcon} style={{ width: 30, height: 30 }} resizeMode="contain" />
+                                <Text style={{ color: "#ee2d32", fontSize: 22, fontWeight: "bold" }}>MAT</Text>
                             </View>
                         </Pressable>
-                        <Pressable onPress={() => console.log("teste")}>
+                        <Pressable onPress={() => navigation.navigate("BIOScreen")}>
                             <View style={styles.categoryCard}>
-                                <Image alt='icon' source={geoIcon} style={{ width: 30, height: 30 }} resizeMode="contain" />
+                                <Text style={{ color: "#ee2d32", fontSize: 22, fontWeight: "bold" }}>BIO</Text>
                             </View>
                         </Pressable>
-                        <Pressable onPress={() => console.log("teste")}>
+                        <Pressable onPress={() => navigation.navigate("GEOScreen")}>
                             <View style={styles.categoryCard}>
-                                <Image alt='icon' source={translateIcon} style={{ width: 30, height: 30 }} resizeMode="contain" />
+                                <Text style={{ color: "#ee2d32", fontSize: 22, fontWeight: "bold" }}>GEO</Text>
                             </View>
                         </Pressable>
                     </MotiView>
@@ -217,24 +209,24 @@ export default function Home({ navigation }) {
                         from={{ translateY: 200 }}
                         animate={{ translateY: 0 }}
                         transition={{ type: "timing", duration: 2000 }}>
-                        <Pressable onPress={() => console.log("teste")}>
+                        <Pressable onPress={() => navigation.navigate("FISScreen")}>
                             <View style={styles.categoryCard}>
-                                <Image alt='icon' source={codeIcon} style={{ width: 30, height: 30 }} resizeMode="contain" />
+                                <Text style={{ color: "#ee2d32", fontSize: 22, fontWeight: "bold" }}>FIS</Text>
                             </View>
                         </Pressable>
-                        <Pressable onPress={() => console.log("teste")}>
+                        <Pressable onPress={() => navigation.navigate("QUIScreen")}>
                             <View style={styles.categoryCard}>
-                                <Image alt='icon' source={serverIcon} style={{ width: 30, height: 30 }} resizeMode="contain" />
+                                <Text style={{ color: "#ee2d32", fontSize: 22, fontWeight: "bold" }}>QUI</Text>
                             </View>
                         </Pressable>
-                        <Pressable onPress={() => console.log("teste")}>
+                        <Pressable onPress={() => navigation.navigate("INGScreen")}>
                             <View style={styles.categoryCard}>
-                                <Image alt='icon' source={wrenchIcon} style={{ width: 30, height: 30 }} resizeMode="contain" />
+                                <Text style={{ color: "#ee2d32", fontSize: 22, fontWeight: "bold" }}>ING</Text>
                             </View>
                         </Pressable>
-                        <Pressable onPress={() => console.log("teste")}>
+                        <Pressable onPress={() => navigation.navigate("HISScreen")}>
                             <View style={styles.categoryCard}>
-                                <Image alt='icon' source={otherIcon} style={{ width: 30, height: 30 }} resizeMode="contain" />
+                                <Text style={{ color: "#ee2d32", fontSize: 22, fontWeight: "bold" }}>HIS</Text>
                             </View>
                         </Pressable>
                     </MotiView>
@@ -271,22 +263,22 @@ export default function Home({ navigation }) {
                         </Button>
                     </MotiView>
                 </View>
-                <JobCard subject={"Biologia"} minSal={1000} maxSal={2001} jobName={"Nutrição"} jobArea={"Saúde"} jobImage={Nutricao} onPress={() => navigation.navigate("NutricaoScreen")} bgColor={"#61ff78"}/> 
-                <JobCard subject={"Lingua Portuguesa"} minSal={1000} maxSal={2000} jobName={"Advogado"} jobArea={"Direito"} jobImage={Advogado} onPress={() => navigation.navigate("DireitoScreen")} bgColor={"#f9f909"}/> 
-                <JobCard subject={"Matemática"} minSal={1000} maxSal={2000} jobName={"Engenheiro"} jobArea={"Construção"} jobImage={Construtor} onPress={() => navigation.navigate("EngenhariaScreen")} bgColor={"#FF8450"}/> 
-                <JobCard subject={"Matemática"} minSal={1000} maxSal={2000} jobName={"DBA"} jobArea={"Tecnologia"} jobImage={Nutricao} onPress={() => navigation.navigate("DatabaseScreen")} bgColor={"#"}/> 
-                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Publicidade e Propaganda"} jobArea={"Marketing"} jobImage={Nutricao} onPress={() => navigation.navigate("PublicidadeScreen")} bgColor={"#"}/> 
-                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Design"} jobArea={"Marketing"} jobImage={Nutricao} onPress={() => navigation.navigate("DesignScreen")} bgColor={"#"}/> 
-                <JobCard subject={"Matemática"} minSal={1000} maxSal={2000} jobName={"Pedreiro"} jobArea={"Construção"} jobImage={Nutricao} onPress={() => navigation.navigate("PedreiroScreen")} bgColor={"#"}/> 
-                <JobCard subject={"Lingua Portuguesa"} minSal={1000} maxSal={2000} jobName={"Jornalista"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("JornalistaPage")} bgColor={"#"}/> 
-                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Administracao"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("AdministracaoScreen")} bgColor={"#"}/> 
-                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Atleta"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("AtletaScreen")} bgColor={"#"}/> 
-                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Cabeleireiro"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("CabeleireiroScreen")} bgColor={"#"}/> 
-                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Geologo"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("GeologoScreen")} bgColor={"#"}/> 
-                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Comissário"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("ComissarioScreen")} bgColor={"#"}/> 
-                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Economista"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("NutricaoScreen")} bgColor={"#"}/> 
-                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Arquiteto"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("ArquiteturaScreen")} bgColor={"#"}/> 
-                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Medicina"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("MedicinaScreen")} bgColor={"#"}/>
+                <JobCard subject={"Biologia"} minSal={1000} maxSal={2001} jobName={"Nutrição"} jobArea={"Saúde"} jobImage={Nutricao} onPress={() => navigation.navigate("NutricaoScreen")} bgColor={"#61ff78"} />
+                <JobCard subject={"Lingua Portuguesa"} minSal={1000} maxSal={2000} jobName={"Advogado"} jobArea={"Direito"} jobImage={Advogado} onPress={() => navigation.navigate("DireitoScreen")} bgColor={"#f9f909"} />
+                <JobCard subject={"Matemática"} minSal={1000} maxSal={2000} jobName={"Engenheiro"} jobArea={"Construção"} jobImage={Construtor} onPress={() => navigation.navigate("EngenhariaScreen")} bgColor={"#FF8450"} />
+                <JobCard subject={"Matemática"} minSal={1000} maxSal={2000} jobName={"DBA"} jobArea={"Tecnologia"} jobImage={Nutricao} onPress={() => navigation.navigate("DatabaseScreen")} bgColor={"#"} />
+                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Publicidade e Propaganda"} jobArea={"Marketing"} jobImage={Nutricao} onPress={() => navigation.navigate("PublicidadeScreen")} bgColor={"#"} />
+                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Design"} jobArea={"Marketing"} jobImage={Nutricao} onPress={() => navigation.navigate("DesignScreen")} bgColor={"#"} />
+                <JobCard subject={"Matemática"} minSal={1000} maxSal={2000} jobName={"Pedreiro"} jobArea={"Construção"} jobImage={Nutricao} onPress={() => navigation.navigate("PedreiroScreen")} bgColor={"#"} />
+                <JobCard subject={"Lingua Portuguesa"} minSal={1000} maxSal={2000} jobName={"Jornalista"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("JornalistaPage")} bgColor={"#"} />
+                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Administracao"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("AdministracaoScreen")} bgColor={"#"} />
+                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Atleta"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("AtletaScreen")} bgColor={"#"} />
+                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Cabeleireiro"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("CabeleireiroScreen")} bgColor={"#"} />
+                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Geologo"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("GeologoScreen")} bgColor={"#"} />
+                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Comissário"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("ComissarioScreen")} bgColor={"#"} />
+                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Economista"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("NutricaoScreen")} bgColor={"#"} />
+                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Arquiteto"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("ArquiteturaScreen")} bgColor={"#"} />
+                <JobCard subject={"Matéria"} minSal={1000} maxSal={2000} jobName={"Medicina"} jobArea={"área onde trabalha"} jobImage={Nutricao} onPress={() => navigation.navigate("MedicinaScreen")} bgColor={"#"} />
             </ScrollView>
         </SafeAreaView >
     )
