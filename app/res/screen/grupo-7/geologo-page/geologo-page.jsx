@@ -1,6 +1,6 @@
 
 import { Text, Box, SafeAreaView, Image, View, StyleSheet, ImageBackground, ScrollView, FlatList, Button } from '@gluestack-ui/themed';
-import {HashLink as link} from "react-router-hash-link"
+// import {HashLink as link} from "react-router-hash-link" PROBLEMA NO LINK
 import styles from './Style';
 
 import Logo1 from '../../../../src/img/geologia/logo1.png'
@@ -24,7 +24,7 @@ export default function GeologoScreen({}) {
             <FlatList w={'60%'}
               data={[
                 <a href="#sobre">ABOUT</a>,
-                { key: <Link smooth to="#sobre">Sobre o Curso</Link>},
+                // { key: <Link smooth to="#sobre">Sobre o Curso</Link>}, PROBLEMA NO LINK
                 { key: 'O que um geólogo faz?' },
                 { key: 'Áreas de atuação' },
                 { key: 'Gráficos' },

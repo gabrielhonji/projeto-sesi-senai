@@ -27,6 +27,8 @@ import DatabaseScreen from '../grupo-3/database/database-page';
 import EngenhariaScreen from '../grupo-2/nutricao/engenharia-page';
 import ArquiteturaScreen from '../grupo-8/arquitetura-page/arquitetura-page';
 import CiclismoScreen from '../grupo-1/atleta-page/Ciclismo';
+import AvaialableJobs from './availableJobs';
+import MedicinaScreen from '../grupo-6/medicina/medicina';
 
 export default function StartNavigator() {
     return (
@@ -37,7 +39,6 @@ export default function StartNavigator() {
                 {/* Jobs */}
                 <Stack.Screen name="AdministracaoScreen" component={AdministracaoScreen} />
                 <Stack.Screen name="AtletaScreen" component={AtletaScreen} />
-                <Stack.Screen name="CiclismoScreen" component={CiclismoScreen} />
                 <Stack.Screen name="DatabaseScreen" component={DatabaseScreen} />
                 <Stack.Screen name="DesignScreen" component={DesignScreen} />
                 <Stack.Screen name="DireitoScreen" component={DireitoScreen} />
@@ -49,6 +50,8 @@ export default function StartNavigator() {
                 <Stack.Screen name="ComissarioScreen" component={Comissario} />
                 <Stack.Screen name="EngenhariaScreen" component={EngenhariaScreen} />
                 <Stack.Screen name="ArquiteturaScreen" component={ArquiteturaScreen} />
+                <Stack.Screen name="MedicinaScreen" component={MedicinaScreen} />
+                <Stack.Screen name="AvailableJobs" component={AvaialableJobs} />
             </Stack.Navigator>
         </NavigationContainer>
     );
