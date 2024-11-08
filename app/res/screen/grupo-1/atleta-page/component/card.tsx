@@ -22,12 +22,7 @@ const Cards = ({title,subtitle,filter1,filter2,source}: Props) => {
               <Text style={{color:"#fff", fontSize:21, fontWeight:"bold"}}>{title}</Text>
               <Text style={{color:"#fff"}}>{subtitle}</Text>
               <View style={{flexDirection:"row", gap:8, marginTop:7,}}>
-              <View style={{backgroundColor:"#C7C7C7", width:54, height:15, borderRadius:30, justifyContent:"center" ,alignItems:"center"}}>
-                <Text style={{position:"absolute"}}>{filter1}</Text>
-              </View>
-              <View style={{backgroundColor:"#C7C7C7", width:54, height:15, borderRadius:30, justifyContent:"center" ,alignItems:"center"}}>
-                <Text style={{position:"absolute"}}>{filter2}</Text>
-              </View>
+              
               </View>
               </View>
             </View>
