@@ -1,23 +1,19 @@
+import { Card, Image } from '@rneui/themed';
 import React from 'react';
-import { Text, View, ScrollView, SafeAreaView, TouchableOpacity, ImageBackground } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Input, Button, Image, LinearGradient } from '@rneui/themed'
-import { Card, Icon } from '@rneui/themed';
-import styles from "./Styles"
+import { SafeAreaView, ScrollView, Text, View } from 'react-native';
+import styles from "./Styles";
 // import axios from 'axios';
-import imagem1 from "../../../../src/img/img-cabeleireiro/Cabelereiro/Imagemfigma1.png"
-import imagem2 from "../../../../src/img/img-cabeleireiro/Cabelereiro/Imagemfigma2certo.png"
-import imagem3 from '../../../../src/img/img-cabeleireiro/Cabelereiro/Imagemfigma3.png'
-import quimica from '../../../../src/img/img-cabeleireiro/Cabelereiro/quimica.png'
-import tabela from '../../../../src/img/img-cabeleireiro/Cabelereiro/TABELA.png'
+import imagem1 from "../../../../src/img/img-cabeleireiro/Cabelereiro/Imagemfigma1.png";
+import imagem2 from "../../../../src/img/img-cabeleireiro/Cabelereiro/Imagemfigma2certo.png";
+import imagem3 from '../../../../src/img/img-cabeleireiro/Cabelereiro/Imagemfigma3.png';
+import quimica from '../../../../src/img/img-cabeleireiro/Cabelereiro/quimica.png';
+import tabela from '../../../../src/img/img-cabeleireiro/Cabelereiro/TABELA.png';
 
 export default CabeleireiroScreen = ({ navigation }) => {
 
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', }}>
       <SafeAreaView style={styles.container}>
-
         <ScrollView vertical>
           <Card containerStyle={{
             marginTop: 15,
