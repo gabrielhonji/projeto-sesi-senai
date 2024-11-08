@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { Box, Button, ButtonText, Image, Input, InputField, InputIcon, InputSlot, Pressable, SearchIcon, Text, View } from "@gluestack-ui/themed";
-import { config } from "@gluestack-ui/config";
-import { GluestackUIProvider } from "@gluestack-ui/themed";
-import { StyleSheet, SafeAreaView, ScrollView, FlatList } from "react-native";
+import { Image, Pressable, Text, View } from "@gluestack-ui/themed";
+import React, { useState } from "react";
+import { FlatList, SafeAreaView, ScrollView, StyleSheet } from "react-native";
 import LinearGradient from "react-native-linear-gradient";
 
 // Adicione os imports dos ícones
@@ -13,6 +11,7 @@ export default function MATScreen({ navigation }) {
 
     const DATA = [
         { id: 3, area: "TI", name: "Database", minSal: 4000, maxSal: 12000, subject: "Matemática", image: require("../../../../src/img/profissoes/database.png"), backgroundColor: "#0373fc", screen: "DatabaseScreen" },
+        { id: 4, area: "Design e artes visuais", name: "Design", minSal: 2000, maxSal: 6000, subject: "Lingua Portuguesa", image: require("../../../../src/img/profissoes/design.png"), backgroundColor: "#fcf803", screen: "DesignScreen" },
         { id: 5, area: "Administração e Gestão", name: "Administração", minSal: 3000, maxSal: 10000, subject: "Matemática", image: require("../../../../src/img/profissoes/administracao.png"), backgroundColor: "#032cfc", screen: "AdministracaoScreen" },
         { id: 8, area: "Construção civil", name: "Pedreiro", minSal: 1500, maxSal: 4000, subject: "Matemática", image: require("../../../../src/img/profissoes/pedreiro.png"), backgroundColor: "#575555", screen: "PedreiroScreen" },
         { id: 9, area: "Economia e finanças", name: "Economista", minSal: 4000, maxSal: 12000, subject: "Matemática", image: require("../../../../src/img/profissoes/economista.png"), backgroundColor: "#02afe8", screen: "EconomistaScreen" },

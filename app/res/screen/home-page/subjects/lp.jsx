@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { Box, Button, ButtonText, Image, Input, InputField, InputIcon, InputSlot, Pressable, SearchIcon, Text, View } from "@gluestack-ui/themed";
-import { config } from "@gluestack-ui/config";
-import { GluestackUIProvider } from "@gluestack-ui/themed";
-import { StyleSheet, SafeAreaView, ScrollView, FlatList } from "react-native";
+import { Image, Pressable, Text, View } from "@gluestack-ui/themed";
+import React, { useState } from "react";
+import { FlatList, SafeAreaView, ScrollView, StyleSheet } from "react-native";
 import LinearGradient from "react-native-linear-gradient";
 
 // Adicione os imports dos ícones
@@ -12,7 +10,6 @@ import subjectIcon from "../../../../src/img/subjectIcon.png";
 export default function LPScreen({ navigation }) {
 
     const DATA = [
-        { id: 4, area: "Design e artes visuais", name: "Design", minSal: 2000, maxSal: 6000, subject: "Lingua Portuguesa", image: require("../../../../src/img/profissoes/design.png"), backgroundColor: "#fcf803", screen: "DesignScreen" },
         { id: 7, area: "Direito e justiça", name: "Direito", minSal: 3000, maxSal: 15000, subject: "Lingua Portuguesa", image: require("../../../../src/img/profissoes/direito.png"), backgroundColor: "#000", screen: "DireitoScreen" },
         { id: 11, area: "Comunicação e Marketing", name: "Publicidade", minSal: 2500, maxSal: 8000, subject: "Lingua Portuguesa", image: require("../../../../src/img/profissoes/publicidade.png"), backgroundColor: "#fafa02", screen: "PublicidadeScreen" },
         { id: 13, area: "Comunicação e Mídia", name: "Jornalista", minSal: 2000, maxSal: 7000, subject: "Lingua Portuguesa", image: require("../../../../src/img/profissoes/jornalista.png"), backgroundColor: "#0206fa", screen: "JornalistaPage" },

@@ -9,40 +9,34 @@ import React from 'react';
 // const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
-import AdministracaoScreen from '../grupo-5/administracao/administracao-page';
+import CabeleireiroScreen from "../../screen/grupo-6/cabelereiro/Principal";
 import AtletaScreen from '../grupo-1/atleta-page/atleta-page';
-import DBAPage from '../grupo-3/database/database-page';
-import DesignScreen from '../grupo-4/design/design-page';
-import DireitoScreen from '../grupo-7/direito/direito-page';
-import Home from './home';
+import EconomistaScreen from '../grupo-1/economista';
+import EngenhariaScreen from '../grupo-2/nutricao/engenharia-page';
 import NutricaoScreen from '../grupo-2/nutricao/nutricao-page';
-import PedreiroScreen from '../grupo-8/pedreiro/pedreiro-page';
+import DatabaseScreen from '../grupo-3/database/database-page';
 import PublicidadeScreen from '../grupo-3/publicidade/publicidade-page';
 import Comissario from '../grupo-4/comissario/comissário';
+import DesignScreen from '../grupo-4/design/design-page';
+import AdministracaoScreen from '../grupo-5/administracao/administracao-page';
 import JornalistaPage from '../grupo-5/jornalista-page/jornalista-page';
-import CabeleireiroScreen from "../../screen/grupo-6/cabelereiro/Principal"
-import OnBoarding from './onboarding';
-import GeologoScreen from '../grupo-7/geologo-page/geologo-page';
-import DatabaseScreen from '../grupo-3/database/database-page';
-import EngenhariaScreen from '../grupo-2/nutricao/engenharia-page';
-import ArquiteturaScreen from '../grupo-8/arquitetura-page/arquitetura-page';
-import CiclismoScreen from '../grupo-1/atleta-page/Ciclismo';
-import AvaialableJobs from './availableJobs';
 import MedicinaScreen from '../grupo-6/medicina/medicina';
+import DireitoScreen from '../grupo-7/direito/direito-page';
+import GeologoScreen from '../grupo-7/geologo-page/geologo-page';
+import ArquiteturaScreen from '../grupo-8/arquitetura-page/arquitetura-page';
+import PedreiroScreen from '../grupo-8/pedreiro/pedreiro-page';
+import AvaialableJobs from './availableJobs';
+import Home from './home';
 import JobsBeingAdded from './jobsBeingAdded';
-import MATScreen from './subjects/mat';
-import LPScreen from './subjects/lp';
+import OnBoarding from './onboarding';
+import BIOScreen from './subjects/bio';
+import FISScreen from './subjects/fis';
 import GEOScreen from './subjects/geo';
 import HISScreen from './subjects/his';
-import BIOScreen from './subjects/bio';
 import INGScreen from './subjects/ing';
-import FISScreen from './subjects/fis';
+import LPScreen from './subjects/lp';
+import MATScreen from './subjects/mat';
 import QUIScreen from './subjects/qui';
-import EconomistaScreen from '../grupo-1/economista';
-
-
-
-
 
 export default function StartNavigator() {
     return (
